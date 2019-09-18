@@ -1,0 +1,27 @@
+// Name hero backgounds based on module/page name.
+// Home page
+
+.hero {
+  background-size: cover;
+  background-position: 30%;
+  background-repeat: no-repeat;
+  height: 10rem;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-up(md) {
+    height: 15rem;
+  }
+  @include media-breakpoint-up(lg) {
+	background-position: 0;
+    height: 17rem;
+    margin-bottom: 3rem;
+  }
+  @include media-breakpoint-up(xl) {
+    height: 20rem;
+  }
+}
+
+.store-hero-bg {
+    background-image: url("../img/PeopleAndTransit_0030.png");
+    margin-bottom: 0;
+}

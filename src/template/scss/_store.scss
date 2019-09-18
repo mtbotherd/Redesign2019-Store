@@ -1,0 +1,212 @@
+/***************************************************************
+	Store styles & includes
+***************************************************************/
+#store {
+  //   @import "payment-info.scss";
+  //   @import "shopping-cart";
+
+  .page-anchors {
+    .btn-link {
+      border: 2px solid $blue;
+      background-color: $white;
+      color: $body-color;
+      @include font-size(18);
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  .card-deck {
+    &:last-child {
+      .card {
+        @include media-breakpoint-up(md) {
+          margin-bottom: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    padding-bottom: 0;
+
+    @include media-breakpoint-up(lg) {
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .card-footer {
+    padding: 0.188rem 1.25rem;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0.657rem 1.25rem;
+    }
+  }
+
+  .quantity {
+    width: 50px;
+    height: 40px;
+
+    @include media-breakpoint-up(lg) {
+      width: 70px;
+      height: 50px;
+    }
+  }
+
+  // blue cyan background
+  .blue-cyan-bg {
+    color: $white;
+
+    @include media-breakpoint-up(lg) {
+      background-image: url("../img/blue-cyan-bg.png");
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      padding: 3rem 0;
+    }
+
+    .row {
+      @include media-breakpoint-up(md) {
+        margin-right: -30px;
+        margin-left: -30px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+    }
+
+    h2 {
+      margin-bottom: 15px;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .blue-bg {
+      background-color: $blue;
+      padding: 1.5rem;
+
+      @include media-breakpoint-up(lg) {
+        padding: 3rem 2rem;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding: 3rem;
+      }
+
+      a {
+        color: $white;
+        // &:hover {
+        //   color: $white;
+        // }
+      }
+    }
+
+    .cyan-bg {
+      background-color: $cyan;
+      padding: 1.5rem;
+
+      @include media-breakpoint-up(lg) {
+        padding: 3rem 2rem;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding: 3rem;
+      }
+    }
+
+    .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .phone-white {
+      width: 25px;
+      height: 40px;
+
+      @include media-breakpoint-up(lg) {
+        width: 30px;
+        height: 48px;
+      }
+    }
+
+    .ticket-white {
+      width: 27px;
+      height: 40px;
+
+      @include media-breakpoint-up(lg) {
+        width: 33px;
+        height: 48px;
+      }
+    }
+  }
+
+  .line-break {
+    margin: 1rem;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    &::before,
+    &::after {
+      content: "";
+      top: 12px;
+      height: 0px;
+      position: absolute;
+      border-top: 1px solid black;
+      width: 40%;
+    }
+    &::before {
+      left: 0px;
+    }
+    &::after {
+      right: 0px;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .btn-value {
+    width: 70px;
+    height: 40px;
+    @include font-size(16);
+    margin-right: 0.68rem;
+    margin-bottom: 1rem;
+    padding: 0.25rem 0.75rem;
+
+    &:nth-child(6n) {
+      margin-right: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 50px;
+      @include font-size(18);
+      margin-right: 0.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-right: 1.75rem;
+    }
+  }
+  .icon-sm {
+    width: 1.25rem;
+  }
+}
+
+.popover {
+  border-radius: 0.25rem;
+}

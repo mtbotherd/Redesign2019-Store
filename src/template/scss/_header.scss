@@ -1,0 +1,88 @@
+@import 'utilities';
+
+a.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  transition: top 1s ease-out;
+
+  &:focus {
+    background-color: $red;
+    color: $white;
+    left: 0;
+    padding: 1rem;
+    text-decoration: underline;
+    top: 0;
+    transition: top 0.1s ease-in;
+  }
+}
+#header {
+  @include media-breakpoint-up(xl) {
+    .navbar {
+      padding: 0 !important;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      &:hover {
+        background-color: $cyan;
+
+        .nav-link {
+          color: $white;
+        }
+      }
+      .nav-link {
+        // padding: 0;
+        @include media-breakpoint-up(xl) {
+          padding-top: 1.25rem;
+          padding-right: 0.85rem !important;
+          padding-bottom: 1.25rem;
+          padding-left: 0.85rem !important;
+        }
+
+        .icon {
+            width: 0.75rem;
+            width: 0.75rem;
+
+            @include media-breakpoint-up(md) {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+
+        &:active,
+        &:hover {
+          color: $white;
+        }
+      }
+
+      .dropdown-toggle {
+        &::after {
+          border: none !important; // Removed Bootstraps default arrow.
+        }
+      }
+
+      .dropdown-menu {
+        background-color: $gray-100;
+        @include media-breakpoint-up(xl) {
+          margin-top: 0;
+          border: none;
+        }
+
+        .dropdown-item {
+          color: $cyan;
+          @include media-breakpoint-up(lg) {
+            @include font-size(18);
+          }
+
+          &:hover,
+          &:active {
+            color: $secondary;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

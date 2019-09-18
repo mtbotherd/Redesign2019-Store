@@ -1,0 +1,22 @@
+/**********************************************
+    Billing & payment information styles
+**********************************************/
+#store {
+  .billing-info {
+    .card-body {
+      .h4 {
+        width: 175px;
+        margin: 0 auto 1.5rem auto;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .alert {
+    margin-top: 30px;
+  }
+}
