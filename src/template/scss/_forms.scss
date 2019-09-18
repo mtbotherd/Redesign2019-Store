@@ -73,7 +73,7 @@ form {
         border-left: 0;
         @include font-size(18);
       }
-	}
+    }
   }
 
   button[type="search"] {
@@ -88,7 +88,7 @@ form {
   // Required form elements styles
   /* Denote label at top of forms */
   .denote-required {
-	  position: relative;
+    position: relative;
     @include font-size(18);
 
     @include media-breakpoint-up(lg) {
@@ -170,13 +170,18 @@ form {
   }
 
   // custom controls
-	.custom-radio {
-		.custom-control-label::before {
-			margin-top: 2px;
+  .custom-radio,
+  .custom-checkbox {
+    .custom-control-label::before {
+      margin-top: 2px;
 
-			@include media-breakpoint-up(lg) {
-				margin-top: 3px;
-			}
-		}
-	}
+      @include media-breakpoint-up(lg) {
+        margin-top: 3px;
+      }
+    }
+  }
+
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+    top: 5px;
+  }
 }

@@ -8525,11 +8525,15 @@ form {
     text-align: center; }
   form input[name="quantity"]::placeholder {
     text-align: center; }
-  form .custom-radio .custom-control-label::before {
+  form .custom-radio .custom-control-label::before,
+  form .custom-checkbox .custom-control-label::before {
     margin-top: 2px; }
     @media (min-width: 992px) {
-      form .custom-radio .custom-control-label::before {
+      form .custom-radio .custom-control-label::before,
+      form .custom-checkbox .custom-control-label::before {
         margin-top: 3px; } }
+  form .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+    top: 5px; }
 
 .accordion .card .card-header {
   padding: 0 !important; }
