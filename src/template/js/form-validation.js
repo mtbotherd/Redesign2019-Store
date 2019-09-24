@@ -5,7 +5,9 @@ $(function () {
 	// Globals
 	$('form').validate({
 		debug: true,
+		ignore: ':hidden',
 		rules: {
+			// Billing info
 			firstName: 'required',
 			lastName: 'required',
 			address: 'required',
@@ -22,12 +24,25 @@ $(function () {
 				required: true,
 				equalTo: '#emailAddress'
 			},
+			// CC info
 			creditCardNumber: 'required',
 			expirationMonth: 'required',
 			expirationYear: 'required',
-			cvc: 'required'
+			cvc: 'required',
+			// Shipping Address
+			saFirstName: 'required',
+			saLastName: 'required',
+			saAddress: 'required',
+			saCity: 'required',
+			saState: 'required',
+			saZipcode: 'required',
+			saPhoneNumber: 'required',
+			saEmailAddress: 'required',
+			// Terms
+			terms: 'required'
 		},
 		messages: {
+			// Billing info
 			firstName: 'Please enter your first name.',
 			lastName: 'Please enter your last name.',
 			address: 'Please enter your street address.',
@@ -43,14 +58,26 @@ $(function () {
 				required: 'Please enter a valid email address.',
 				equalTo: 'The email addresses do not match.'
 			},
+			// CC info
 			creditCardNumber: 'Please enter a valid card number.',
 			expirationMonth: 'Please select a month.',
 			expirationYear: 'Please select a year.',
-			cvc: 'Please enter the 3-digit CVC.'
+			cvc: 'Please enter the 3-digit CVC.',
+			// Shipping address
+			saFirstName: 'Please enter your first name.',
+			saLastName: 'Please enter your last name.',
+			saAddress: 'Please enter your street address.',
+			saCity: 'Please enter the city.',
+			saState: 'Please select a state.',
+			saZipcode: 'Please enter the zip code.',
+			saPhoneNumber: 'Please enter your phone number.',
+			saEmailAddress: 'Please enter your email address.',
+			// Terms
+			terms: 'You must accept the terms and conditions to continue.'
 		},
-		onfocusout: function(element) {
-            this.element(element); // triggers validation
-        },
+		// onfocusout: function(element) {
+        //     this.element(element); // triggers validation
+        // },
 		errorElement: 'div',
 	
 		// Replaces default .has-error class with Bootstrap 4 .is-valid class
@@ -62,16 +89,15 @@ $(function () {
             // Add the `help-block` class to the error element
             error.addClass("help-block");
 
-            element.parents(".form-group, .input-group").addClass("has-feedback");
+            element.parents(".form-group, .input-group, .custom-control").addClass("has-feedback");
 
             if (element.prop("type") === "checkbox" ||
                 element.prop("type") === "radio" ||
                 element.prop("type") === "file") {
                 //$("<img src='template/img/svg/alert-red.svg'/>").appendTo(element.parents(".form-group, input-group"));
-                error.appendTo(element.parents(".form-group"));
+				$("<img class='alert-red' src='template/img/svg/alert-red.svg'/>").appendTo(element.parents(".custom-control"));
+				error.appendTo(element.parents(".custom-control"));
             } else {
-				// $("<img src='template/img/svg/alert-red.svg'/>").appendTo(element.parents(".form-group, input-group"));
-				// error.appendTo(element.parents(".form-group, input-group"));
 				$("<img class='alert-red' src='template/img/svg/alert-red.svg'/>").appendTo(element.parents(".form-group, .input-group"));
 				error.appendTo(element.parents(".form-group, .input-group"));
 			}
@@ -84,15 +110,15 @@ $(function () {
         },
         highlight: function(element, errorClass, validClass) {
             // Adds error ".is-invalid" for Bootstrap 4 styles.
-            $(element).parents(".form-group, .input-group").addClass(errorClass).removeClass(validClass);
+            $(element).parents(".form-group, .input-group, .custom-control").addClass(errorClass).removeClass(validClass);
 
             // Sets error icon.
             $(element).next(".alert-red").show()/*addClass("fa-exclamation-triangle").removeClass("fa-check")*/;
         },
         unhighlight: function(element, errorClass, validClass) {
             // Adds valid class ".is-valid" for Bootstrap 4 styles.
-			$(element).parents(".form-group, .input-group").addClass(validClass).removeClass(errorClass);
-			$(element).next(".alert-red").remove()
+			$(element).parents(".form-group, .input-group, .custom-control").addClass(validClass).removeClass(errorClass);
+			$(element).next(".alert-red").remove();
         }
 	});
 });

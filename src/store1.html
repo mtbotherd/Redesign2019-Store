@@ -339,62 +339,63 @@
 										<h3 class="h4 text-center">Add a pass</h4>
 											<div class="custom-control custom-radio">
 												<input type="radio"
-													   id="customRadio1"
-													   name="customRadio"
+													   id="pass31DayNonRush"
+													   name="pass31DayNonRush"
 													   class="custom-control-input">
 												<label class="custom-control-label"
-													   for="customRadio1"><strong>$65</strong> 31-Day Pass Local
+													   for="pass31DayNonRush"><strong>$65</strong> 31-Day Pass Local
 													Non-Rush Hour</label>
 											</div>
 											<div class="custom-control custom-radio">
 												<input type="radio"
-													   id="customRadio2"
-													   name="customRadio"
+													   id="pass31DayExpress"
+													   name="pass31DayExpress"
 													   class="custom-control-input">
 												<label class="custom-control-label"
-													   for="customRadio2"><strong>$120 </strong> 31-Day Pass
+													   for="pass31DayExpress"><strong>$120 </strong> 31-Day Pass
 													Express</label>
 											</div>
 											<div class="custom-control custom-radio">
 												<input type="radio"
-													   id="customRadio1"
-													   name="customRadio"
+													   id="pass31DayLocalRush"
+													   name="pass31DayLocalRush"
 													   class="custom-control-input">
 												<label class="custom-control-label"
-													   for="customRadio1"><strong>$90 </strong> 31-Day Local Rush
+													   for="pass31DayLocalRush"><strong>$90 </strong> 31-Day Local Rush
 													Hour</label>
 											</div>
 											<div class="custom-control custom-radio">
 												<input type="radio"
-													   id="customRadio2"
-													   name="customRadio"
+													   id="pass10DayRidePass"
+													   name="pass10DayRidePass"
 													   class="custom-control-input">
 												<label class="custom-control-label"
-													   for="customRadio2"><strong>$20.50 </strong> 10-Day Ride
+													   for="pass10DayRidePass"><strong>$20.50 </strong> 10-Day Ride
 													Pass</label>
 											</div>
 											<div class="custom-control custom-radio">
 												<input type="radio"
-													   id="customRadio2"
-													   name="customRadio"
+													   id="pass7DayRidePass"
+													   name="pass7DayRidePass"
 													   class="custom-control-input">
 												<label class="custom-control-label"
-													   for="customRadio2"><strong>$24 </strong> 7-Day Ride Pass</label>
+													   for="pass7DayRidePass"><strong>$24 </strong> 7-Day Ride Pass</label>
 											</div>
 											<div class="form-row">
 												<div class="col-6 offset-3">
 													<div class="form-group">
-														<label for="quantity"
+														<label for="gotoQuantity"
 															   class="d-inline-block">Quantity</label>
 														<input type="number"
 															   class="form-control d-inline-block quantity"
 															   maxlength="3"
-															   id="quantity">
+															   id="gotoQuantity"
+															   name="gotoQuantity">
 													</div>
 												</div>
 											</div>
 											<div class="text-center">
-												<button type="button"
+												<button type="submit"
 														class="btn btn-warning">Add to cart</button>
 											</div>
 									</div>
@@ -410,14 +411,15 @@
 											Student Pass.</p>
 										<div class="form-group">
 											<label class="sr-only"
-												   for="serialNumber">Enter Go-To card serial number</label>
+												   for="gotoSerialNumber">Enter Go-To card serial number</label>
 											<input type="text"
 												   class="form-control"
-												   id="serialNumber"
+												   id="gotoSerialNumber"
+												   name="gotoSerialNumber"
 												   placeholder="Enter Go-To Card serial number">
 										</div>
 										<div class="text-center mb-2 mb-md-4">
-											<button type="button"
+											<button type="submit"
 													class="btn btn-warning">Continue</button>
 										</div>
 										<p>Please allow 24 hours for value to be available on your card.
@@ -458,17 +460,17 @@
 										<div class="form-row">
 											<div class="col-6 offset-3">
 												<div class="form-group">
-													<label for="quantity"
+													<label for="visitorPassQuantity"
 														   class="d-inline-block">Quantity</label>
 													<input type="number"
 														   class="form-control d-inline-block quantity"
-														   maxlength="3"
-														   id="quantity">
+														   id="visitorPassQuantity"
+														   name="visitorPassQuantity">
 												</div>
 											</div>
 										</div>
 										<div class="text-center">
-											<button type="button"
+											<button type="submit"
 													class="btn btn-warning">Add to cart</button>
 										</div>
 									</div>
@@ -738,6 +740,9 @@
 		<script src="template/js/bootstrap.js"></script>
 		<script src="template/js/jquery.exlink.js"></script>
 		<script src="template/js/svgxuse.js"></script>
+		<script src="template/js/jquery.validate.js"></script>
+		<!-- <script src="template/js/additional-methods.js"></script> -->
+		<script src="template/js/form-validation.js"></script>
 		<!-- End vendor scripts -->
 
 		<!-- build:js template/js/scripts.min.js -->

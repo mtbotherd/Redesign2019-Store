@@ -23,7 +23,7 @@ $(document).ready(function() {
 	$('[data-toggle="popover"]').popover();
 
 	// Show/hide shipping address
-	$("#shippingAddress").change(function() {
+	$("#saShippingAddress").change(function() {
 		if(this.checked) {
 			$(".shipping-info").fadeOut();
 		} else {

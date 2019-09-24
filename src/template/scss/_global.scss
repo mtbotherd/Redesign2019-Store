@@ -92,43 +92,6 @@ hr {
   }
 }
 
-.text-link-container {
-  position: relative;
-  a {
-    &:link {
-      color: $cyan;
-      @include font-size(18);
-      font-weight: $font-weight-bold;
-
-      @include media-breakpoint-up(lg) {
-        @include font-size(23);
-      }
-
-      &::after {
-        background-image: url("../img/svg/arrow-right-dark-blue.svg");
-      }
-    }
-
-    &::after {
-      position: absolute;
-      top: 0.5rem;
-      content: "";
-      background-image: url("../img/svg/arrow-right-blue.svg");
-      background-repeat: no-repeat;
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-
-    &:hover {
-      color: $blue;
-
-      &::after {
-        background-image: url("../img/svg/arrow-right-dark-blue.svg");
-      }
-    }
-  }
-}
-
 .btn {
   @include font-size(16);
   margin-bottom: 0 !important;

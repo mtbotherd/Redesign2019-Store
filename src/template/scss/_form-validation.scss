@@ -16,12 +16,14 @@ form {
   .is-invalid {
     position: relative;
     .form-control,
-    .custom-select {
+    .custom-select,
+    .custom-control-label::before {
       border-color: $red !important;
     }
 
     .form-control:focus,
     .custom-select:focus,
+    .custom-control-label::before,
     .custom-file-input:focus ~ .custom-file-label {
       box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25), 0 0 6px $red;
       -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25), 0 0 6px $red;
@@ -44,6 +46,22 @@ form {
 
       @include media-breakpoint-up(md) {
         top: 3.15rem;
+      }
+    }
+  }
+
+  .custom-control.is-invalid {
+    .help-block {
+      position: absolute;
+      top: 3.25rem;
+      left: 3rem;
+      color: $red;
+      font-style: italic;
+      line-height: 1;
+
+      @include media-breakpoint-up(lg) {
+        top: 2rem;
+        left: 3rem;
       }
     }
   }
@@ -83,6 +101,10 @@ form {
       position: absolute;
       top: 2.75rem;
       right: 1.5rem;
+    }
+
+    .alert-red {
+      display: none;
     }
   }
 }

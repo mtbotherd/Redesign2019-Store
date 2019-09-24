@@ -392,17 +392,20 @@
 													<a href="/contact-us">metrotransit.org/contact-us</a>.</p>
 												<p>Revised May 20, 2013</p>
 												<div class="custom-control custom-checkbox">
-													<input type="checkbox"
-														class="custom-control-input"
-														id="customCheck1">
-													<label class="custom-control-label"
-														for="customCheck1">I have read and accept these terms and
-														conditions.</label>
+													<div class="d-block">
+														<input type="checkbox"
+															class="custom-control-input"
+															id="terms"
+															name="terms"/>
+														<label class="custom-control-label"
+															for="terms">I have read and accept these terms and
+															conditions.</label>
+													</div>
 												</div>
 											</div>
 										</div>
 										<div class="button-container-icon-right mb-0">
-											<a href="/" class="btn btn-outline-primary">Continue &nbsp;</a>
+											<button type="submit" class="btn btn-outline-primary">Continue</button>
 										</div>
 									</div>
 								</div>
@@ -558,6 +561,9 @@
 		<script src="template/js/bootstrap.js"></script>
 		<script src="template/js/jquery.exlink.js"></script>
 		<script src="template/js/svgxuse.js"></script>
+		<script src="template/js/jquery.validate.js"></script>
+		<!-- <script src="template/js/additional-methods.js"></script> -->
+		<script src="template/js/form-validation.js"></script>
 		<!-- End vendor scripts -->
 
 		<!-- build:js template/js/scripts.min.js -->

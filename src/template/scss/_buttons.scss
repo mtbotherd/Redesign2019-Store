@@ -246,3 +246,45 @@
     }
   }
 }
+
+.text-link-container {
+  position: relative;
+  a {
+    &:link {
+      color: $cyan;
+      @include font-size(18);
+      font-weight: $font-weight-bold;
+
+      @include media-breakpoint-up(lg) {
+        @include font-size(23);
+      }
+
+      &::after {
+        background-image: url("../img/svg/arrow-right-blue.svg");
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 0.35rem;
+      content: "";
+      background-image: url("../img/svg/arrow-right-blue.svg");
+      background-repeat: no-repeat;
+      background-size: 1rem;
+      width: 1rem;
+      height: 1rem;
+
+      @include media-breakpoint-up(lg) {
+        top: 0.55rem;
+      }
+    }
+
+    &:hover {
+      color: $blue;
+
+      &::after {
+        background-image: url("../img/svg/arrow-right-dark-blue.svg");
+      }
+    }
+  }
+}

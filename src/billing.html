@@ -358,6 +358,7 @@
 												<input type="address"
 													   class="form-control"
 													   id="address2"
+													   name="address2"
 													   aria-describedby="emailHelp"
 													   placeholder="Address 2">
 											</div>
@@ -529,7 +530,7 @@
 											</div>
 										</div>
 										<div class="col-md-6">
-											<div class="form-group required mb-3">
+											<div class="form-group required">
 												<label for="expirationMonth"
 													   class="sr-only">Expiration Month</label>
 												<select id="expirationMonth"
@@ -550,7 +551,7 @@
 													<option value="12">12 December</option>
 												</select>
 											</div>
-											<div class="form-group required mb-3">
+											<div class="form-group required">
 												<label for="expirationYear"
 													   class="sr-only">Expiration Year</label>
 												<select id="expirationYear"
@@ -618,23 +619,23 @@
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group required">
-													<label for="firtName"
+													<label for="saFirstName"
 														class="sr-only">First name</label>
 													<input type="text"
 														class="form-control"
-														id="firstName"
-														name="firstName"
+														id="saFirstName"
+														name="saFirstName"
 														placeholder="First name">
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group required">
-													<label for="lastName"
+													<label for="saLastName"
 														class="sr-only">Last name</label>
 													<input type="text"
 														class="form-control"
-														id="lastName"
-														name="lastName"
+														id="saLastName"
+														name="saLastName"
 														placeholder="Last name">
 												</div>
 											</div>
@@ -642,21 +643,22 @@
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group required">
-													<label for="address"
+													<label for="saAddress"
 														class="sr-only">Address</label>
 													<input type="text"
 														class="form-control"
-														id="address"
-														name="address"
+														id="saAddress"
+														name="saAddress"
 														placeholder="Address">
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
-													<label class="sr-only">Address 2</label>
+													<label for="saAddress2" class="sr-only">Address 2</label>
 													<input type="address"
 														class="form-control"
-														id="address2"
+														id="saAddress2"
+														name="saAddresss2"
 														aria-describedby="emailHelp"
 														placeholder="Address 2">
 												</div>
@@ -665,22 +667,22 @@
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group required">
-													<label for="city"
+													<label for="saCity"
 														class="sr-only">City</label>
 													<input type="text"
 														class="form-control"
-														id="city"
-														name="city"
+														id="saCity"
+														name="saCity"
 														placeholder="City">
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group required">
-													<label for="state"
+													<label for="saState"
 														class="sr-only">State</label>
 													<select class="custom-select"
-															id="state"
-															name="state">
+															id="saState"
+															name="saState">
 														<option value="">State</option>
 														<option value="AL">Alabama</option>
 														<option value="AK">Alaska</option>
@@ -739,23 +741,23 @@
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group required">
-													<label for="zipcode"
+													<label for="saZipcode"
 														class="sr-only">Zip code</label>
 													<input type="text"
 														class="form-control"
-														id="zipcode"
-														name="zipcode"
+														id="saZipcode"
+														name="saZipcode"
 														placeholder="Zip code">
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group required">
-													<label for="phoneNumber"
+													<label for="saPhoneNumber"
 														class="sr-only">Phone number</label>
 													<input type="text"
 														class="form-control"
-														id="phoneNumber"
-														name="phoneNumber"
+														id="saPhoneNumber"
+														name="saPhoneNumber"
 														placeholder="Phone number">
 												</div>
 											</div>
@@ -763,12 +765,12 @@
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group required">
-													<label for="emailAddress"
+													<label for="saEmailAddress"
 														class="sr-only">Email address</label>
 													<input type="email"
 														class="form-control"
-														id="emailAddress"
-														name="emailAddress"
+														id="c"
+														name="saEmailAddress"
 														placeholder="Email address">
 												</div>
 											</div>
@@ -777,10 +779,11 @@
 									<div class="custom-control custom-checkbox">
 										<input type="checkbox"
 											   class="custom-control-input"
-											   id="shippingAddress"
+											   id="saShippingAddress"
+											   name="saShippingAddress"
 											   checked>
 										<label class="custom-control-label"
-											   for="shippingAddress">Shipping address is the same as my billing
+											   for="saShippingAddress">Shipping address is the same as my billing
 											address</label>
 									</div>
 								</div>
@@ -954,7 +957,7 @@
 															</div>
 														</div>
 														<div class="button-container-icon-right">
-															<a class="btn btn-outline-primary">Checkout</a>
+															<button type="submit" class="btn btn-outline-primary">Checkout</button>
 														</div>
 														<p><em>All sales are final.</em></p>
 													</div>
