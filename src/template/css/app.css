@@ -7884,7 +7884,7 @@ a.skip-to-content {
       height: 20rem; } }
 
 .store-hero-bg {
-  background-image: url("../img/PeopleAndTransit_0030.png");
+  background-image: url("/template/img/PeopleAndTransit_0030.png");
   margin-bottom: 0; }
 
 /**********************************************
@@ -7959,7 +7959,7 @@ a.skip-to-content {
     .button-container-icon-right .btn-outline-primary::after {
       position: absolute;
       content: "";
-      background-image: url("../img/svg/arrow-right-blue.svg");
+      background-image: url("/template/img/svg/arrow-right-blue.svg");
       background-repeat: no-repeat;
       top: 0.65rem;
       right: 0.75rem;
@@ -7969,7 +7969,7 @@ a.skip-to-content {
         .button-container-icon-right .btn-outline-primary::after {
           top: 1.25rem; } }
     .button-container-icon-right .btn-outline-primary:hover::after {
-      background-image: url("../img/svg/arrow-right-white.svg"); }
+      background-image: url("/template/img/svg/arrow-right-white.svg"); }
 
 .button-container-icon-left {
   position: relative;
@@ -7983,7 +7983,7 @@ a.skip-to-content {
     .button-container-icon-left .btn-outline-primary::before {
       position: absolute;
       content: "";
-      background-image: url("../img/svg/arrow-left-blue.svg");
+      background-image: url("/template/img/svg/arrow-left-blue.svg");
       background-repeat: no-repeat;
       top: 0.6rem;
       left: 0.75rem;
@@ -7995,7 +7995,7 @@ a.skip-to-content {
           width: 1.5rem;
           height: 1.5rem; } }
     .button-container-icon-left .btn-outline-primary:hover::before {
-      background-image: url("../img/svg/arrow-left-white.svg"); }
+      background-image: url("/template/img/svg/arrow-left-white.svg"); }
 
 .btn-outline-secondary {
   color: #626462;
@@ -8062,7 +8062,7 @@ a.skip-to-content {
     .link-container-icon-right .btn-link::after {
       position: absolute;
       content: "";
-      background-image: url("../img/svg/arrow-right-blue.svg");
+      background-image: url("/template/img/svg/arrow-right-blue.svg");
       background-repeat: no-repeat;
       top: 0.75rem;
       width: 1.25rem;
@@ -8075,7 +8075,7 @@ a.skip-to-content {
     .link-container-icon-right .btn-link:hover {
       color: #0053a0; }
       .link-container-icon-right .btn-link:hover::after {
-        background-image: url("../img/svg/arrow-right-dark-blue.svg"); }
+        background-image: url("/template/img/svg/arrow-right-dark-blue.svg"); }
 
 .text-link-container {
   position: relative; }
@@ -8089,12 +8089,12 @@ a.skip-to-content {
         font-size: 23px !important;
         font-size: 1.4375rem !important; } }
     .text-link-container a:link::after {
-      background-image: url("../img/svg/arrow-right-blue.svg"); }
+      background-image: url("/template/img/svg/arrow-right-blue.svg"); }
   .text-link-container a::after {
     position: absolute;
     top: 0.35rem;
     content: "";
-    background-image: url("../img/svg/arrow-right-blue.svg");
+    background-image: url("/template/img/svg/arrow-right-blue.svg");
     background-repeat: no-repeat;
     background-size: 1rem;
     width: 1rem;
@@ -8105,7 +8105,7 @@ a.skip-to-content {
   .text-link-container a:hover {
     color: #0053a0; }
     .text-link-container a:hover::after {
-      background-image: url("../img/svg/arrow-right-dark-blue.svg"); }
+      background-image: url("/template/img/svg/arrow-right-dark-blue.svg"); }
 
 #store .card {
   margin-bottom: 30px; }
@@ -8197,13 +8197,13 @@ a.skip-to-content {
 #store .shopping-cart #billingInfo .card-header h2::before,
 #store .checkout #billingInfo .card-header h2::before {
   content: "";
-  background-image: url("../img/svg/purchase-white.svg"); }
+  background-image: url("/template/img/svg/purchase-white.svg"); }
 
 #store .billing-info #shoppingCart .card-header h2::before,
 #store .shopping-cart #shoppingCart .card-header h2::before,
 #store .checkout #shoppingCart .card-header h2::before {
   content: "";
-  background-image: url("../img/svg/shopping-cart-white.svg"); }
+  background-image: url("/template/img/svg/shopping-cart-white.svg"); }
 
 #store .checkout .card-body {
   background-color: #f5f5f4 !important; }
@@ -8233,11 +8233,11 @@ a.skip-to-content {
 
 #store .card-deck #goToCard .card-header h2::before {
   content: "";
-  background-image: url("../img/svg/purchase-white.svg"); }
+  background-image: url("/template/img/svg/purchase-white.svg"); }
 
 #store .card-deck #goToCard .card-header h2::after {
   content: "";
-  background-image: url("../img/svg/white-circle-info.svg");
+  background-image: url("/template/img/svg/white-circle-info.svg");
   background-repeat: no-repeat;
   background-size: 1.5rem 1.5rem;
   position: absolute;
@@ -8256,11 +8256,11 @@ a.skip-to-content {
 
 #store .card-deck #addValue .card-header h2::before {
   content: "";
-  background-image: url("../img/svg/add-value-white.svg"); }
+  background-image: url("/template/img/svg/add-value-white.svg"); }
 
 #store .card-deck #addValue .card-header h2::after {
   content: "";
-  background-image: url("../img/svg/white-circle-info.svg");
+  background-image: url("/template/img/svg/white-circle-info.svg");
   background-repeat: no-repeat;
   background-size: 1.5rem 1.5rem;
   position: absolute;
@@ -8279,7 +8279,7 @@ a.skip-to-content {
 
 #store .card-deck #visitorPass .card-header h2::before {
   content: "";
-  background-image: url("../img/svg/traveling-white.svg");
+  background-image: url("/template/img/svg/traveling-white.svg");
   background-size: 42px 32px;
   width: 42px;
   height: 32px;
@@ -8293,7 +8293,7 @@ a.skip-to-content {
 
 #store .card-deck #eventTickets .card-header h2::before {
   content: "";
-  background-image: url("../img/svg/event-white.svg"); }
+  background-image: url("/template/img/svg/event-white.svg"); }
 
 /**************************************************
     Form validation styles
@@ -8683,7 +8683,7 @@ form {
   color: #fff; }
   @media (min-width: 992px) {
     #store .blue-cyan-bg {
-      background-image: url("../img/blue-cyan-bg.png");
+      background-image: url("/template/img/blue-cyan-bg.png");
       background-size: cover;
       background-position: 50%;
       background-repeat: no-repeat;

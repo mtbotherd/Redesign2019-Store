@@ -12,7 +12,7 @@
     height: 15rem;
   }
   @include media-breakpoint-up(lg) {
-	background-position: 0;
+    background-position: 0;
     height: 17rem;
     margin-bottom: 3rem;
   }
@@ -22,6 +22,6 @@
 }
 
 .store-hero-bg {
-    background-image: url("../img/PeopleAndTransit_0030.png");
-    margin-bottom: 0;
+  background-image: url("/template/img/PeopleAndTransit_0030.png");
+  margin-bottom: 0;
 }

@@ -125,7 +125,7 @@
       .card-header h2 {
         &::before {
           content: "";
-          background-image: url("../img/svg/purchase-white.svg");
+          background-image: url("/template/img/svg/purchase-white.svg");
         }
       }
     }
@@ -134,7 +134,7 @@
       .card-header h2 {
         &::before {
           content: "";
-          background-image: url("../img/svg/shopping-cart-white.svg");
+          background-image: url("/template/img/svg/shopping-cart-white.svg");
         }
       }
     }
