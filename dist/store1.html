@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Metro Transit</title>
+	<link rel="shortcut icon"
+		  href="favicon.ico"
+		  type="image/x-icon">
+	<link rel="stylesheet" href="/template/css/app.min.css">
+</head>
+
+<body>
+	<form id="aspnForm">
+
+		<!-- Begin Header -->
+		<header id="header">
+			<nav class="navbar navbar-expand-xl navbar-light">
+				<a href="#mainContent"
+				   class="skip-to-content">Skip to main content</a>
+				<div class="container">
+					<a class="navbar-brand"
+					   href="/">
+						<img alt="metro transit logo"
+							 src="/template/img/MetroTransitLogo.svg"
+							 class="logo d-inline-block">
+					</a>
+					<button class="navbar-toggler"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse"
+						 id="navbarSupportedContent">
+						<ul class="navbar-nav ml-xl-auto">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle"
+								   href="/trip-planner"
+								   id="navbarDropdown"
+								   role="button"
+								   data-toggle="dropdown"
+								   aria-haspopup="true"
+								   aria-expanded="false">
+									Trip Tools
+									<img src="/template/img/svg/chevron-down-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/chevron-down-white.svg"
+										 class="icon active">
+								</a>
+								<div class="dropdown-menu"
+									 aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"
+									   href="/trip-planner">Trip Planner</a>
+									<a class="dropdown-item"
+									   href="/nextrip">NexTrip</a>
+									<a class="dropdown-item"
+									   href="/alerts">Alerts</a>
+									<a class="dropdown-item"
+									   href="/park-ride">Find a Park &amp; Ride</a>
+									<a class="dropdown-item"
+									   href="/planner/servicesfinder.aspx">
+										Find a Stop or Station
+									</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"
+								   href="schedules-maps">
+									Schedules &amp; Maps
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle"
+								   href="#"
+								   id="navbarDropdown"
+								   role="button"
+								   data-toggle="dropdown"
+								   aria-haspopup="true"
+								   aria-expanded="false">
+									Fares
+									<img src="/template/img/svg/chevron-down-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/chevron-down-white.svg"
+										 class="icon active">
+								</a>
+								<div class="dropdown-menu"
+									 aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"
+									   href="/fares">Fares</a>
+									<a class="dropdown-item"
+									   href="/go-to-card">Go-To Card</a>
+									<a class="dropdown-item"
+									   href="/pass-programs">Pass Programs</a>
+									<a class="dropdown-item"
+									   href="https://store.metrotransit.org/">Store</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle"
+								   href="#"
+								   id="navbarDropdown"
+								   role="button"
+								   data-toggle="dropdown"
+								   aria-haspopup="true"
+								   aria-expanded="false">
+									More
+									<img src="/template/img/svg/chevron-down-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/chevron-down-white.svg"
+										 class="icon active">
+								</a>
+								<div class="dropdown-menu"
+									 aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"
+									   href="/carpool">Carpool &amp; Vanpool</a>
+									<a class="dropdown-item"
+									   href="/transit-link">Transit Link</a>
+									<a class="dropdown-item"
+									   href="/guaranteed-ride-home">Guaranteed Ride Home</a>
+									<a class="dropdown-item"
+									   href="/bicycle">Bicycle</a>
+									<a class="dropdown-item"
+									   href="/news">News &amp; Events</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle"
+								   href="#"
+								   id="navbarDropdown"
+								   role="button"
+								   data-toggle="dropdown"
+								   aria-haspopup="true"
+								   aria-expanded="false">
+									Help
+									<img src="/template/img/svg/chevron-down-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/chevron-down-white.svg"
+										 class="icon active">
+								</a>
+								<div class="dropdown-menu"
+									 aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"
+									   href="/how-to-ride">How to Ride Guide</a>
+									<a class="dropdown-item"
+									   href="contact-us">Contact Us</a>
+									<a class="dropdown-item"
+									   href="/lost-found">Lost &amp; Found</a>
+									<a class="dropdown-item"
+									   href="/accessibility">Accessibility</a>
+									<a class="dropdown-item"
+									   href="/languages">Languages</a>
+									<a class="dropdown-item"
+									   href="/police">Transit Police</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle"
+								   href="#"
+								   id="navbarDropdown"
+								   role="button"
+								   data-toggle="dropdown"
+								   aria-haspopup="true"
+								   aria-expanded="false">
+									En
+									<img src="/template/img/svg/chevron-down-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/chevron-down-white.svg"
+										 class="icon active">
+								</a>
+								<div class="dropdown-menu"
+									 aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="navbar-nav utilities">
+							<li class="nav-item">
+								<a class="nav-link"
+								   href="https://store.metrotransit.org">
+									<img src="/template/img/svg/shopping-cart-green.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/shopping-cart-white.svg"
+										 class="icon active">
+								</a>
+							</li>
+							<li class="nav-item position-relative">
+								<div class="nav-link site-search">
+									<img src="/template/img/svg/search-gray.svg"
+										 class="icon  inactive">
+									<img src="/template/img/svg/search-white.svg"
+										 class="icon active">
+								</div>
+								<div id="search-box"
+									 class="site-search-box">
+									<div class="input-group">
+										<input type="search"
+											   id="siteSearch"
+											   class="form-control"
+											   placeholder="Search for routes and information"
+											   aria-label="Search for routes and information"
+											   aria-describedby="siteSearchButton">
+										<label for="siteSearch"
+											   class="sr-only">Search for routes and information</label>
+										<div class="input-group-append mr-auto">
+											<button id="siteSearchButton"
+													type="search"
+													class="btn btn-primary">
+												<span class="sr-only">Search button</span>
+												<img class="icon"
+													 src="/template/img/svg/search-gray.svg">
+											</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"
+								   href="">
+									<img src="/template/img/svg/avatar-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/avatar-white.svg"
+										 class="icon active">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- End Header -->
+
+		<!-- Begin Main Content -->
+		<section id="mainContent">
+			<div id="primaryPage">
+
+				<div class="hero store-hero-bg">
+					<div class="container">
+						<div class="page-title">
+							<h1>Store</h1>
+						</div>
+					</div>
+				</div>
+
+				<div id="store"
+					 class="page-content">
+					<!-- Main page content -->
+					<section class="section">
+						<div class="container">
+							<div class="page-anchors d-xs-block d-md-none">
+								<div class="btn-container">
+									<a class="btn btn-link btn-block"
+									   href="#goToCard">Buy a Go-To Card</a>
+								</div>
+								<div class="btn-container">
+									<a class="btn btn-link btn-block"
+									   href="#addValue">Add value to a card</a>
+								</div>
+								<div class="btn-container">
+									<a class="btn btn-link btn-block"
+									   href="#visitorPass">Visitor Pass</a>
+								</div>
+								<div class="btn-container">
+									<a class="btn btn-link btn-block"
+									   href="#eventTickets">Round-trip event tickets</a>
+								</div>
+							</div>
+							<div class="card-deck">
+								<div id="goToCard"
+									 class="card">
+									<div class="card-header position-relative">
+										<h2 class="text-center">Buy a Go-To Card</h2>
+									</div>
+									<div class="card-body">
+										<h3 class="h4 text-center">Choose an amount</h3>
+										<div class="d-flex flex-wrap">
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount active">
+													<input type="radio" name="Value" id="Value0" value="0" autocomplete="off" checked> $0
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value5.0000" value="5.0000" autocomplete="off"> $5
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value10.0000" value="10.0000" autocomplete="off"> $10
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value20.0000" value="20.0000" autocomplete="off"> $20
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value30.0000" value="30.0000" autocomplete="off"> $30
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value35.0000" value="35.0000" autocomplete="off"> $35
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value40.0000" value="40.0000" autocomplete="off"> $40
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value45.0000" value="45.0000" autocomplete="off"> $45
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value50.0000" value="50.0000" autocomplete="off"> $50
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value60.0000" value="60.0000" autocomplete="off"> $60
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value70.0000" value="70.0000" autocomplete="off"> $70
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value80.0000" value="80.0000" autocomplete="off"> $80
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value100.0000" value="100.0000" autocomplete="off"> $100
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value120.0000" value="120.0000" autocomplete="off"> $120
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value140.0000" value="140.0000" autocomplete="off"> $140
+												</label>
+											</div>
+											<div class="btn-group-toggle" data-toggle="button">
+												<label class="btn btn-outline-secondary btn-amount">
+													<input type="radio" name="Value" id="Value180.0000" value="180.0000" autocomplete="off"> $180
+												</label>
+											</div>
+										</div>
+										<div class="flex-container">
+											<p class="line-break position-relative mr-0 ml-0">and/or</p>
+										</div>
+										<h3 class="h4 text-center">Add a pass</h4>
+											<div class="custom-control custom-radio">
+												<input type="radio"
+													   id="pass31DayNonRush"
+													   name="pass31DayNonRush"
+													   class="custom-control-input">
+												<label class="custom-control-label"
+													   for="pass31DayNonRush"><strong>$65</strong> 31-Day Pass Local
+													Non-Rush Hour</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio"
+													   id="pass31DayExpress"
+													   name="pass31DayExpress"
+													   class="custom-control-input">
+												<label class="custom-control-label"
+													   for="pass31DayExpress"><strong>$120 </strong> 31-Day Pass
+													Express</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio"
+													   id="pass31DayLocalRush"
+													   name="pass31DayLocalRush"
+													   class="custom-control-input">
+												<label class="custom-control-label"
+													   for="pass31DayLocalRush"><strong>$90 </strong> 31-Day Local Rush
+													Hour</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio"
+													   id="pass10DayRidePass"
+													   name="pass10DayRidePass"
+													   class="custom-control-input">
+												<label class="custom-control-label"
+													   for="pass10DayRidePass"><strong>$20.50 </strong> 10-Day Ride
+													Pass</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio"
+													   id="pass7DayRidePass"
+													   name="pass7DayRidePass"
+													   class="custom-control-input">
+												<label class="custom-control-label"
+													   for="pass7DayRidePass"><strong>$24 </strong> 7-Day Ride Pass</label>
+											</div>
+											<div class="form-row">
+												<div class="col-6 offset-3">
+													<div class="form-group">
+														<label for="gotoQuantity"
+															   class="d-inline-block">Quantity</label>
+														<input type="number"
+															   class="form-control d-inline-block quantity"
+															   maxlength="3"
+															   id="gotoQuantity"
+															   name="gotoQuantity">
+													</div>
+												</div>
+											</div>
+											<div class="text-center">
+												<button type="submit"
+														class="btn btn-warning">Add to cart</button>
+											</div>
+									</div>
+									<div class="card-footer">&nbsp;</div>
+								</div>
+								<div id="addValue"
+									 class="card">
+									<div class="card-header">
+										<h2 class="text-center">Add value to card</h2>
+									</div>
+									<div class="card-body">
+										<p>Add value to an existing Go-To Card, Metropass, College Pass, U-Pass or
+											Student Pass.</p>
+										<div class="form-group">
+											<label class="sr-only"
+												   for="gotoSerialNumber">Enter Go-To card serial number</label>
+											<input type="text"
+												   class="form-control"
+												   id="gotoSerialNumber"
+												   name="gotoSerialNumber"
+												   placeholder="Enter Go-To Card serial number">
+										</div>
+										<div class="text-center mb-2 mb-md-4">
+											<button type="submit"
+													class="btn btn-warning">Continue</button>
+										</div>
+										<p>Please allow 24 hours for value to be available on your card.
+											Need it in fewer than 24 hours? Visit an authorized fare retailer.
+											All sales are final.</p>
+
+										<h3 class="h4 text-center">Where is the serial number?</h3>
+										<div class="row">
+											<div class="col-md-6">
+												<img class="img-fluid"
+													 src="/template/img/gotoCardBack.gif" />
+											</div>
+											<div class="col-md-6">
+												<p class="">Your Go-To Card serial number is a 16-digit number
+													found in the lower-right corner on the back of your card.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer">&nbsp;</div>
+								</div>
+							</div>
+							<div class="card-deck">
+								<div id="visitorPass"
+									 class="card">
+									<div class="card-header">
+										<h2 class="text-center">Visitor Pass</h2>
+									</div>
+									<div class="card-body">
+										<h3 class="h4 text-center">$5</h3>
+										<p>Unlimited rides until 2 a.m. after first
+											use. Visitor Passes are valid for a $2.50 fare (cannot be
+											used on Northstar, express buses or Metro Mobility). Also
+											available at Transit Service Centers.</p>
+										<p>This pass will be shipped within FIVE business days.
+											Learn more at <a
+											   href="metrotransit.org/visitor-pass">metrotransit.org/visitor-pass</a>.
+										</p>
+										<div class="form-row">
+											<div class="col-6 offset-3">
+												<div class="form-group">
+													<label for="visitorPassQuantity"
+														   class="d-inline-block">Quantity</label>
+													<input type="number"
+														   class="form-control d-inline-block quantity"
+														   id="visitorPassQuantity"
+														   name="visitorPassQuantity">
+												</div>
+											</div>
+										</div>
+										<div class="text-center">
+											<button type="submit"
+													class="btn btn-warning">Add to cart</button>
+										</div>
+									</div>
+									<div class="card-footer">&nbsp;</div>
+								</div>
+								<div id="eventTickets"
+									 class="card">
+									<div class="card-header">
+										<h2 class="text-center">Event tickets</h2>
+									</div>
+									<div class="card-body">
+										<h3 class="h4 text-center">Going to a game?</h3>
+										<p class="text-center mb-4 mb-lg-5">Find out about purchasing tickets for
+											Northstar and METRO lines.</p>
+										<div class="button-container-icon-right">
+											<a class="btn btn-outline-primary">Name of Page</a>
+										</div>
+										<div class="button-container-icon-right">
+											<a class="btn btn-outline-primary">Name of Page</a>
+										</div>
+										<div class="button-container-icon-right">
+											<a class="btn btn-outline-primary">Name of Page</a>
+										</div>
+									</div>
+									<div class="card-footer">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Additional content sections -->
+					<section class="blue-cyan-bg">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-6 blue-bg">
+									<h2 class="text-center">Other ways to purchase fares</h2>
+									<div class="row">
+										<div
+											 class="col-5 offset-1 col-md-3 offset-md-3 col-lg-4 offset-lg-2 mb-4 text-center">
+											<a class="stretched-link"
+											   href="https://www.metrotransit.org/buy-by-mail">
+												<img class="icon"
+													 src="/template/img/svg/mail-white.svg" />
+												<span class="d-block">By mail</span>
+											</a>
+										</div>
+										<div class="col-5 col-md-3 col-lg-4 mb-4 text-center">
+											<a class="stretched-link"
+											   href="https://www.metrotransit.org/service-centers">
+												<img class="icon"
+													 src="/template/img/svg/store-white.svg" />
+												<span class="d-block">Authorized<br />fare retailer</span>
+											</a>
+										</div>
+									</div>
+
+									<div class="row">
+										<div
+											 class="col-5 offset-1 col-md-3 offset-md-3 col-lg-4 offset-lg-2 text-center">
+											<img class="icon phone-white"
+												 src="/template/img/svg/phone-white.svg" />
+											<p>By phone <br>612-373-3333<br />
+												<small>(for Go-To Cards only)</small></p>
+										</div>
+										<div class="col-5 col-md-3 col-lg-4 text-center">
+											<a class="stretched-link"
+											   href="https://www.metrotransit.org/how-to-use-a-ticket-machine">
+												<img class="icon ticket-white"
+													 src="/template/img/svg/ticket-white.svg" />
+												<span class="d-block">Ticket machine<br />on rail platforms</span>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6 cyan-bg">
+									<h2 class="text-center">My Store Features</h2>
+									<p class="text-center">To edit your account information, including your password,
+										click on the Edit Account link in the upper right hand corner.</p>
+									<div class="btn-container text-center">
+										<button type="button"
+												class="btn btn-warning pr-0 pl-0">Add My Fare Card List</button>
+									</div>
+									<div class="text-center">
+										<button type="button"
+												class="btn btn-warning">Enroll in Auto Refill</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+		<!-- End Main Content -->
+
+		<!-- Begin Footer -->
+		<footer class="section">
+			<div class="container">
+				<div class="button-container-icon-right">
+					<a href="/contact-us"
+					   class="btn btn-outline-primary">Contact us</a>
+				</div>
+				<div class="d-none d-lg-block social-media text-center">
+					<a href="https://www.twitter.com/MetroTransitMN"><img class="icon mr-2"
+							 src="/template/img/svg/twitter-gray.svg"></a>
+					<a href="https://www.facebook.com/MetroTransitMN"><img class="icon mr-2"
+							 src="/template/img/svg/facebook-gray.svg"></a>
+					<a href="https://www.youtube.com/MetroTransitMN"><img class="icon mr-2"
+							 src="/template/img/svg/youtube-gray.svg"></a>
+					<a href="https://instagram.com/metrotransitmn"><img class="icon mr-2"
+							 src="/template/img/svg/instagram-gray.svg"></a>
+					<a href="https://www.linkedin.com/company/metro-transit"><img class="icon mr-2"
+							 src="/template/img/svg/linkedin-gray.svg"></a>
+					<a href="https://www.flickr.com/photos/metrotransitmn/"><img class="icon"
+							 src="/template/img/svg/flickr-gray.svg"></a>
+				</div>
+				<div class="footer d-none d-lg-block">
+					<div class="card-deck">
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">About Metro Transit</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/transit-initiatives"
+										   class="nav-link">Transit Initiatives</a>
+									</li>
+									<li class="nav-item">
+										<a href="/facilities"
+										   class="nav-link">Facilities</a>
+									</li>
+									<li class="nav-item">
+										<a href="/riders-almanac-blog"
+										   class="nav-link">Riders Almanac</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">Media Relations</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/contacts"
+										   class="nav-link">Contacts</a>
+									</li>
+									<li class="nav-item">
+										<a href="/press"
+										   class="nav-link">Press Releases</a>
+									</li>
+									<li class="nav-item">
+										<a href="/awards"
+										   class="nav-link">Awards</a>
+									</li>
+									<li class="nav-item">
+										<a href="/"
+										   class="nav-link">Images &amp; Logos</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">Careers</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/jobs"
+										   class="nav-link">Available Job Opportunities</a>
+									</li>
+									<li class="nav-item">
+										<a href="/drive"
+										   class="nav-link">Become a Bus Driver</a>
+									</li>
+									<li class="nav-item">
+										<a href="/transit-police-careers"
+										   class="nav-link">Join the Transit Police</a>
+									</li>
+									<li class="nav-item">
+										<a href="/job-seekers"
+										   class="nav-link">Career Fairs</a>
+									</li>
+									<li class="nav-item">
+										<a href="/internships"
+										   class="nav-link">Internships</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">Policies</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/social-media-policy"
+										   class="nav-link">Social Media Policy</a>
+									</li>
+									<li class="nav-item">
+										<a href="https://metrocouncil.org/Privacy-Policy.aspx"
+										   class="nav-link"
+										   target="_blank">Privacy Policy</a>
+									</li>
+									<li class="nav-item">
+										<a href="/code-of-conduct"
+										   class="nav-link">Code of Conduct</a>
+									</li>
+									<li class="nav-item">
+										<a href="/titlevi"
+										   class="nav-link">Title VI: Commitment to Fairness</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card-deck">
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">Mission &amp; Impact</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/commitment-to-fairness"
+										   class="nav-link">Commitment to Fairness</a>
+									</li>
+									<li class="nav-item">
+										<a href="/impact-programs"
+										   class="nav-link">Impact Programs</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">Resources</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/app"
+										   class="nav-link">Try the Metro Transit App</a>
+									</li>
+									<li class="nav-item">
+										<a href="/advertise-with-metro-transit"
+										   class="nav-link">Advertise with Us</a>
+									</li>
+									<li class="nav-item">
+										<a href="/apps"
+										   class="nav-link">API Resources for Developers</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card border-0"></div>
+						<div class="card border-0"></div>
+					</div>
+				</div>
+				<p class="text-center">
+					<small>
+						Metro Transit is a service of the Metropolitan Council.
+						<span class="d-block d-md-none"> <br> </span>© 2019 Metro
+						Transit
+					</small>
+				</p>
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<!-- Vendor scripts -->
+		<script src="/template/js/jquery.js"></script>
+		<script src="/template/js/popper.js"></script>
+		<script src="/template/js/bootstrap.js"></script>
+		<script src="/template/js/jquery.exlink.js"></script>
+		<script src="/template/js/svgxuse.js"></script>
+		<script src="/template/js/jquery.validate.js"></script>
+		<!-- <script src="/template/js/additional-methods.js"></script> -->
+		<script src="/template/js/form-validation.js"></script>
+		<!-- End vendor scripts -->
+
+		<script src="/template/js/scripts.min.js"></script>
+	</form>
+</body>
+
+</html>
