@@ -9,9 +9,7 @@
 	<link rel="shortcut icon"
 		  href="favicon.ico"
 		  type="image/x-icon">
-	<!-- build:css /template/css/app.min.css -->
-	<link rel="stylesheet" href="/template/css/app.css">
-	<!-- endbuild -->
+	<link rel="stylesheet" href="/template/css/app.min.css">
 </head>
 
 <body>
@@ -261,7 +259,6 @@
 		<section id="mainContent">
 			<div id="primaryPage">
 
-				<!-- When adding a new page, also add new background image styles in _hero-backgrounds.scss. Change the class below to match that of the hero background. -->
 				<div class="hero store-hero-bg">
 					<div class="container">
 						<div class="page-title">
@@ -389,62 +386,63 @@
 										<h3 class="h4 text-center">Add a pass</h4>
 											<div class="custom-control custom-radio">
 												<input type="radio"
-													   id="customRadio1"
-													   name="customRadio"
+													   id="pass31DayNonRush"
+													   name="pass31DayNonRush"
 													   class="custom-control-input">
 												<label class="custom-control-label"
-													   for="customRadio1"><strong>$65</strong> 31-Day Pass Local
+													   for="pass31DayNonRush"><strong>$65</strong> 31-Day Pass Local
 													Non-Rush Hour</label>
 											</div>
 											<div class="custom-control custom-radio">
 												<input type="radio"
-													   id="customRadio2"
-													   name="customRadio"
+													   id="pass31DayExpress"
+													   name="pass31DayExpress"
 													   class="custom-control-input">
 												<label class="custom-control-label"
-													   for="customRadio2"><strong>$120 </strong> 31-Day Pass
+													   for="pass31DayExpress"><strong>$120 </strong> 31-Day Pass
 													Express</label>
 											</div>
 											<div class="custom-control custom-radio">
 												<input type="radio"
-													   id="customRadio1"
-													   name="customRadio"
+													   id="pass31DayLocalRush"
+													   name="pass31DayLocalRush"
 													   class="custom-control-input">
 												<label class="custom-control-label"
-													   for="customRadio1"><strong>$90 </strong> 31-Day Local Rush
+													   for="pass31DayLocalRush"><strong>$90 </strong> 31-Day Local Rush
 													Hour</label>
 											</div>
 											<div class="custom-control custom-radio">
 												<input type="radio"
-													   id="customRadio2"
-													   name="customRadio"
+													   id="pass10DayRidePass"
+													   name="pass10DayRidePass"
 													   class="custom-control-input">
 												<label class="custom-control-label"
-													   for="customRadio2"><strong>$20.50 </strong> 10-Day Ride
+													   for="pass10DayRidePass"><strong>$20.50 </strong> 10-Day Ride
 													Pass</label>
 											</div>
 											<div class="custom-control custom-radio">
 												<input type="radio"
-													   id="customRadio2"
-													   name="customRadio"
+													   id="pass7DayRidePass"
+													   name="pass7DayRidePass"
 													   class="custom-control-input">
 												<label class="custom-control-label"
-													   for="customRadio2"><strong>$24 </strong> 7-Day Ride Pass</label>
+													   for="pass7DayRidePass"><strong>$24 </strong> 7-Day Ride Pass</label>
 											</div>
 											<div class="form-row">
 												<div class="col-6 offset-3">
 													<div class="form-group">
-														<label for="quantity"
+														<label for="gotoQuantity"
 															   class="d-inline-block">Quantity</label>
 														<input type="number"
 															   class="form-control d-inline-block quantity"
 															   maxlength="3"
-															   id="quantity">
+															   id="gotoQuantity"
+															   name="gotoQuantity">
 													</div>
 												</div>
 											</div>
 											<div class="text-center">
-												<button type="button"
+												<button type="submit"
 														class="btn btn-warning">Add to cart</button>
 											</div>
 									</div>
@@ -456,103 +454,35 @@
 										<h2 class="text-center">Add value to card</h2>
 									</div>
 									<div class="card-body">
-										<p><strong>Serial #:</strong> 0160-0341-4162-5587<br />
-											<strong>Nickname:</strong> Ellens Card<br />
-											<strong>Current Pass:</strong> Employee Pass<br />
-											<strong>Current Stored Value:</strong> $0.00<br />
-											<a href=''>View Transaction History</a><br />
-											<a href=''>Register My Card</a><br />
-											<a href=''>Enroll in Auto Refill</a><br />
-											<a href=''>Deactivate</a></p>
-										<h4 class="text-center">Add stored value</h4>
-										<div class="d-flex flex-wrap">
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount active">
-													<input type="radio" name="Value" id="Value0" value="0" autocomplete="off" checked> $0
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value5.0000" value="5.0000" autocomplete="off"> $5
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value10.0000" value="10.0000" autocomplete="off"> $10
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value20.0000" value="20.0000" autocomplete="off"> $20
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value30.0000" value="30.0000" autocomplete="off"> $30
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value35.0000" value="35.0000" autocomplete="off"> $35
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value40.0000" value="40.0000" autocomplete="off"> $40
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value45.0000" value="45.0000" autocomplete="off"> $45
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value50.0000" value="50.0000" autocomplete="off"> $50
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value60.0000" value="60.0000" autocomplete="off"> $60
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value70.0000" value="70.0000" autocomplete="off"> $70
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value80.0000" value="80.0000" autocomplete="off"> $80
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value100.0000" value="100.0000" autocomplete="off"> $100
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value120.0000" value="120.0000" autocomplete="off"> $120
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value140.0000" value="140.0000" autocomplete="off"> $140
-												</label>
-											</div>
-											<div class="btn-group-toggle" data-toggle="button">
-												<label class="btn btn-outline-secondary btn-amount">
-													<input type="radio" name="Value" id="Value180.0000" value="180.0000" autocomplete="off"> $180
-												</label>
-											</div>
+										<p>Add value to an existing Go-To Card, Metropass, College Pass, U-Pass or
+											Student Pass.</p>
+										<div class="form-group">
+											<label class="sr-only"
+												   for="gotoSerialNumber">Enter Go-To card serial number</label>
+											<input type="text"
+												   class="form-control"
+												   id="gotoSerialNumber"
+												   name="gotoSerialNumber"
+												   placeholder="Enter Go-To Card serial number">
+										</div>
+										<div class="text-center mb-2 mb-md-4">
+											<button type="submit"
+													class="btn btn-warning">Continue</button>
 										</div>
 										<p>Please allow 24 hours for value to be available on your card.
 											Need it in fewer than 24 hours? Visit an authorized fare retailer.
 											All sales are final.</p>
-										<div class="d-flex justify-content-center">
-											<button type="button"
-													class="btn btn-warning mt-3">Add to cart</button>
+
+										<h3 class="h4 text-center">Where is the serial number?</h3>
+										<div class="row">
+											<div class="col-md-6">
+												<img class="img-fluid"
+													 src="/template/img/gotoCardBack.gif" />
+											</div>
+											<div class="col-md-6">
+												<p class="">Your Go-To Card serial number is a 16-digit number
+													found in the lower-right corner on the back of your card.</p>
+											</div>
 										</div>
 									</div>
 									<div class="card-footer">&nbsp;</div>
@@ -577,17 +507,17 @@
 										<div class="form-row">
 											<div class="col-6 offset-3">
 												<div class="form-group">
-													<label for="quantity"
+													<label for="visitorPassQuantity"
 														   class="d-inline-block">Quantity</label>
 													<input type="number"
 														   class="form-control d-inline-block quantity"
-														   maxlength="3"
-														   id="quantity">
+														   id="visitorPassQuantity"
+														   name="visitorPassQuantity">
 												</div>
 											</div>
 										</div>
 										<div class="text-center">
-											<button type="button"
+											<button type="submit"
 													class="btn btn-warning">Add to cart</button>
 										</div>
 									</div>
@@ -857,11 +787,12 @@
 		<script src="/template/js/bootstrap.js"></script>
 		<script src="/template/js/jquery.exlink.js"></script>
 		<script src="/template/js/svgxuse.js"></script>
+		<script src="/template/js/jquery.validate.js"></script>
+		<!-- <script src="/template/js/additional-methods.js"></script> -->
+		<script src="/template/js/form-validation.js"></script>
 		<!-- End vendor scripts -->
 
-		<!-- build:js /template/js/scripts.min.js -->
-		<script src="/template/js/scripts.js"></script>
-		<!-- endbuild -->
+		<script src="/template/js/scripts.min.js"></script>
 	</form>
 </body>
 
