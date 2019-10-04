@@ -8395,148 +8395,133 @@ form .is-valid .alert-red {
 /**********************************************
     Form styles
 **********************************************/
-form {
-  /* Denote label at top of forms */ }
-  form .form-row {
-    margin-top: 30px; }
-    @media (min-width: 992px) {
-      form .form-row {
-        margin-top: 45px; } }
-  form .form-group,
-  form .input-group {
-    margin-bottom: 15px; }
-    @media (min-width: 992px) {
-      form .form-group,
-      form .input-group {
-        margin-bottom: 30px; } }
-  form .form-control,
-  form .form-control-lg,
-  form .custom-select {
-    font-size: 16px !important;
-    font-size: 1rem !important; }
-    @media (min-width: 992px) {
-      form .form-control,
-      form .form-control-lg,
-      form .custom-select {
-        font-size: 23px !important;
-        font-size: 1.4375rem !important; } }
-  form .input-group .form-control {
-    border-right: none; }
-  form .input-group .input-group-text {
-    background-color: #fff;
-    border-left: none; }
-  form .input-group.is-invalid .input-group-text {
-    border: 1px solid #ed1b2e;
-    border-left: none; }
-  form .form-control:disabled,
-  form .form-control[readonly] {
-    background-color: #fff; }
-  form .site-search-box {
-    background: #f5f5f4;
-    position: absolute;
-    top: 67px;
-    right: 0;
-    width: 420px;
-    padding: 1rem;
-    display: none;
-    z-index: 3; }
-    form .site-search-box .form-control {
-      color: #626462;
-      font-size: 18px !important;
-      font-size: 1.125rem !important; }
-    form .site-search-box .input-group-append {
-      background-color: #fff; }
-      form .site-search-box .input-group-append .btn-primary {
-        background-color: #fff;
-        border: 1px solid #e3e3e0;
-        border-left: 0;
-        font-size: 18px !important;
-        font-size: 1.125rem !important; }
-  @media (min-width: 768px) {
-    form button[type="search"] .icon {
-      width: 24px !important;
-      height: 24px !important; } }
-  form .denote-required {
-    position: relative;
+.form-row {
+  margin-top: 30px; }
+  @media (min-width: 992px) {
+    .form-row {
+      margin-top: 45px; } }
+
+.form-group,
+.input-group {
+  margin-bottom: 15px; }
+  @media (min-width: 992px) {
+    .form-group,
+    .input-group {
+      margin-bottom: 30px; } }
+
+.form-control,
+.form-control-lg,
+.custom-select {
+  font-size: 16px !important;
+  font-size: 1rem !important; }
+  @media (min-width: 992px) {
+    .form-control,
+    .form-control-lg,
+    .custom-select {
+      font-size: 23px !important;
+      font-size: 1.4375rem !important; } }
+
+.input-group .form-control {
+  border-right: none; }
+
+.input-group .input-group-text {
+  background-color: #fff;
+  border-left: none; }
+
+.input-group.is-invalid .input-group-text {
+  border: 1px solid #ed1b2e;
+  border-left: none; }
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: #fff; }
+
+.site-search-box {
+  background: #f5f5f4;
+  position: absolute;
+  top: 67px;
+  right: 0;
+  width: 420px;
+  padding: 1rem;
+  display: none;
+  z-index: 3; }
+  .site-search-box .form-control {
+    color: #626462;
     font-size: 18px !important;
     font-size: 1.125rem !important; }
+  .site-search-box .input-group-append {
+    background-color: #fff; }
+    .site-search-box .input-group-append .btn-primary {
+      background-color: #fff;
+      border: 1px solid #e3e3e0;
+      border-left: 0;
+      font-size: 18px !important;
+      font-size: 1.125rem !important; }
+
+@media (min-width: 768px) {
+  button[type="search"] .icon {
+    width: 24px !important;
+    height: 24px !important; } }
+
+/* Denote label at top of forms */
+.denote-required {
+  position: relative;
+  font-size: 18px !important;
+  font-size: 1.125rem !important; }
+  @media (min-width: 992px) {
+    .denote-required {
+      font-size: 23px !important;
+      font-size: 1.4375rem !important; } }
+  .denote-required .required-symbol {
+    font-size: 43px !important;
+    font-size: 2.6875rem !important;
+    position: absolute;
+    top: -0.5rem;
+    left: -1.25rem;
+    color: #ed1b2e; }
     @media (min-width: 992px) {
-      form .denote-required {
-        font-size: 23px !important;
-        font-size: 1.4375rem !important; } }
-    form .denote-required .required-symbol {
-      font-size: 43px !important;
-      font-size: 2.6875rem !important;
-      position: absolute;
-      top: -0.5rem;
-      left: -1.25rem;
-      color: #ed1b2e; }
-      @media (min-width: 992px) {
-        form .denote-required .required-symbol {
-          font-size: 47px !important;
-          font-size: 2.9375rem !important;
-          line-height: 0;
-          margin-right: 0.25rem;
-          top: 1.7rem; } }
-  form .billing-info .form-group,
-  form .billing-info .input-group,
-  form .payment-info .form-group,
-  form .payment-info .input-group,
-  form .shipping-info .form-group,
-  form .shipping-info .input-group {
-    width: 327px; }
-    @media (min-width: 992px) {
-      form .billing-info .form-group,
-      form .billing-info .input-group,
-      form .payment-info .form-group,
-      form .payment-info .input-group,
-      form .shipping-info .form-group,
-      form .shipping-info .input-group {
-        width: 445px; } }
-    @media (min-width: 1200px) {
-      form .billing-info .form-group,
-      form .billing-info .input-group,
-      form .payment-info .form-group,
-      form .payment-info .input-group,
-      form .shipping-info .form-group,
-      form .shipping-info .input-group {
-        width: 535px; } }
-    form .billing-info .form-group.required,
-    form .billing-info .input-group.required,
-    form .payment-info .form-group.required,
-    form .payment-info .input-group.required,
-    form .shipping-info .form-group.required,
-    form .shipping-info .input-group.required {
-      position: relative; }
-      form .billing-info .form-group.required::after,
-      form .billing-info .input-group.required::after,
-      form .payment-info .form-group.required::after,
-      form .payment-info .input-group.required::after,
-      form .shipping-info .form-group.required::after,
-      form .shipping-info .input-group.required::after {
-        content: "*";
-        position: absolute;
-        top: 0;
-        right: -1rem;
-        font-size: 43px !important;
-        font-size: 2.6875rem !important;
-        color: #ed1b2e;
-        line-height: 1; }
-        @media (min-width: 992px) {
-          form .billing-info .form-group.required::after,
-          form .billing-info .input-group.required::after,
-          form .payment-info .form-group.required::after,
-          form .payment-info .input-group.required::after,
-          form .shipping-info .form-group.required::after,
-          form .shipping-info .input-group.required::after {
-            font-size: 47px !important;
-            font-size: 2.9375rem !important; } }
-    form .billing-info .form-group.required-custom::after,
-    form .billing-info .input-group.required-custom::after,
-    form .payment-info .form-group.required-custom::after,
-    form .payment-info .input-group.required-custom::after,
-    form .shipping-info .form-group.required-custom::after,
-    form .shipping-info .input-group.required-custom::after {
+      .denote-required .required-symbol {
+        font-size: 47px !important;
+        font-size: 2.9375rem !important;
+        line-height: 0;
+        margin-right: 0.25rem;
+        top: 1.7rem; } }
+
+.billing-info .form-group,
+.billing-info .input-group,
+.payment-info .form-group,
+.payment-info .input-group,
+.shipping-info .form-group,
+.shipping-info .input-group {
+  width: 327px; }
+  @media (min-width: 992px) {
+    .billing-info .form-group,
+    .billing-info .input-group,
+    .payment-info .form-group,
+    .payment-info .input-group,
+    .shipping-info .form-group,
+    .shipping-info .input-group {
+      width: 445px; } }
+  @media (min-width: 1200px) {
+    .billing-info .form-group,
+    .billing-info .input-group,
+    .payment-info .form-group,
+    .payment-info .input-group,
+    .shipping-info .form-group,
+    .shipping-info .input-group {
+      width: 535px; } }
+  .billing-info .form-group.required,
+  .billing-info .input-group.required,
+  .payment-info .form-group.required,
+  .payment-info .input-group.required,
+  .shipping-info .form-group.required,
+  .shipping-info .input-group.required {
+    position: relative; }
+    .billing-info .form-group.required::after,
+    .billing-info .input-group.required::after,
+    .payment-info .form-group.required::after,
+    .payment-info .input-group.required::after,
+    .shipping-info .form-group.required::after,
+    .shipping-info .input-group.required::after {
       content: "*";
       position: absolute;
       top: 0;
@@ -8546,33 +8531,63 @@ form {
       color: #ed1b2e;
       line-height: 1; }
       @media (min-width: 992px) {
-        form .billing-info .form-group.required-custom::after,
-        form .billing-info .input-group.required-custom::after,
-        form .payment-info .form-group.required-custom::after,
-        form .payment-info .input-group.required-custom::after,
-        form .shipping-info .form-group.required-custom::after,
-        form .shipping-info .input-group.required-custom::after {
+        .billing-info .form-group.required::after,
+        .billing-info .input-group.required::after,
+        .payment-info .form-group.required::after,
+        .payment-info .input-group.required::after,
+        .shipping-info .form-group.required::after,
+        .shipping-info .input-group.required::after {
           font-size: 47px !important;
           font-size: 2.9375rem !important; } }
-  form .shipping-info {
-    display: none; }
-  form input[name="quantity"]::-webkit-input-placeholder {
-    text-align: center; }
-  form input[name="quantity"]::-moz-placeholder {
-    text-align: center; }
-  form input[name="quantity"]::-ms-input-placeholder {
-    text-align: center; }
-  form input[name="quantity"]::placeholder {
-    text-align: center; }
-  form .custom-radio .custom-control-label::before,
-  form .custom-checkbox .custom-control-label::before {
-    margin-top: 2px; }
+  .billing-info .form-group.required-custom::after,
+  .billing-info .input-group.required-custom::after,
+  .payment-info .form-group.required-custom::after,
+  .payment-info .input-group.required-custom::after,
+  .shipping-info .form-group.required-custom::after,
+  .shipping-info .input-group.required-custom::after {
+    content: "*";
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    font-size: 43px !important;
+    font-size: 2.6875rem !important;
+    color: #ed1b2e;
+    line-height: 1; }
     @media (min-width: 992px) {
-      form .custom-radio .custom-control-label::before,
-      form .custom-checkbox .custom-control-label::before {
-        margin-top: 3px; } }
-  form .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
-    top: 5px; }
+      .billing-info .form-group.required-custom::after,
+      .billing-info .input-group.required-custom::after,
+      .payment-info .form-group.required-custom::after,
+      .payment-info .input-group.required-custom::after,
+      .shipping-info .form-group.required-custom::after,
+      .shipping-info .input-group.required-custom::after {
+        font-size: 47px !important;
+        font-size: 2.9375rem !important; } }
+
+.shipping-info {
+  display: none; }
+
+input[name="quantity"]::-webkit-input-placeholder {
+  text-align: center; }
+
+input[name="quantity"]::-moz-placeholder {
+  text-align: center; }
+
+input[name="quantity"]::-ms-input-placeholder {
+  text-align: center; }
+
+input[name="quantity"]::placeholder {
+  text-align: center; }
+
+.custom-radio .custom-control-label::before,
+.custom-checkbox .custom-control-label::before {
+  margin-top: 2px; }
+  @media (min-width: 992px) {
+    .custom-radio .custom-control-label::before,
+    .custom-checkbox .custom-control-label::before {
+      margin-top: 3px; } }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+  top: 5px; }
 
 .accordion .card .card-header {
   padding: 0 !important; }

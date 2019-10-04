@@ -1,187 +1,185 @@
 /**********************************************
     Form styles
 **********************************************/
-form {
-  .form-row {
-    margin-top: 30px;
+.form-row {
+  margin-top: 30px;
 
-    @include media-breakpoint-up(lg) {
-      margin-top: 45px;
-    }
+  @include media-breakpoint-up(lg) {
+    margin-top: 45px;
   }
-  .form-group,
-  .input-group {
-    margin-bottom: 15px;
+}
+.form-group,
+.input-group {
+  margin-bottom: 15px;
 
-    @include media-breakpoint-up(lg) {
-      margin-bottom: 30px;
-    }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 30px;
   }
-  .form-control,
-  .form-control-lg,
-  .custom-select {
-    @include font-size(16);
+}
+.form-control,
+.form-control-lg,
+.custom-select {
+  @include font-size(16);
 
-    @include media-breakpoint-up(lg) {
-      @include font-size(23);
-    }
+  @include media-breakpoint-up(lg) {
+    @include font-size(23);
+  }
+}
+
+.input-group {
+  .form-control {
+    border-right: none;
+  }
+  .input-group-text {
+    background-color: $white;
+    border-left: none;
   }
 
-  .input-group {
-    .form-control {
-      border-right: none;
-    }
+  &.is-invalid {
     .input-group-text {
-      background-color: $white;
+      border: 1px solid $red;
       border-left: none;
     }
+  }
+}
 
-    &.is-invalid {
-      .input-group-text {
-        border: 1px solid $red;
-        border-left: none;
-      }
-    }
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: $white;
+}
+
+.site-search-box {
+  background: $gray-100;
+  position: absolute;
+  top: 67px;
+  right: 0;
+  width: 420px;
+  padding: 1rem;
+  display: none;
+  z-index: 3;
+
+  .form-control {
+    color: $gray-600;
+    @include font-size(18);
   }
 
-  .form-control:disabled,
-  .form-control[readonly] {
-    background-color: $white;
-  }
+  .input-group-append {
+    background-color: #fff;
 
-  .site-search-box {
-    background: $gray-100;
-    position: absolute;
-    top: 67px;
-    right: 0;
-    width: 420px;
-    padding: 1rem;
-    display: none;
-    z-index: 3;
-
-    .form-control {
-      color: $gray-600;
+    .btn-primary {
+      background-color: $white;
+      border: 1px solid $border-color;
+      border-left: 0;
       @include font-size(18);
     }
+  }
+}
 
-    .input-group-append {
-      background-color: #fff;
-
-      .btn-primary {
-        background-color: $white;
-        border: 1px solid $border-color;
-        border-left: 0;
-        @include font-size(18);
-      }
+button[type="search"] {
+  .icon {
+    @include media-breakpoint-up(md) {
+      width: 24px !important;
+      height: 24px !important;
     }
   }
+}
 
-  button[type="search"] {
-    .icon {
-      @include media-breakpoint-up(md) {
-        width: 24px !important;
-        height: 24px !important;
-      }
-    }
+// Required form elements styles
+/* Denote label at top of forms */
+.denote-required {
+  position: relative;
+  @include font-size(18);
+
+  @include media-breakpoint-up(lg) {
+    @include font-size(23);
   }
 
-  // Required form elements styles
-  /* Denote label at top of forms */
-  .denote-required {
-    position: relative;
-    @include font-size(18);
+  .required-symbol {
+    @include font-size(43);
+    position: absolute;
+    top: -0.5rem;
+    left: -1.25rem;
+    color: $red;
 
     @include media-breakpoint-up(lg) {
-      @include font-size(23);
-    }
-
-    .required-symbol {
-      @include font-size(43);
-      position: absolute;
-      top: -0.5rem;
-      left: -1.25rem;
-      color: $red;
-
-      @include media-breakpoint-up(lg) {
-        @include font-size(47);
-        line-height: 0;
-        margin-right: 0.25rem;
-        top: 1.7rem;
-      }
+      @include font-size(47);
+      line-height: 0;
+      margin-right: 0.25rem;
+      top: 1.7rem;
     }
   }
+}
 
-  // Billing
-  .billing-info,
-  .payment-info,
-  .shipping-info {
-    .form-group,
-    .input-group {
-      width: 327px;
-      @include media-breakpoint-up(lg) {
-        width: 445px;
-      }
-      @include media-breakpoint-up(xl) {
-        width: 535px;
-      }
+// Billing
+.billing-info,
+.payment-info,
+.shipping-info {
+  .form-group,
+  .input-group {
+    width: 327px;
+    @include media-breakpoint-up(lg) {
+      width: 445px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 535px;
+    }
 
-      &.required {
-        position: relative;
+    &.required {
+      position: relative;
 
-        &::after {
-          content: "*";
-          position: absolute;
-          top: 0;
-          right: -1rem;
-          @include font-size(43);
-          color: $red;
-          line-height: 1;
+      &::after {
+        content: "*";
+        position: absolute;
+        top: 0;
+        right: -1rem;
+        @include font-size(43);
+        color: $red;
+        line-height: 1;
 
-          @include media-breakpoint-up(lg) {
-            @include font-size(47);
-          }
+        @include media-breakpoint-up(lg) {
+          @include font-size(47);
         }
       }
+    }
 
-      &.required-custom {
-        &::after {
-          content: "*";
-          position: absolute;
-          top: 0;
-          right: -1rem;
-          @include font-size(43);
-          color: $red;
-          line-height: 1;
+    &.required-custom {
+      &::after {
+        content: "*";
+        position: absolute;
+        top: 0;
+        right: -1rem;
+        @include font-size(43);
+        color: $red;
+        line-height: 1;
 
-          @include media-breakpoint-up(lg) {
-            @include font-size(47);
-          }
+        @include media-breakpoint-up(lg) {
+          @include font-size(47);
         }
       }
     }
   }
+}
 
-  .shipping-info {
-    display: none;
-  }
+.shipping-info {
+  display: none;
+}
 
-  input[name="quantity"]::placeholder {
-    text-align: center;
-  }
+input[name="quantity"]::placeholder {
+  text-align: center;
+}
 
-  // custom controls
-  .custom-radio,
-  .custom-checkbox {
-    .custom-control-label::before {
-      margin-top: 2px;
+// custom controls
+.custom-radio,
+.custom-checkbox {
+  .custom-control-label::before {
+    margin-top: 2px;
 
-      @include media-breakpoint-up(lg) {
-        margin-top: 3px;
-      }
+    @include media-breakpoint-up(lg) {
+      margin-top: 3px;
     }
   }
+}
 
-  .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
-    top: 5px;
-  }
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+  top: 5px;
 }
