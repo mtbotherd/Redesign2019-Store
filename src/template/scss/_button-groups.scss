@@ -2,36 +2,8 @@
   cursor: pointer;
 }
 .btn-group-toggle {
-  margin-right: 0.52rem;
-  margin-bottom: 0.52rem;
-  width: 70px;
-  height: 40px;
-
+  display: block;
   @include media-breakpoint-up(lg) {
-    height: 50px;
-  }
-
-  @include media-breakpoint-up(xl) {
-    margin-right: 1.95rem;
-    margin-bottom: 1.95rem;
-  }
-
-  &:nth-child(4n) {
-    margin-right: 0;
-
-    @include media-breakpoint-up(lg) {
-      margin-right: 0.52rem;
-    }
-
-    @include media-breakpoint-up(xl) {
-      margin-right: 1.95rem;
-    }
-  }
-
-  &:nth-child(5n) {
-    @include media-breakpoint-up(lg) {
-      margin-right: 0;
-    }
   }
 
   .btn-outline-secondary:not(:disabled):not(.disabled).active {
@@ -40,23 +12,51 @@
     color: $cyan;
   }
 
-  .btn-amount {
+  .btn-outline-secondary {
     border-radius: 0.25rem !important;
     @include font-size(16);
     width: 70px;
     height: 40px;
-    margin-right: 0;
+    margin-right: 0.3rem;
+    margin-bottom: 0.5rem !important;
 
     @include media-breakpoint-up(lg) {
       @include font-size(18);
       width: 70px;
       height: 50px;
+      margin-right: 1.72rem;
+      margin-bottom: 1.75rem !important;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+
+      @include media-breakpoint-up(lg) {
+        margin-right: 1.72rem;
+      }
+    }
+
+    &:nth-child(5n) {
+      @include media-breakpoint-up(lg) {
+        margin-right: 0;
+      }
     }
 
     &:hover {
       background-color: $teal;
       border: 2px solid $cyan;
       color: $cyan;
+    }
+
+    &:last-child {
+      width: 70px;
+      height: 40px;
+
+      @include media-breakpoint-up(lg) {
+        @include font-size(18);
+        width: 70px;
+        height: 50px;
+      }
     }
   }
 }
