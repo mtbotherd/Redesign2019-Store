@@ -1,9 +1,15 @@
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
+
 .btn-group-toggle {
   display: block;
-  @include media-breakpoint-up(lg) {
+
+  p {
+    margin-bottom: 0;
+    @include media-breakpoint-up(lg) {
+      margin-top: 0.25rem;
+    }
   }
 
   .btn-outline-secondary:not(:disabled):not(.disabled).active {

@@ -8082,6 +8082,11 @@ a.skip-to-content {
 
 .btn-group-toggle {
   display: block; }
+  .btn-group-toggle p {
+    margin-bottom: 0; }
+    @media (min-width: 992px) {
+      .btn-group-toggle p {
+        margin-top: 0.25rem; } }
   .btn-group-toggle .btn-outline-secondary:not(:disabled):not(.disabled).active {
     background-color: #dbf4fd;
     border: 2px solid #0097d0;
