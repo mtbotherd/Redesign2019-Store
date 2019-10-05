@@ -8081,49 +8081,48 @@ a.skip-to-content {
   cursor: pointer; }
 
 .btn-group-toggle {
-  margin-right: 0.52rem;
-  margin-bottom: 0.52rem;
-  width: 70px;
-  height: 40px; }
-  @media (min-width: 992px) {
-    .btn-group-toggle {
-      height: 50px; } }
-  @media (min-width: 1200px) {
-    .btn-group-toggle {
-      margin-right: 1.95rem;
-      margin-bottom: 1.95rem; } }
-  .btn-group-toggle:nth-child(4n) {
-    margin-right: 0; }
-    @media (min-width: 992px) {
-      .btn-group-toggle:nth-child(4n) {
-        margin-right: 0.52rem; } }
-    @media (min-width: 1200px) {
-      .btn-group-toggle:nth-child(4n) {
-        margin-right: 1.95rem; } }
-  @media (min-width: 992px) {
-    .btn-group-toggle:nth-child(5n) {
-      margin-right: 0; } }
+  display: block; }
   .btn-group-toggle .btn-outline-secondary:not(:disabled):not(.disabled).active {
     background-color: #dbf4fd;
     border: 2px solid #0097d0;
     color: #0097d0; }
-  .btn-group-toggle .btn-amount {
+  .btn-group-toggle .btn-outline-secondary {
     border-radius: 0.25rem !important;
     font-size: 16px !important;
     font-size: 1rem !important;
     width: 70px;
     height: 40px;
-    margin-right: 0; }
+    margin-right: 0.3rem;
+    margin-bottom: 0.5rem !important; }
     @media (min-width: 992px) {
-      .btn-group-toggle .btn-amount {
+      .btn-group-toggle .btn-outline-secondary {
         font-size: 18px !important;
         font-size: 1.125rem !important;
         width: 70px;
-        height: 50px; } }
-    .btn-group-toggle .btn-amount:hover {
+        height: 50px;
+        margin-right: 1.72rem;
+        margin-bottom: 1.75rem !important; } }
+    .btn-group-toggle .btn-outline-secondary:nth-child(4n) {
+      margin-right: 0; }
+      @media (min-width: 992px) {
+        .btn-group-toggle .btn-outline-secondary:nth-child(4n) {
+          margin-right: 1.72rem; } }
+    @media (min-width: 992px) {
+      .btn-group-toggle .btn-outline-secondary:nth-child(5n) {
+        margin-right: 0; } }
+    .btn-group-toggle .btn-outline-secondary:hover {
       background-color: #dbf4fd;
       border: 2px solid #0097d0;
       color: #0097d0; }
+    .btn-group-toggle .btn-outline-secondary:last-child {
+      width: 70px;
+      height: 40px; }
+      @media (min-width: 992px) {
+        .btn-group-toggle .btn-outline-secondary:last-child {
+          font-size: 18px !important;
+          font-size: 1.125rem !important;
+          width: 70px;
+          height: 50px; } }
 
 #store .card {
   margin-bottom: 30px; }
