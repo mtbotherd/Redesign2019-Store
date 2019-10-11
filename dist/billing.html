@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Metro Transit</title>
+	<link rel="shortcut icon"
+		  href="favicon.ico"
+		  type="image/x-icon">
+	<link rel="stylesheet" href="/template/css/app.min.css">
+</head>
+
+<body>
+
+	<form id="aspnForm">
+
+		<!-- Begin Header -->
+		<header id="header">
+			<nav class="navbar navbar-expand-xl navbar-light">
+				<a href="#mainContent"
+				   class="skip-to-content">Skip to main content</a>
+				<div class="container">
+					<a class="navbar-brand"
+					   href="/">
+						<img alt="metro transit logo"
+							 src="/template/img/MetroTransitLogo.svg"
+							 class="logo d-inline-block">
+					</a>
+					<button class="navbar-toggler"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse"
+						 id="navbarSupportedContent">
+						<ul class="navbar-nav ml-xl-auto">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle"
+								   href="/trip-planner"
+								   id="navbarDropdown"
+								   role="button"
+								   data-toggle="dropdown"
+								   aria-haspopup="true"
+								   aria-expanded="false">
+									Trip Tools
+									<img src="/template/img/svg/chevron-down-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/chevron-down-white.svg"
+										 class="icon active">
+								</a>
+								<div class="dropdown-menu"
+									 aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"
+									   href="/trip-planner">Trip Planner</a>
+									<a class="dropdown-item"
+									   href="/nextrip">NexTrip</a>
+									<a class="dropdown-item"
+									   href="/alerts">Alerts</a>
+									<a class="dropdown-item"
+									   href="/park-ride">Find a Park &amp; Ride</a>
+									<a class="dropdown-item"
+									   href="/planner/servicesfinder.aspx">
+										Find a Stop or Station
+									</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"
+								   href="schedules-maps">
+									Schedules &amp; Maps
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle"
+								   href="#"
+								   id="navbarDropdown"
+								   role="button"
+								   data-toggle="dropdown"
+								   aria-haspopup="true"
+								   aria-expanded="false">
+									Fares
+									<img src="/template/img/svg/chevron-down-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/chevron-down-white.svg"
+										 class="icon active">
+								</a>
+								<div class="dropdown-menu"
+									 aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"
+									   href="/fares">Fares</a>
+									<a class="dropdown-item"
+									   href="/go-to-card">Go-To Card</a>
+									<a class="dropdown-item"
+									   href="/passes">Pass Programs</a>
+									<a class="dropdown-item"
+									   href="https://store.metrotransit.org/">Store</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle"
+								   href="#"
+								   id="navbarDropdown"
+								   role="button"
+								   data-toggle="dropdown"
+								   aria-haspopup="true"
+								   aria-expanded="false">
+									More
+									<img src="/template/img/svg/chevron-down-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/chevron-down-white.svg"
+										 class="icon active">
+								</a>
+								<div class="dropdown-menu"
+									 aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"
+									   href="/carpool">Carpool &amp; Vanpool</a>
+									<a class="dropdown-item"
+									   href="/transit-link">Transit Link</a>
+									<a class="dropdown-item"
+									   href="/guaranteed-ride-home">Guaranteed Ride Home</a>
+									<a class="dropdown-item"
+									   href="/bicycle">Bicycle</a>
+									<a class="dropdown-item"
+									   href="/news">News &amp; Events</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle"
+								   href="#"
+								   id="navbarDropdown"
+								   role="button"
+								   data-toggle="dropdown"
+								   aria-haspopup="true"
+								   aria-expanded="false">
+									Help
+									<img src="/template/img/svg/chevron-down-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/chevron-down-white.svg"
+										 class="icon active">
+								</a>
+								<div class="dropdown-menu"
+									 aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"
+									   href="/how-to-ride">How to Ride Guide</a>
+									<a class="dropdown-item"
+									   href="contact-us">Contact Us</a>
+									<a class="dropdown-item"
+									   href="/lost-found">Lost &amp; Found</a>
+									<a class="dropdown-item"
+									   href="/accessibility">Accessibility</a>
+									<a class="dropdown-item"
+									   href="/languages">Languages</a>
+									<a class="dropdown-item"
+									   href="/police">Transit Police</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle"
+								   href="#"
+								   id="navbarDropdown"
+								   role="button"
+								   data-toggle="dropdown"
+								   aria-haspopup="true"
+								   aria-expanded="false">
+									En
+									<img src="/template/img/svg/chevron-down-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/chevron-down-white.svg"
+										 class="icon active">
+								</a>
+								<div class="dropdown-menu"
+									 aria-labelledby="navbarDropdown">
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+									<a class="dropdown-item"
+									   href="#">Link</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="navbar-nav utilities">
+							<li class="nav-item">
+								<a class="nav-link"
+								   href="https://store.metrotransit.org">
+									<img src="/template/img/svg/shopping-cart-green.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/shopping-cart-white.svg"
+										 class="icon active">
+								</a>
+							</li>
+							<li class="nav-item position-relative">
+								<div class="nav-link site-search">
+									<img src="/template/img/svg/search-gray.svg"
+										 class="icon  inactive">
+									<img src="/template/img/svg/search-white.svg"
+										 class="icon active">
+								</div>
+								<div id="search-box"
+									 class="site-search-box">
+									<div class="input-group">
+										<input type="search"
+											   id="siteSearch"
+											   class="form-control"
+											   placeholder="Search for routes and information"
+											   aria-label="Search for routes and information"
+											   aria-describedby="siteSearchButton">
+										<label for="siteSearch"
+											   class="sr-only">Search for routes and information</label>
+										<div class="input-group-append mr-auto">
+											<button id="siteSearchButton"
+													type="search"
+													class="btn btn-primary">
+												<span class="sr-only">Search button</span>
+												<img class="icon"
+													 src="/template/img/svg/search-gray.svg">
+											</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"
+								   href="">
+									<img src="/template/img/svg/avatar-gray.svg"
+										 class="icon inactive">
+									<img src="/template/img/svg/avatar-white.svg"
+										 class="icon active">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- End Header -->
+
+		<!-- Begin Main Content -->
+		<form>
+			<section id="mainContent">
+				<div id="primaryPage">
+
+					<!-- When adding a new page, also add new background image styles in _hero-backgrounds.scss. Change the class below to match that of the hero background. -->
+					<div class="hero store-hero-bg">
+						<div class="container">
+							<div class="page-title">
+								<h1>Store</h1>
+							</div>
+						</div>
+					</div>
+
+					<div id="store"
+						 class="page-content">
+						<!-- Main page content -->
+						<section class="section reverse">
+							<div class="container">
+								<div class="billing-info">
+									<div id="shoppingCart"
+										 class="card mb-0">
+										<div class="card-header card-header-expanded">
+											<h2 class="text-center">Billing Address &amp; Payment Information
+											</h2>
+										</div>
+										<div class="card-body pt-0 pb-0">
+											<div class="row">
+												<div class="col-md-5 text-center mb-0">
+													<button type="button"
+															class="btn btn-warning float-lg-right">Sign in</button>
+												</div>
+												<div class="col-md-2 text-center">
+													<p class="h4 mt-1 mb-1 mt-lg-3">or</p>
+												</div>
+												<div class="col-md-5 text-center">
+													<button type="button"
+															class="btn btn-warning float-lg-left mb-0">Create
+														account</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- Additional content sections -->
+						<section class="section reverse">
+							<div class="container">
+								<div class="billing-info">
+									<div class="">
+										<div class="d-flex justify-content-between">
+											<h3 class="h4">Billing Address</h3>
+											<p class="d-flex denote-required position-relative"><span
+													  class="required-symbol">&#42;</span> = Required Field</h3>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="firtName"
+													   class="sr-only">First name</label>
+												<input type="text"
+													   class="form-control"
+													   id="firstName"
+													   name="firstName"
+													   placeholder="First name">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="lastName"
+													   class="sr-only">Last name</label>
+												<input type="text"
+													   class="form-control"
+													   id="lastName"
+													   name="lastName"
+													   placeholder="Last name">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="address"
+													   class="sr-only">Address</label>
+												<input type="text"
+													   class="form-control"
+													   id="address"
+													   name="address"
+													   placeholder="Address">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="sr-only">Address 2</label>
+												<input type="address"
+													   class="form-control"
+													   id="address2"
+													   name="address2"
+													   aria-describedby="emailHelp"
+													   placeholder="Address 2">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="city"
+													   class="sr-only">City</label>
+												<input type="text"
+													   class="form-control"
+													   id="city"
+													   name="city"
+													   placeholder="City">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="state"
+													   class="sr-only">State</label>
+												<select class="custom-select"
+														id="state"
+														name="state">
+													<option value="">State</option>
+													<option value="AL">Alabama</option>
+													<option value="AK">Alaska</option>
+													<option value="AZ">Arizona</option>
+													<option value="AR">Arkansas</option>
+													<option value="CA">California</option>
+													<option value="CO">Colorado</option>
+													<option value="CT">Connecticut</option>
+													<option value="DE">Delaware</option>
+													<option value="FL">Florida</option>
+													<option value="GA">Georgia</option>
+													<option value="HI">Hawaii</option>
+													<option value="ID">Idaho</option>
+													<option value="IL">Illinois</option>
+													<option value="IN">Indiana</option>
+													<option value="IA">Iowa</option>
+													<option value="KS">Kansas</option>
+													<option value="KY">Kentucky</option>
+													<option value="LA">Louisiana</option>
+													<option value="ME">Maine</option>
+													<option value="MD">Maryland</option>
+													<option value="MA">Massachusetts</option>
+													<option value="MI">Michigan</option>
+													<option value="MN">Minnesota</option>
+													<option value="MS">Mississippi</option>
+													<option value="MO">Missouri</option>
+													<option value="MT">Montana</option>
+													<option value="NE">Nebraska</option>
+													<option value="NV">Nevada</option>
+													<option value="NH">New Hampshire</option>
+													<option value="NJ">New Jersey</option>
+													<option value="NM">New Mexico</option>
+													<option value="NY">New York</option>
+													<option value="NC">North Carolina</option>
+													<option value="ND">North Dakota</option>
+													<option value="OH">Ohio</option>
+													<option value="OK">Oklahoma</option>
+													<option value="OR">Oregon</option>
+													<option value="PA">Pennsylvania</option>
+													<option value="RI">Rhode Island</option>
+													<option value="SC">South Carolina</option>
+													<option value="SD">South Dakota</option>
+													<option value="TN">Tennessee</option>
+													<option value="TX">Texas</option>
+													<option value="UT">Utah</option>
+													<option value="VT">Vermont</option>
+													<option value="VA">Virginia</option>
+													<option value="WA">Washington</option>
+													<option value="WV">West Virginia</option>
+													<option value="WI">Wisconsin</option>
+													<option value="WY">Wyoming</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="zipcode"
+													   class="sr-only">Zip code</label>
+												<input type="text"
+													   class="form-control"
+													   id="zipcode"
+													   name="zipcode"
+													   placeholder="Zip code">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="phoneNumber"
+													   class="sr-only">Phone number</label>
+												<input type="text"
+													   class="form-control"
+													   id="phoneNumber"
+													   name="phoneNumber"
+													   placeholder="Phone number">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="emailAddress"
+													   class="sr-only">Email address</label>
+												<input type="email"
+													   class="form-control"
+													   id="emailAddress"
+													   name="emailAddress"
+													   placeholder="Email address">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="input-group mb-lg-4 mb-2 required">
+												<label for="confirmEmailAddress"
+													   class="sr-only">Confirm email address</label>
+												<input type="email"
+													   class="form-control"
+													   id="confirmEmailAddress"
+													   name="confirmEmailAddress"
+													   placeholder="Confirm email address">
+												<div class="input-group-append">
+													<div class="input-group-text">
+														<img class="gray-circle-info"
+															 src='/template/img/svg/gray-circle-info.svg'
+															 data-toggle="popover"
+															 data-trigger="hover"
+															 data-content='We will use your e-mail address to send you a confirmation message once your order is processed.
+															Metro Transit will not sell or disclose your personal information to any third party unless required to do 
+															so by law except for administrative or planning purpose to help us improve transit products or services. 
+															Metro Transit may use the information to tell you about its products and services.' />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="d-flex justify-content-between mt-4 mt-lg-0">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox"
+												   class="custom-control-input"
+												   id="saveDefaultBilling"
+												   name="saveDefaultBilling"
+												   checked>
+											<label class="custom-control-label"
+												   for="saveDefaultBilling">Save as my default billing address</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section reverse">
+							<div class="container">
+								<div class="payment-info">
+									<h3 class="h4">Payment Information</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="creditCardNumber"
+													   class="sr-only">Credit card number</label>
+												<input type="text"
+													   id="creditCardNumber"
+													   class="form-control"
+													   name="creditCardNumber"
+													   placeholder="Card Number">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="expirationMonth"
+													   class="sr-only">Expiration Month</label>
+												<select id="expirationMonth"
+														name="expirationMonth"
+														class="custom-select">
+													<option value="">Expiration Month</option>
+													<option value="1">01 January</option>
+													<option value="2">02 February</option>
+													<option value="3">03 March</option>
+													<option value="4">04 April</option>
+													<option value="5">05 May</option>
+													<option value="6">06 June</option>
+													<option value="7">07 July</option>
+													<option value="8">08 August</option>
+													<option value="9">09 September</option>
+													<option value="10">10 October</option>
+													<option value="11">11 November</option>
+													<option value="12">12 December</option>
+												</select>
+											</div>
+											<div class="form-group required">
+												<label for="expirationYear"
+													   class="sr-only">Expiration Year</label>
+												<select id="expirationYear"
+														name="expirationYear"
+														class="custom-select">
+													<option value="">Expiration Year</option>
+													<option value="2019">2019</option>
+													<option value="2020">2020</option>
+													<option value="2021">2021</option>
+													<option value="2022">2022</option>
+													<option value="2023">2023</option>
+													<option value="2024">2024</option>
+													<option value="2025">2025</option>
+													<option value="2026">2026</option>
+													<option value="2027">2027</option>
+													<option value="2028">2028</option>
+													<option value="2029">2029</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 offset-md-6">
+											<div class="input-group required-custom position-relative">
+												<label for="cvc"
+													   class="sr-only">CVC number</label>
+												<input type="text"
+													   id="cvc"
+													   class="form-control"
+													   name="cvc"
+													   maxlength="5"
+													   placeholder="CVC">
+												<div class="input-group-append">
+													<div class="input-group-text">
+														<img class="gray-circle-info"
+															 src='/template/img/svg/gray-circle-info.svg'
+															 data-toggle="popover"
+															 data-trigger="hover"
+															 data-content="This is a three-digit or four-digit number found on your credit card that protects against fraud." />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="alert alert-primary"
+										 role="alert">
+										<h4>Important</h4>
+										<p>Please note that if you enter a billing
+											zip code other than the one on file with the credit card’s issuing bank,
+											or an incorrect CVC code, Metro Transit will deny your transaction for
+											security purposes. Additionally, rejected debit card transactions may
+											cause the funds to be held by your bank for up to 5 business days before
+											being released back to the card.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section reverse">
+							<div class="container">
+								<div class="payemnt-info">
+									<h3 class="h4">Shipping Address</h3>
+									<div class="shipping-info">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group required">
+													<label for="saFirstName"
+														class="sr-only">First name</label>
+													<input type="text"
+														class="form-control"
+														id="saFirstName"
+														name="saFirstName"
+														placeholder="First name">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group required">
+													<label for="saLastName"
+														class="sr-only">Last name</label>
+													<input type="text"
+														class="form-control"
+														id="saLastName"
+														name="saLastName"
+														placeholder="Last name">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group required">
+													<label for="saAddress"
+														class="sr-only">Address</label>
+													<input type="text"
+														class="form-control"
+														id="saAddress"
+														name="saAddress"
+														placeholder="Address">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label for="saAddress2" class="sr-only">Address 2</label>
+													<input type="address"
+														class="form-control"
+														id="saAddress2"
+														name="saAddresss2"
+														aria-describedby="emailHelp"
+														placeholder="Address 2">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group required">
+													<label for="saCity"
+														class="sr-only">City</label>
+													<input type="text"
+														class="form-control"
+														id="saCity"
+														name="saCity"
+														placeholder="City">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group required">
+													<label for="saState"
+														class="sr-only">State</label>
+													<select class="custom-select"
+															id="saState"
+															name="saState">
+														<option value="">State</option>
+														<option value="AL">Alabama</option>
+														<option value="AK">Alaska</option>
+														<option value="AZ">Arizona</option>
+														<option value="AR">Arkansas</option>
+														<option value="CA">California</option>
+														<option value="CO">Colorado</option>
+														<option value="CT">Connecticut</option>
+														<option value="DE">Delaware</option>
+														<option value="FL">Florida</option>
+														<option value="GA">Georgia</option>
+														<option value="HI">Hawaii</option>
+														<option value="ID">Idaho</option>
+														<option value="IL">Illinois</option>
+														<option value="IN">Indiana</option>
+														<option value="IA">Iowa</option>
+														<option value="KS">Kansas</option>
+														<option value="KY">Kentucky</option>
+														<option value="LA">Louisiana</option>
+														<option value="ME">Maine</option>
+														<option value="MD">Maryland</option>
+														<option value="MA">Massachusetts</option>
+														<option value="MI">Michigan</option>
+														<option value="MN">Minnesota</option>
+														<option value="MS">Mississippi</option>
+														<option value="MO">Missouri</option>
+														<option value="MT">Montana</option>
+														<option value="NE">Nebraska</option>
+														<option value="NV">Nevada</option>
+														<option value="NH">New Hampshire</option>
+														<option value="NJ">New Jersey</option>
+														<option value="NM">New Mexico</option>
+														<option value="NY">New York</option>
+														<option value="NC">North Carolina</option>
+														<option value="ND">North Dakota</option>
+														<option value="OH">Ohio</option>
+														<option value="OK">Oklahoma</option>
+														<option value="OR">Oregon</option>
+														<option value="PA">Pennsylvania</option>
+														<option value="RI">Rhode Island</option>
+														<option value="SC">South Carolina</option>
+														<option value="SD">South Dakota</option>
+														<option value="TN">Tennessee</option>
+														<option value="TX">Texas</option>
+														<option value="UT">Utah</option>
+														<option value="VT">Vermont</option>
+														<option value="VA">Virginia</option>
+														<option value="WA">Washington</option>
+														<option value="WV">West Virginia</option>
+														<option value="WI">Wisconsin</option>
+														<option value="WY">Wyoming</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group required">
+													<label for="saZipcode"
+														class="sr-only">Zip code</label>
+													<input type="text"
+														class="form-control"
+														id="saZipcode"
+														name="saZipcode"
+														placeholder="Zip code">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group required">
+													<label for="saPhoneNumber"
+														class="sr-only">Phone number</label>
+													<input type="text"
+														class="form-control"
+														id="saPhoneNumber"
+														name="saPhoneNumber"
+														placeholder="Phone number">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group required">
+													<label for="saEmailAddress"
+														class="sr-only">Email address</label>
+													<input type="email"
+														class="form-control"
+														id="c"
+														name="saEmailAddress"
+														placeholder="Email address">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox"
+											   class="custom-control-input"
+											   id="saShippingAddress"
+											   name="saShippingAddress"
+											   checked>
+										<label class="custom-control-label"
+											   for="saShippingAddress">Shipping address is the same as my billing
+											address</label>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="section reverse">
+							<div class="container">
+								<div class="shopping-cart">
+									<div class="row">
+										<div class="col col-lg-8 offset-lg-2">
+											<div id="shoppingCart"
+												 class="card mb-0">
+												<div class="card-header">
+													<h2 class="text-center">Shopping cart</h2>
+												</div>
+												<div class="card-body p-0">
+													<div class="cart-item-heading">
+														<div class="row">
+															<div class="col-6 col-md-8 h2">Item</div>
+															<div class="col-3 col-md-2 h2 text-center">Qty
+															</div>
+															<div class="col-3 col-md-2 h2 text-right">Total
+															</div>
+														</div>
+													</div>
+													<div class="cart-item">
+														<h3 class="h4 cyan">Stored Value</h3>
+														<p>Card #: <span class="cyan">1234-5678-9000-0000</span>
+														</p>
+														<div class="row">
+															<div class="col-6 col-md-8 d-flex pt-1 pt-md-2">
+																<div
+																	 class="custom-control custom-checkbox d-inline-block">
+																	<input type="checkbox"
+																		   id="deleteItem"
+																		   name="deleteItem"
+																		   class="custom-control-input" />
+																	<label for="deleteItem"
+																		   class="custom-control-label">Delete</label>
+																</div>
+																<p id="itemDescription"
+																   class="item-description d-inline-block">
+																	$5.00</p>
+															</div>
+															<div class="col-3 col-md-2">
+																<div class="form-group">
+																	<label for="quantity"
+																		   class="sr-only">Quantity</label>
+																	<input type="number"
+																		   id="quantity"
+																		   name="quantity"
+																		   class="form-control"
+																		   placeholder="1">
+																</div>
+															</div>
+															<div class="col-3 col-md-2 pt-1 pt-md-2 text-right">
+																<p id="itemCost">$5.00</p>
+															</div>
+														</div>
+													</div>
+													<div class="cart-item">
+														<h3 class="h4 cyan">Visitor Pass</h3>
+														<div class="row">
+															<div class="col-6 col-md-8 d-flex pt-1 pt-md-2">
+																<div
+																	 class="custom-control custom-checkbox d-inline-block">
+																	<input type="checkbox"
+																		   id="deleteItem"
+																		   name="deleteItem"
+																		   class="custom-control-input" />
+																	<label for="deleteItem"
+																		   class="custom-control-label">Delete</label>
+																</div>
+																<p id="itemDescription"
+																   class="item-description d-inline-block">
+																	$5.00</p>
+															</div>
+															<div class="col-3 col-md-2">
+																<div class="form-group">
+																	<label for="quantity"
+																		   class="sr-only">Quantity</label>
+																	<input type="number"
+																		   id="quantity"
+																		   name="quantity"
+																		   class="form-control"
+																		   placeholder="1">
+																</div>
+															</div>
+															<div class="col-3 col-md-2 pt-1 pt-md-2 text-right">
+																<p id="itemCost">$5.00</p>
+															</div>
+														</div>
+													</div>
+													<div class="cart-item">
+														<h3 class="h4 cyan">New Go-To Card + Stored Value 10
+														</h3>
+														<div class="row">
+															<div class="col-6 col-md-8 d-flex pt-1 pt-md-2">
+																<div
+																	 class="custom-control custom-checkbox d-inline-block">
+																	<input type="checkbox"
+																		   id="deleteItem"
+																		   name="deleteItem"
+																		   class="custom-control-input" />
+																	<label for="deleteItem"
+																		   class="custom-control-label">Delete</label>
+																</div>
+																<p id="itemDescription"
+																   class="item-description d-inline-block">
+																	$10.00</p>
+															</div>
+															<div class="col-3 col-md-2">
+																<div class="form-group">
+																	<label for="quantity"
+																		   class="sr-only">Quantity</label>
+																	<input type="number"
+																		   id="quantity"
+																		   name="quantity"
+																		   class="form-control"
+																		   placeholder="1">
+																</div>
+															</div>
+															<div class="col-3 col-md-2 pt-1 pt-md-2 text-right">
+																<p id="itemCost">$10.00</p>
+															</div>
+														</div>
+													</div>
+													<div class="cost-breakdown">
+														<div class="row gray-bg-200">
+															<div class="col-8 text-right"><strong>Sub
+																	Total</strong>
+															</div>
+															<div class="col-4 text-right">$20.00</div>
+														</div>
+														<div class="row">
+															<div class="col-8 text-right"><strong>Processing
+																	&amp;
+																	Shipping</strong></div>
+															<div class="col-4 text-right">$0.00</div>
+														</div>
+														<div class="row">
+															<div class="col-8 text-right"><strong>Sales
+																	Tax</strong>
+															</div>
+															<div class="col-4 text-right">$0.00</div>
+														</div>
+														<div class="row teal-bg">
+															<div class="col-8 text-right">
+																<strong>Total</strong></div>
+															<div class="col-4 text-right">$20.00</div>
+														</div>
+													</div>
+													<div class="cart-controls">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="btn-container">
+																	<button type="button"
+																			id="updateCart"
+																			class="btn btn-warning">Update
+																		cart</button>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="btn-container">
+																	<button type="button"
+																			id="emptyCart"
+																			class="btn btn-warning">Empty
+																		cart</button>
+																</div>
+															</div>
+														</div>
+														<div class="button-container-icon-right">
+															<button type="submit" class="btn btn-outline-primary">Checkout</button>
+														</div>
+														<p><em>All sales are final.</em></p>
+													</div>
+													<div class="link-container-icon-right">
+														<a href="/"
+														   class="btn btn-link">
+															Continue shopping &nbsp;
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+		</form>
+		<!-- End Main Content -->
+
+		<!-- Begin Footer -->
+		<footer class="section">
+			<div class="container">
+				<div class="button-container-icon-right">
+					<a href="/contact-us"
+					   class="btn btn-outline-primary">Contact us</a>
+				</div>
+				<div class="d-none d-lg-block social-media text-center">
+					<a href="https://www.twitter.com/MetroTransitMN"><img class="icon mr-2"
+							 src="/template/img/svg/twitter-gray.svg"></a>
+					<a href="https://www.facebook.com/MetroTransitMN"><img class="icon mr-2"
+							 src="/template/img/svg/facebook-gray.svg"></a>
+					<a href="https://www.youtube.com/MetroTransitMN"><img class="icon mr-2"
+							 src="/template/img/svg/youtube-gray.svg"></a>
+					<a href="https://instagram.com/metrotransitmn"><img class="icon mr-2"
+							 src="/template/img/svg/instagram-gray.svg"></a>
+					<a href="https://www.linkedin.com/company/metro-transit"><img class="icon mr-2"
+							 src="/template/img/svg/linkedin-gray.svg"></a>
+					<a href="https://www.flickr.com/photos/metrotransitmn/"><img class="icon"
+							 src="/template/img/svg/flickr-gray.svg"></a>
+				</div>
+				<div class="footer d-none d-lg-block">
+					<div class="card-deck">
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">About Metro Transit</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/transit-initiatives"
+										   class="nav-link">Transit Initiatives</a>
+									</li>
+									<li class="nav-item">
+										<a href="/facilities"
+										   class="nav-link">Facilities</a>
+									</li>
+									<li class="nav-item">
+										<a href="/riders-almanac-blog"
+										   class="nav-link">Riders Almanac</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">Media Relations</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/contacts"
+										   class="nav-link">Contacts</a>
+									</li>
+									<li class="nav-item">
+										<a href="/press"
+										   class="nav-link">Press Releases</a>
+									</li>
+									<li class="nav-item">
+										<a href="/awards"
+										   class="nav-link">Awards</a>
+									</li>
+									<li class="nav-item">
+										<a href="/"
+										   class="nav-link">Images &amp; Logos</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">Careers</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/jobs"
+										   class="nav-link">Available Job Opportunities</a>
+									</li>
+									<li class="nav-item">
+										<a href="/drive"
+										   class="nav-link">Become a Bus Driver</a>
+									</li>
+									<li class="nav-item">
+										<a href="/transit-police-careers"
+										   class="nav-link">Join the Transit Police</a>
+									</li>
+									<li class="nav-item">
+										<a href="/job-seekers"
+										   class="nav-link">Career Fairs</a>
+									</li>
+									<li class="nav-item">
+										<a href="/internships"
+										   class="nav-link">Internships</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">Policies</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/social-media-policy"
+										   class="nav-link">Social Media Policy</a>
+									</li>
+									<li class="nav-item">
+										<a href="https://metrocouncil.org/Privacy-Policy.aspx"
+										   class="nav-link"
+										   target="_blank">Privacy Policy</a>
+									</li>
+									<li class="nav-item">
+										<a href="/code-of-conduct"
+										   class="nav-link">Code of Conduct</a>
+									</li>
+									<li class="nav-item">
+										<a href="/titlevi"
+										   class="nav-link">Title VI: Commitment to Fairness</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card-deck">
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">Mission &amp; Impact</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/commitment-to-fairness"
+										   class="nav-link">Commitment to Fairness</a>
+									</li>
+									<li class="nav-item">
+										<a href="/impact-programs"
+										   class="nav-link">Impact Programs</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-body">
+								<h4 class="card-title">Resources</h4>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a href="/app"
+										   class="nav-link">Try the Metro Transit App</a>
+									</li>
+									<li class="nav-item">
+										<a href="/advertise-with-metro-transit"
+										   class="nav-link">Advertise with Us</a>
+									</li>
+									<li class="nav-item">
+										<a href="/apps"
+										   class="nav-link">API Resources for Developers</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card border-0"></div>
+						<div class="card border-0"></div>
+					</div>
+				</div>
+				<p class="text-center">
+					<small>
+						Metro Transit is a service of the Metropolitan Council.
+						<span class="d-block d-md-none"> <br> </span>© 2019 Metro
+						Transit
+					</small>
+				</p>
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<!-- Vendor scripts -->
+		<script src="/template/js/jquery.js"></script>
+		<script src="/template/js/popper.js"></script>
+		<script src="/template/js/bootstrap.js"></script>
+		<script src="/template/js/jquery.exlink.js"></script>
+		<script src="/template/js/svgxuse.js"></script>
+		<script src="/template/js/jquery.validate.js"></script>
+		<!-- <script src="/template/js/additional-methods.js"></script> -->
+		<script src="/template/js/form-validation.js"></script>
+		<!-- End vendor scripts -->
+
+		<script src="/template/js/scripts.min.js"></script>
+	</form>
+</body>
+
+</html>

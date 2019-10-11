@@ -28,13 +28,13 @@
       .card-header h2 {
         &::before {
           content: "";
-          background-image: url("../img/svg/purchase-white.svg");
+          background-image: url("/template/img/svg/purchase-white.svg");
         }
 
         // position info icon
         &::after {
           content: "";
-          background-image: url("../img/svg/white-circle-info.svg");
+          background-image: url("/template/img/svg/white-circle-info.svg");
           background-repeat: no-repeat;
           background-size: 1.5rem 1.5rem;
           position: absolute;
@@ -60,13 +60,13 @@
       .card-header h2 {
         &::before {
           content: "";
-          background-image: url("../img/svg/add-value-white.svg");
+          background-image: url("/template/img/svg/add-value-white.svg");
         }
 
         // Pposition info icon
         &::after {
           content: "";
-          background-image: url("../img/svg/white-circle-info.svg");
+          background-image: url("/template/img/svg/white-circle-info.svg");
           background-repeat: no-repeat;
           background-size: 1.5rem 1.5rem;
           position: absolute;
@@ -92,7 +92,7 @@
       .card-header h2 {
         &::before {
           content: "";
-          background-image: url("../img/svg/traveling-white.svg");
+          background-image: url("/template/img/svg/traveling-white.svg");
           background-size: 42px 32px;
           width: 42px;
           height: 32px;
@@ -112,7 +112,7 @@
       .card-header h2 {
         &::before {
           content: "";
-          background-image: url("../img/svg/event-white.svg");
+          background-image: url("/template/img/svg/event-white.svg");
         }
       }
     }

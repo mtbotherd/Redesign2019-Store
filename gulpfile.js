@@ -19,7 +19,6 @@ var gulp = require('gulp'),
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            // baseDir: ['src/Data/sites/1/skins/MetroTransitIII', 'src']
             baseDir: ['src']
         }
     })

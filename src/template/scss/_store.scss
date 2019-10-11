@@ -65,7 +65,7 @@
     color: $white;
 
     @include media-breakpoint-up(lg) {
-      background-image: url("../img/blue-cyan-bg.png");
+      background-image: url("/template/img/blue-cyan-bg.png");
       background-size: cover;
       background-position: 50%;
       background-repeat: no-repeat;
