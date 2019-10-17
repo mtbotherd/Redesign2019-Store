@@ -12,12 +12,6 @@ $(document).ready(function() {
         $(this).find('img.inactive').show();
         $(this).find('img.active').hide();
     });
-
-    // Display search bar
-    $('.site-search').click(function() {
-        $('#search-box').slideToggle();
-        $('#siteSearch').focus();
-	});
 	
 	// Initialize tooltips
 	$('[data-toggle="popover"]').popover();
