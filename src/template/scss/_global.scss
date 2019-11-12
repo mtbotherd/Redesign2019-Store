@@ -210,3 +210,14 @@ abbr {
     margin-bottom: 75px;
   }
 }
+//login/sign up
+.login-signup-form{
+  max-width:770px;
+
+  .gray-box{
+    border:1px solid  $gray-200;
+  }
+  .gray-box::placeholder{
+    color: $gray-300;
+  }
+}
