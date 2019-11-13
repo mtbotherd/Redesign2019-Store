@@ -7740,6 +7740,9 @@ abbr {
   max-width: 770px; }
   .login-signup-form .gray-box {
     border: 1px solid #e3e3e0; }
+    .login-signup-form .gray-box .custom-control-label {
+      font-weight: lighter;
+      line-height: 1.15; }
   .login-signup-form .gray-box::-webkit-input-placeholder {
     color: #8a8b8a; }
   .login-signup-form .gray-box::-moz-placeholder {
@@ -8482,7 +8485,7 @@ form {
       font-size: 2.6875rem !important;
       position: absolute;
       top: -0.5rem;
-      left: -1.25rem;
+      left: -1rem;
       color: #ed1b2e; }
       @media (min-width: 992px) {
         form .denote-required .required-symbol {
@@ -8491,82 +8494,34 @@ form {
           line-height: 0;
           margin-right: 0.25rem;
           top: 1.7rem; } }
-  form .billing-info .form-group,
-  form .billing-info .input-group,
-  form .payment-info .form-group,
-  form .payment-info .input-group,
-  form .shipping-info .form-group,
-  form .shipping-info .input-group {
-    width: 327px; }
-    @media (min-width: 992px) {
-      form .billing-info .form-group,
-      form .billing-info .input-group,
-      form .payment-info .form-group,
-      form .payment-info .input-group,
-      form .shipping-info .form-group,
-      form .shipping-info .input-group {
-        width: 445px; } }
-    @media (min-width: 1200px) {
-      form .billing-info .form-group,
-      form .billing-info .input-group,
-      form .payment-info .form-group,
-      form .payment-info .input-group,
-      form .shipping-info .form-group,
-      form .shipping-info .input-group {
-        width: 535px; } }
-    form .billing-info .form-group.required,
-    form .billing-info .input-group.required,
-    form .payment-info .form-group.required,
-    form .payment-info .input-group.required,
-    form .shipping-info .form-group.required,
-    form .shipping-info .input-group.required {
-      position: relative; }
-      form .billing-info .form-group.required::after,
-      form .billing-info .input-group.required::after,
-      form .payment-info .form-group.required::after,
-      form .payment-info .input-group.required::after,
-      form .shipping-info .form-group.required::after,
-      form .shipping-info .input-group.required::after {
-        content: "*";
-        position: absolute;
-        top: 0;
-        right: -1rem;
-        font-size: 43px !important;
-        font-size: 2.6875rem !important;
-        color: #ed1b2e;
-        line-height: 1; }
-        @media (min-width: 992px) {
-          form .billing-info .form-group.required::after,
-          form .billing-info .input-group.required::after,
-          form .payment-info .form-group.required::after,
-          form .payment-info .input-group.required::after,
-          form .shipping-info .form-group.required::after,
-          form .shipping-info .input-group.required::after {
-            font-size: 47px !important;
-            font-size: 2.9375rem !important; } }
-    form .billing-info .form-group.required-custom::after,
-    form .billing-info .input-group.required-custom::after,
-    form .payment-info .form-group.required-custom::after,
-    form .payment-info .input-group.required-custom::after,
-    form .shipping-info .form-group.required-custom::after,
-    form .shipping-info .input-group.required-custom::after {
+  form .billing-info .form-group.required, form .billing-info .input-group.required, form .payment-info .form-group.required, form .payment-info .input-group.required, form .shipping-info .form-group.required, form .shipping-info .input-group.required {
+    position: relative; }
+    form .billing-info .form-group.required::after, form .billing-info .input-group.required::after, form .payment-info .form-group.required::after, form .payment-info .input-group.required::after, form .shipping-info .form-group.required::after, form .shipping-info .input-group.required::after {
       content: "*";
       position: absolute;
       top: 0;
-      right: -1rem;
+      right: -1.25rem;
       font-size: 43px !important;
       font-size: 2.6875rem !important;
       color: #ed1b2e;
       line-height: 1; }
       @media (min-width: 992px) {
-        form .billing-info .form-group.required-custom::after,
-        form .billing-info .input-group.required-custom::after,
-        form .payment-info .form-group.required-custom::after,
-        form .payment-info .input-group.required-custom::after,
-        form .shipping-info .form-group.required-custom::after,
-        form .shipping-info .input-group.required-custom::after {
+        form .billing-info .form-group.required::after, form .billing-info .input-group.required::after, form .payment-info .form-group.required::after, form .payment-info .input-group.required::after, form .shipping-info .form-group.required::after, form .shipping-info .input-group.required::after {
           font-size: 47px !important;
           font-size: 2.9375rem !important; } }
+  form .billing-info .form-group.required-custom::after, form .billing-info .input-group.required-custom::after, form .payment-info .form-group.required-custom::after, form .payment-info .input-group.required-custom::after, form .shipping-info .form-group.required-custom::after, form .shipping-info .input-group.required-custom::after {
+    content: "*";
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    font-size: 43px !important;
+    font-size: 2.6875rem !important;
+    color: #ed1b2e;
+    line-height: 1; }
+    @media (min-width: 992px) {
+      form .billing-info .form-group.required-custom::after, form .billing-info .input-group.required-custom::after, form .payment-info .form-group.required-custom::after, form .payment-info .input-group.required-custom::after, form .shipping-info .form-group.required-custom::after, form .shipping-info .input-group.required-custom::after {
+        font-size: 47px !important;
+        font-size: 2.9375rem !important; } }
   form .shipping-info {
     display: none; }
   form input[name="quantity"]::-webkit-input-placeholder {
