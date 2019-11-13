@@ -213,11 +213,15 @@ abbr {
 //login/sign up
 .login-signup-form{
   max-width:770px;
-
   .gray-box{
     border:1px solid  $gray-200;
+    .custom-control-label{
+      font-weight: lighter;
+      line-height: 1.15;
+    }
   }
   .gray-box::placeholder{
     color: $gray-300;
   }
 }
+

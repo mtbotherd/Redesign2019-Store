@@ -7740,6 +7740,9 @@ abbr {
   max-width: 770px; }
   .login-signup-form .gray-box {
     border: 1px solid #e3e3e0; }
+    .login-signup-form .gray-box .custom-control-label {
+      font-weight: lighter;
+      line-height: 1.15; }
   .login-signup-form .gray-box::-webkit-input-placeholder {
     color: #8a8b8a; }
   .login-signup-form .gray-box::-moz-placeholder {
