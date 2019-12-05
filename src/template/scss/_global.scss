@@ -8,6 +8,12 @@ body {
   @include media-breakpoint-up(lg) {
     @include font-size(18);
   }
+
+  .moovel {
+    .moovel-hide {
+      display: none;
+    }
+  }
 }
 
 .container {
