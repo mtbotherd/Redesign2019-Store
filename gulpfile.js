@@ -2,15 +2,11 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create(),
     cache = require('gulp-cache'),
-    cssnano = require('gulp-cssnano'),
     del = require('del'),
-    gulpIf = require('gulp-if'),
     imagemin = require('gulp-imagemin'),
     runSequence = require('run-sequence'),
     sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
-    uglify = require('gulp-uglify'),
-    useref = require('gulp-useref');
+    sourcemaps = require('gulp-sourcemaps')
 
 // Development Tasks
 // -----------------
@@ -34,6 +30,20 @@ gulp.task('vendorjs', function() {
             'node_modules/svgxuse/svgxuse.js'
         ])
         .pipe(gulp.dest('src/template/js'))
+});
+
+// Compile sass to css
+gulp.task('sass', function() {
+    return gulp.src('src/template/scss/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
+        .pipe(sourcemaps.write('maps'))
+        // .pipe(gulp.dest('src/Data/sites/1/skins/MetroTransitIII'))
+        .pipe(gulp.dest('src/template/css'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 });
 
 // Copy js to dist
@@ -65,18 +75,9 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest('dist/template/fonts'))
 });
 
-// Compile sass to css
-gulp.task('sass', function() {
-    return gulp.src('src/template/scss/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer())
-        .pipe(sourcemaps.write('maps'))
-        // .pipe(gulp.dest('src/Data/sites/1/skins/MetroTransitIII'))
-        .pipe(gulp.dest('src/template/css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
+gulp.task('html', function () {
+	return gulp.src('src/**/*.html')
+		.pipe(gulp.dest('dist'))
 });
 
 
@@ -91,21 +92,6 @@ gulp.task('watch', function() {
 // Optimization Tasks
 // ------------------
 
-// Optimize CSS and JS
-gulp.task('useref', function() {
-    return gulp.src([
-            // 'src/Data/sites/1/skins/MetroTransitIII/*.html',
-			'src/*.html',
-			'!src/_primary-boilerplate.html',
-			'!src/_secondary-boilerplate.html'
-        ]) // Grabs CSS and JS from HTML document
-        .pipe(useref())
-        .pipe(gulpIf('template/js/*.js', uglify())) // Minifies only if it's a js file
-        .pipe(gulpIf('template/css/*.css', cssnano())) // Minifies only if it's a css file
-        // .pipe(gulp.dest('dist/Data/sites/1/skins/MetroTransitIII'))
-        .pipe(gulp.dest('dist'))
-});
-
 // Optimize images
 gulp.task('images', function() {
     return gulp.src('src/template/img/**/*.+(png|jpg|gif|svg)')
@@ -114,6 +100,21 @@ gulp.task('images', function() {
         })) // refer to https://github.com/sindresorhus/gulp-imagemin for optimization options available based on file type.
         .pipe(gulp.dest('dist/template/img'))
 });
+
+// Optimize CSS and JS
+// gulp.task('useref', function() {
+//     return gulp.src([
+//             // 'src/Data/sites/1/skins/MetroTransitIII/*.html',
+// 			'src/*.html',
+// 			'!src/_primary-boilerplate.html',
+// 			'!src/_secondary-boilerplate.html'
+//         ]) // Grabs CSS and JS from HTML document
+//         .pipe(useref())
+//         .pipe(gulpIf('template/js/*.js', uglify())) // Minifies only if it's a js file
+//         .pipe(gulpIf('template/css/*.css', cssnano())) // Minifies only if it's a css file
+//         // .pipe(gulp.dest('dist/Data/sites/1/skins/MetroTransitIII'))
+//         .pipe(gulp.dest('dist'))
+// });
 
 // Clean Dist
 gulp.task('clean', function() {
@@ -137,7 +138,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
     runSequence(
         'clean:dist',
-        'sass', ['useref', 'css', 'fonts', 'scripts', 'images'],
+        'sass', ['html', 'css', 'fonts', 'scripts', 'images'],
         callback
     )
 });
