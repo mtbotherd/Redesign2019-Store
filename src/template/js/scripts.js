@@ -29,6 +29,8 @@ $(document).ready(function() {
 		} else {
 			$(".shipping-info").fadeIn();
 		}
-	});
+    });
+    
+    // $().button('toggle')
 
 });
