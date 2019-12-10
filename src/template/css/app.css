@@ -7579,6 +7579,8 @@ body {
       font-size: 1.125rem !important; } }
   body .moovel .moovel-hide {
     display: none; }
+  body .moovel .moovel-show {
+    display: block; }
 
 @media (min-width: 768px) {
   .container {

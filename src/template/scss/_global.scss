@@ -13,6 +13,10 @@ body {
     .moovel-hide {
       display: none;
     }
+
+    .moovel-show {
+      display: block;
+    }
   }
 }
 
@@ -217,17 +221,16 @@ abbr {
   }
 }
 //login/sign up
-.login-signup-form{
-  max-width:770px;
-  .gray-box{
-    border:1px solid  $gray-200;
-    .custom-control-label{
+.login-signup-form {
+  max-width: 770px;
+  .gray-box {
+    border: 1px solid $gray-200;
+    .custom-control-label {
       font-weight: lighter;
       line-height: 1.15;
     }
   }
-  .gray-box::placeholder{
+  .gray-box::placeholder {
     color: $gray-300;
   }
 }
-
