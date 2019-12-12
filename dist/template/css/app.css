@@ -8446,47 +8446,9 @@ body.moovel nav.moovel-show ul {
   content: "";
   background-image: url("/template/img/svg/purchase-white.svg"); }
 
-#store .card-deck #goToCard .card-header h2::after {
-  content: "";
-  background-image: url("/template/img/svg/white-circle-info.svg");
-  background-repeat: no-repeat;
-  background-size: 1.5rem 1.5rem;
-  position: absolute;
-  top: 1.35rem;
-  right: 2.66rem;
-  width: 1.5rem;
-  height: 1.5rem; }
-  @media (min-width: 992px) {
-    #store .card-deck #goToCard .card-header h2::after {
-      top: 1.85rem;
-      right: 3.22rem; } }
-  @media (min-width: 1200px) {
-    #store .card-deck #goToCard .card-header h2::after {
-      top: 1.85rem;
-      right: 6.22rem; } }
-
 #store .card-deck #addValue .card-header h2::before {
   content: "";
   background-image: url("/template/img/svg/add-value-white.svg"); }
-
-#store .card-deck #addValue .card-header h2::after {
-  content: "";
-  background-image: url("/template/img/svg/white-circle-info.svg");
-  background-repeat: no-repeat;
-  background-size: 1.5rem 1.5rem;
-  position: absolute;
-  top: 1.35rem;
-  right: 2.54rem;
-  width: 1.5rem;
-  height: 1.5rem; }
-  @media (min-width: 992px) {
-    #store .card-deck #addValue .card-header h2::after {
-      top: 1.85rem;
-      right: 3.04rem; } }
-  @media (min-width: 1200px) {
-    #store .card-deck #addValue .card-header h2::after {
-      top: 1.85rem;
-      right: 5.82rem; } }
 
 #store .card-deck #visitorPass .card-header h2::before {
   content: "";
@@ -8770,7 +8732,7 @@ input[name="quantity"]::placeholder {
   text-align: center; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
-  top: 5px; }
+  top: 2px; }
 
 .accordion .card .card-header {
   padding: 0 !important; }

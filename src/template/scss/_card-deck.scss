@@ -30,29 +30,6 @@
           content: "";
           background-image: url("/template/img/svg/purchase-white.svg");
         }
-
-        // position info icon
-        &::after {
-          content: "";
-          background-image: url("/template/img/svg/white-circle-info.svg");
-          background-repeat: no-repeat;
-          background-size: 1.5rem 1.5rem;
-          position: absolute;
-          top: 1.35rem;
-          right: 2.66rem;
-          width: 1.5rem;
-          height: 1.5rem;
-
-          @include media-breakpoint-up(lg) {
-            top: 1.85rem;
-            right: 3.22rem;
-          }
-
-          @include media-breakpoint-up(xl) {
-            top: 1.85rem;
-            right: 6.22rem;
-          }
-        }
       }
     }
 
@@ -61,29 +38,6 @@
         &::before {
           content: "";
           background-image: url("/template/img/svg/add-value-white.svg");
-        }
-
-        // Pposition info icon
-        &::after {
-          content: "";
-          background-image: url("/template/img/svg/white-circle-info.svg");
-          background-repeat: no-repeat;
-          background-size: 1.5rem 1.5rem;
-          position: absolute;
-          top: 1.35rem;
-          right: 2.54rem;
-          width: 1.5rem;
-          height: 1.5rem;
-
-          @include media-breakpoint-up(lg) {
-            top: 1.85rem;
-            right: 3.04rem;
-          }
-
-          @include media-breakpoint-up(xl) {
-            top: 1.85rem;
-            right: 5.82rem;
-          }
         }
       }
     }
