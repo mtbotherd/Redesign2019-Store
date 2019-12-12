@@ -167,18 +167,6 @@ input[name="quantity"]::placeholder {
   text-align: center;
 }
 
-// custom controls
-.custom-radio,
-.custom-checkbox {
-  .custom-control-label::before {
-    margin-top: 2px;
-
-    @include media-breakpoint-up(lg) {
-      margin-top: 3px;
-    }
-  }
-}
-
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
   top: 5px;
 }
