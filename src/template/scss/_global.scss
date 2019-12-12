@@ -9,7 +9,7 @@ body {
     @include font-size(18);
   }
 
-  .moovel {
+  &.moovel {
     .moovel-hide {
       display: none !important;
     }
@@ -222,7 +222,7 @@ abbr {
 }
 //login/sign up
 .login-signup-form {
-  max-width: 770px;
+  width: 770px;
   .gray-box {
     border: 1px solid $gray-200;
     .custom-control-label {

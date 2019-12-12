@@ -7577,9 +7577,9 @@ body {
     body {
       font-size: 18px !important;
       font-size: 1.125rem !important; } }
-  body .moovel .moovel-hide {
+  body.moovel .moovel-hide {
     display: none !important; }
-  body .moovel .moovel-show {
+  body.moovel .moovel-show {
     display: block !important; }
 
 @media (min-width: 768px) {
@@ -7741,7 +7741,7 @@ abbr {
     margin-bottom: 75px; } }
 
 .login-signup-form {
-  max-width: 770px; }
+  width: 770px; }
   .login-signup-form .gray-box {
     border: 1px solid #e3e3e0; }
     .login-signup-form .gray-box .custom-control-label {
@@ -8035,6 +8035,19 @@ a.skip-to-content {
           position: absolute;
           left: -17.1rem;
           margin-top: 0; } }
+
+nav.moovel-nav ul {
+  list-style-type: none;
+  padding-left: 0 !important; }
+  nav.moovel-nav ul li {
+    display: -webkit-inline-box;
+    display: inline-flex; }
+    nav.moovel-nav ul li .icon {
+      width: 1.5rem;
+      height: 1.5rem; }
+    nav.moovel-nav ul li .arrow-left-blue {
+      width: 1rem;
+      height: 1rem; }
 
 .hero {
   background-size: cover;
