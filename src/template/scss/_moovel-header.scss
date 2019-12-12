@@ -1,19 +1,33 @@
-nav.moovel-nav {
-  ul {
-    list-style-type: none;
-    padding-left: 0 !important;
+.moovel-hide {
+  display: none !important;
+}
 
-    li {
-      display: inline-flex;
+body.moovel {
+  .moovel-hide {
+    display: none !important;
+  }
 
-      .icon {
-        width: 1.5rem;
-        height: 1.5rem;
-      }
+  .moovel-show {
+    display: block !important;
+  }
 
-      .arrow-left-blue {
-        width: 1rem;
-        height: 1rem;
+  nav.moovel-show {
+    ul {
+      list-style-type: none;
+      padding-left: 0 !important;
+
+      li {
+        display: inline-flex;
+
+        .icon {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        .arrow-left-blue {
+          width: 1rem;
+          height: 1rem;
+        }
       }
     }
   }
