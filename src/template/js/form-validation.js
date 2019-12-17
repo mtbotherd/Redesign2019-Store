@@ -95,10 +95,10 @@ $(function () {
                 element.prop("type") === "radio" ||
                 element.prop("type") === "file") {
                 //$("<img src='/template/img/svg/alert-red.svg'/>").appendTo(element.parents(".form-group, input-group"));
-				$("<img class='alert-red' src='/template/img/svg/alert-red.svg'/>").appendTo(element.parents(".custom-control"));
+				$("<img alt="" class='alert-red' src='/template/img/svg/alert-red.svg'/>").appendTo(element.parents(".custom-control"));
 				error.appendTo(element.parents(".custom-control"));
             } else {
-				$("<img class='alert-red' src='/template/img/svg/alert-red.svg'/>").appendTo(element.parents(".form-group, .input-group"));
+				$("<img alt="" class='alert-red' src='/template/img/svg/alert-red.svg'/>").appendTo(element.parents(".form-group, .input-group"));
 				error.appendTo(element.parents(".form-group, .input-group"));
 			}
         },
