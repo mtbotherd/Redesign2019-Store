@@ -9098,5 +9098,8 @@ footer.section {
     font-weight: 700;
     text-decoration: none;
     padding: 0.25rem 0; }
+  footer.section .copyright {
+    font-size: 0.9rem;
+    text-align: center; }
 
 /*# sourceMappingURL=maps/app.css.map */
