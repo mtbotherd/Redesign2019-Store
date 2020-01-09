@@ -41,17 +41,17 @@
       .white-circle-info {
         top: 1.35rem;
         left: auto;
-        right: 2.75rem;
+        right: 2rem;
         width: 1.5rem;
         height: 1.5rem;
 
         @include media-breakpoint-up(lg) {
           top: 2rem;
-          right: 4rem;
+          right: 3.5rem;
         }
 
         @include media-breakpoint-up(xl) {
-          right: 7rem;
+          right: 6.25rem;
         }
       }
     }

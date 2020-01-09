@@ -213,11 +213,11 @@
 							<div class="page-anchors d-xs-block d-md-none">
 								<div class="btn-container">
 									<a class="btn btn-link btn-block"
-									   href="#goToCard">Buy a Go-To Card</a>
+									   href="#existingCard">Existing Go-To Card</a>
 								</div>
 								<div class="btn-container">
 									<a class="btn btn-link btn-block"
-									   href="#addValue">Add value to a card</a>
+									   href="#newCard">New Go-To Card</a>
 								</div>
 								<div class="btn-container">
 									<a class="btn btn-link btn-block"
@@ -229,7 +229,47 @@
 								</div>
 							</div>
 							<div class="card-deck">
-								<div id="goToCard"
+								<div id="existingCard"
+									 class="card">
+									<div class="card-header">
+										<h2 class="text-center">Existing Go-To Card</h2>
+										<img alt="" class="icon white-circle-info" src="/template/img/svg/white-circle-info.svg" data-toggle="popover" data-trigger="click" data-content="Please allow 24 hours for value to be available on your card. Need it in fewer than 24 hours? Visit an authorized fare retailer. All sales are final.">
+									</div>
+									<div class="card-body">
+										<p>Add value to an existing Go-To Card, Metropass, College Pass, U-Pass or
+											Student Pass.</p>
+										<div class="form-group">
+											<label class="sr-only"
+												   for="gotoSerialNumber">Enter Go-To card serial number</label>
+											<input type="text"
+												   class="form-control"
+												   id="gotoSerialNumber"
+												   name="gotoSerialNumber"
+												   placeholder="Enter Go-To Card serial number">
+										</div>
+										<div class="text-center mb-2 mb-md-4">
+											<button type="submit"
+													class="btn btn-warning">Continue</button>
+										</div>
+										<p>Please allow 24 hours for value to be available on your card.
+											Need it in fewer than 24 hours? Visit an authorized fare retailer.
+											All sales are final.</p>
+
+										<h3 class="h4 text-center">Where is the serial number?</h3>
+										<div class="row">
+											<div class="col-md-6">
+												<img alt="" class="img-fluid"
+													 src="/template/img/gotoCardBack.gif" />
+											</div>
+											<div class="col-md-6">
+												<p class="">Your Go-To Card serial number is a 16-digit number
+													found in the lower-right corner on the back of your card.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer">&nbsp;</div>
+								</div>
+								<div id="newCard"
 									 class="card">
 									<div class="card-header position-relative">
 										<h2 class="text-center">New Go-To Card</h2>
@@ -362,46 +402,6 @@
 										<div class="text-center">
 											<button type="submit"
 													class="btn btn-warning">Add to cart</button>
-										</div>
-									</div>
-									<div class="card-footer">&nbsp;</div>
-								</div>
-								<div id="addValue"
-									 class="card">
-									<div class="card-header">
-										<h2 class="text-center">Add value to card</h2>
-										<img alt="" class="icon white-circle-info" src="/template/img/svg/white-circle-info.svg" data-toggle="popover" data-trigger="click" data-content="Please allow 24 hours for value to be available on your card. Need it in fewer than 24 hours? Visit an authorized fare retailer. All sales are final.">
-									</div>
-									<div class="card-body">
-										<p>Add value to an existing Go-To Card, Metropass, College Pass, U-Pass or
-											Student Pass.</p>
-										<div class="form-group">
-											<label class="sr-only"
-												   for="gotoSerialNumber">Enter Go-To card serial number</label>
-											<input type="text"
-												   class="form-control"
-												   id="gotoSerialNumber"
-												   name="gotoSerialNumber"
-												   placeholder="Enter Go-To Card serial number">
-										</div>
-										<div class="text-center mb-2 mb-md-4">
-											<button type="submit"
-													class="btn btn-warning">Continue</button>
-										</div>
-										<p>Please allow 24 hours for value to be available on your card.
-											Need it in fewer than 24 hours? Visit an authorized fare retailer.
-											All sales are final.</p>
-
-										<h3 class="h4 text-center">Where is the serial number?</h3>
-										<div class="row">
-											<div class="col-md-6">
-												<img alt="" class="img-fluid"
-													 src="/template/img/gotoCardBack.gif" />
-											</div>
-											<div class="col-md-6">
-												<p class="">Your Go-To Card serial number is a 16-digit number
-													found in the lower-right corner on the back of your card.</p>
-											</div>
 										</div>
 									</div>
 									<div class="card-footer">&nbsp;</div>

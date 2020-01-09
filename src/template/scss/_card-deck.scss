@@ -24,7 +24,7 @@
     }
 
     // Explicitely set header icons
-    #goToCard {
+    #newCard {
       .card-header h2 {
         &::before {
           content: "";
@@ -33,7 +33,7 @@
       }
     }
 
-    #addValue {
+    #existingCard {
       .card-header h2 {
         &::before {
           content: "";
