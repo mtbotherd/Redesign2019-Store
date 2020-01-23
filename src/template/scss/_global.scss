@@ -10,6 +10,24 @@ body {
   }
 }
 
+a.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  transition: top 1s ease-out;
+
+  &:focus {
+    background-color: $red;
+    color: $white;
+    left: 0;
+    padding: 1rem;
+    text-decoration: underline;
+    top: 0;
+    transition: top 0.1s ease-in;
+    z-index: 10;
+  }
+}
+
 .container {
   @include media-breakpoint-up(md) {
     padding-right: 0;
