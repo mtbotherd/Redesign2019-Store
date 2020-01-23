@@ -88,9 +88,6 @@ var Main = (function ($, window, document, undefined) {
 			else
 			  return 0; //It is not IE
 		}
-		
-		if (GetIEVersion() > 0) 
-			alert(" You are using Internet Explorer " + GetIEVersion() + ". Please use Edge or Chrome to get the full experience. ");
 			
         // shopping car number
         let qty = getCookie('cart_status');
