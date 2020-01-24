@@ -7847,6 +7847,34 @@ abbr {
   background-image: url("/template/img/PeopleAndTransit_0030.png");
   margin-bottom: 0; }
 
+.accordion .card .card-header {
+  padding: 0 !important; }
+  .accordion .card .card-header .btn {
+    color: #626462;
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
+    background-color: #d8ecfd; }
+    @media (min-width: 992px) {
+      .accordion .card .card-header .btn {
+        font-size: 23px !important;
+        font-size: 1.4375rem !important; } }
+    .accordion .card .card-header .btn.collapsed {
+      background-color: #f5f5f4; }
+  .accordion .card .card-header .icon {
+    width: 2.25rem;
+    height: 2.25rem; }
+    @media (min-width: 992px) {
+      .accordion .card .card-header .icon {
+        width: 2.5rem;
+        height: 2.5rem; } }
+    .accordion .card .card-header .icon.chevron-down-blue {
+      width: 1rem;
+      height: 1rem; }
+      @media (min-width: 992px) {
+        .accordion .card .card-header .icon.chevron-down-blue {
+          width: 1.5rem;
+          height: 1.5rem; } }
+
 .btn-container {
   text-align: center;
   margin-bottom: 15px; }
@@ -8423,33 +8451,10 @@ input[name="quantity"]::placeholder {
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
   top: 2px; }
 
-.accordion .card .card-header {
-  padding: 0 !important; }
-  .accordion .card .card-header .btn {
-    color: #626462;
-    font-size: 18px !important;
-    font-size: 1.125rem !important;
-    background-color: #d8ecfd; }
-    @media (min-width: 992px) {
-      .accordion .card .card-header .btn {
-        font-size: 23px !important;
-        font-size: 1.4375rem !important; } }
-    .accordion .card .card-header .btn.collapsed {
-      background-color: #f5f5f4; }
-  .accordion .card .card-header .icon {
-    width: 2.25rem;
-    height: 2.25rem; }
-    @media (min-width: 992px) {
-      .accordion .card .card-header .icon {
-        width: 2.5rem;
-        height: 2.5rem; } }
-    .accordion .card .card-header .icon.chevron-down-blue {
-      width: 1rem;
-      height: 1rem; }
-      @media (min-width: 992px) {
-        .accordion .card .card-header .icon.chevron-down-blue {
-          width: 1.5rem;
-          height: 1.5rem; } }
+table.table-my-fare-card-list {
+  width: 100%; }
+  table.table-my-fare-card-list thead .th-lg {
+    min-width: 12rem; }
 
 .tooltip {
   border: 2px solid #fff; }

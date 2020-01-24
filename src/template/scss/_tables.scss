@@ -1,0 +1,11 @@
+table {
+  &.table-my-fare-card-list {
+    width: 100%;
+
+    thead {
+      .th-lg {
+        min-width: 12rem;
+      }
+    }
+  }
+}
