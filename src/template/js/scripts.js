@@ -142,7 +142,7 @@ var Main = (function ($, window, document, undefined) {
 				{ "orderable": true },
 				{ "orderable": false },
 				{ "orderable": false },
-				{ "orderable": false },
+				{ "orderable": false }
 			],
 			fixedHeader: true
 		});
