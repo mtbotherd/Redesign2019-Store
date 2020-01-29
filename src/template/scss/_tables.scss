@@ -1,23 +1,5 @@
 table {
   &#myFareCardList {
-    position: relative;
-    thead {
-      th {
-        // &:nth-of-type(3) {
-        //   min-width: 155px !important;
-        //   @include media-breakpoint-up(xl) {
-        //     min-width: 160px !important;
-        //   }
-        // }
-        // &:nth-of-type(4) {
-        //   min-width: 155px !important;
-        //   @include media-breakpoint-up(lg) {
-        //     width: auto;
-        //   }
-        // }
-      }
-    }
-
     tbody {
       td {
         white-space: nowrap;

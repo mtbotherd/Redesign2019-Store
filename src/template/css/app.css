@@ -8452,15 +8452,13 @@ input[name="quantity"]::placeholder {
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
   top: 2px; }
 
-table#myFareCardList {
-  position: relative; }
-  table#myFareCardList tbody td {
-    white-space: nowrap; }
-    table#myFareCardList tbody td:nth-of-type(3) select, table#myFareCardList tbody td:nth-of-type(4) select {
-      min-width: 155px !important; }
-      @media (min-width: 992px) {
-        table#myFareCardList tbody td:nth-of-type(3) select, table#myFareCardList tbody td:nth-of-type(4) select {
-          width: auto; } }
+table#myFareCardList tbody td {
+  white-space: nowrap; }
+  table#myFareCardList tbody td:nth-of-type(3) select, table#myFareCardList tbody td:nth-of-type(4) select {
+    min-width: 155px !important; }
+    @media (min-width: 992px) {
+      table#myFareCardList tbody td:nth-of-type(3) select, table#myFareCardList tbody td:nth-of-type(4) select {
+        width: auto; } }
 
 .tooltip {
   border: 2px solid #fff; }
