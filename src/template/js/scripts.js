@@ -140,11 +140,11 @@ var Main = (function ($, window, document, undefined) {
 			"columns": [
 				{ "orderable": true },
 				{ "orderable": true },
-				{ "orderable": false },
+				{ "orderable": true },
 				{ "orderable": false },
 				{ "orderable": false }
-			],
-			fixedHeader: true
+			]
+			//fixedHeader: true
 		});
 
         // Secondary nav set active item
