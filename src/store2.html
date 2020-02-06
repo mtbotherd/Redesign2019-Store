@@ -116,7 +116,7 @@
 										<div class="input-group-append">
 											<button type="button" id="siteSearchBtn" class="btn btn-primary">
 												<span class="sr-only">Search button</span>
-												<img alt="search button" class="icon" src="/img/svg/search-gray.svg">
+												<img alt="search button" class="icon" src="/template/img/svg/search-gray.svg">
 											</button>
 										</div>
 									</div>
@@ -198,167 +198,288 @@
 		<!-- End Header -->
 
 		<!-- Begin Main Content -->
-		<section id="mainContent">
-			<div id="primaryPage">
+		<main id="pageContainer">
+			<section>
+				<div id="primaryPage">
 
-				<!-- When adding a new page, also add new background image styles in _hero-backgrounds.scss. Change the class below to match that of the hero background. -->
-				<div class="hero store-hero-bg">
-					<div class="container">
-						<div class="page-title">
-							<h1>Store</h1>
+					<!-- When adding a new page, also add new background image styles in _hero-backgrounds.scss. Change the class below to match that of the hero background. -->
+					<div class="hero store-hero-bg">
+						<div class="container">
+							<div class="page-title">
+								<h1>Store</h1>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div id="store"
-					 class="page-content">
-					<!-- Main page content -->
-					<section class="section">
-						<div class="container">
-							<div class="page-anchors d-xs-block d-md-none">
-								<div class="btn-container">
-									<a class="btn btn-link btn-block"
-									   href="#goToCard">Buy a Go-To Card</a>
-								</div>
-								<div class="btn-container">
-									<a class="btn btn-link btn-block"
-									   href="#addValue">Add value to a card</a>
-								</div>
-								<div class="btn-container">
-									<a class="btn btn-link btn-block"
-									   href="#visitorPass">Visitor Pass</a>
-								</div>
-								<div class="btn-container">
-									<a class="btn btn-link btn-block"
-									   href="#eventTickets">Round-trip event tickets</a>
-								</div>
-							</div>
-							<div class="card-deck">
-								<div id="goToCard"
-									 class="card">
-									<div class="card-header position-relative">
-										<h2 class="text-center">Buy a Go-To Card</h2>
+					<div id="store"
+						class="page-content">
+						<!-- Main page content -->
+						<section class="section">
+							<div class="container">
+								<div class="page-anchors d-xs-block d-md-none">
+									<div class="btn-container">
+										<a class="btn btn-link btn-block"
+										href="#goToCard">Buy a Go-To Card</a>
 									</div>
-									<div class="card-body">
-										<h3 class="h4 text-center">Choose an amount</h3>
-										<div class="flex-wrap btn-group btn-group-toggle" data-toggle="buttons">
-											<label class="btn btn-outline-secondary active">
-												<input type="radio" name="Value" id="Value0" value="0" autocomplete="off" checked>
-												<p>$0</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value5.0000" value="5.0000" autocomplete="off">
-												<p>$5</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value10.0000" value="10.0000" autocomplete="off">
-												<p>$10</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value20.0000" value="20.0000" autocomplete="off">
-												<p>$20</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value30.0000" value="30.0000" autocomplete="off">
-												<p>$30</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value35.0000" value="35.0000" autocomplete="off"> <p>$35</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value40.0000" value="40.0000" autocomplete="off"> <p>$40</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value45.0000" value="45.0000" autocomplete="off"> <p>$45</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value50.0000" value="50.0000" autocomplete="off"> <p>$50</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value60.0000" value="60.0000" autocomplete="off"> <p>$60</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value70.0000" value="70.0000" autocomplete="off"> <p>$60</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value80.0000" value="80.0000" autocomplete="off"> <p>$80</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value100.0000" value="100.0000" autocomplete="off">
-												<p>$100</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value120.0000" value="120.0000" autocomplete="off">
-												<p>$120</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value140.0000" value="140.0000" autocomplete="off">
-												<p>$140</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value180.0000" value="180.0000" autocomplete="off">
-												<p>$180</p>
-											</label>
+									<div class="btn-container">
+										<a class="btn btn-link btn-block"
+										href="#addValue">Add value to a card</a>
+									</div>
+									<div class="btn-container">
+										<a class="btn btn-link btn-block"
+										href="#visitorPass">Visitor Pass</a>
+									</div>
+									<div class="btn-container">
+										<a class="btn btn-link btn-block"
+										href="#eventTickets">Round-trip event tickets</a>
+									</div>
+								</div>
+								<div class="card-deck">
+									<div id="goToCard"
+										class="card">
+										<div class="card-header position-relative">
+											<h2 class="text-center">Buy a Go-To Card</h2>
 										</div>
+										<div class="card-body">
+											<h3 class="h4 text-center">Choose an amount</h3>
+											<div class="flex-wrap btn-group btn-group-toggle" data-toggle="buttons">
+												<label class="btn btn-outline-secondary active">
+													<input type="radio" name="Value" id="Value0" value="0" autocomplete="off" checked>
+													<p>$0</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value5.0000" value="5.0000" autocomplete="off">
+													<p>$5</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value10.0000" value="10.0000" autocomplete="off">
+													<p>$10</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value20.0000" value="20.0000" autocomplete="off">
+													<p>$20</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value30.0000" value="30.0000" autocomplete="off">
+													<p>$30</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value35.0000" value="35.0000" autocomplete="off"> <p>$35</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value40.0000" value="40.0000" autocomplete="off"> <p>$40</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value45.0000" value="45.0000" autocomplete="off"> <p>$45</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value50.0000" value="50.0000" autocomplete="off"> <p>$50</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value60.0000" value="60.0000" autocomplete="off"> <p>$60</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value70.0000" value="70.0000" autocomplete="off"> <p>$60</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value80.0000" value="80.0000" autocomplete="off"> <p>$80</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value100.0000" value="100.0000" autocomplete="off">
+													<p>$100</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value120.0000" value="120.0000" autocomplete="off">
+													<p>$120</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value140.0000" value="140.0000" autocomplete="off">
+													<p>$140</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value180.0000" value="180.0000" autocomplete="off">
+													<p>$180</p>
+												</label>
+											</div>
 
-										<div class="flex-container">
-											<p class="line-break position-relative mr-0 ml-0">and/or</p>
+											<div class="flex-container">
+												<p class="line-break position-relative mr-0 ml-0">and/or</p>
+											</div>
+
+											<h3 class="h4 text-center">Add a pass</h4>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+														id="customRadio1"
+														name="customRadio"
+														class="custom-control-input">
+													<label class="custom-control-label"
+														for="customRadio1"><strong>$65</strong> 31-Day Pass Local
+														Non-Rush Hour</label>
+												</div>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+														id="customRadio2"
+														name="customRadio"
+														class="custom-control-input">
+													<label class="custom-control-label"
+														for="customRadio2"><strong>$120 </strong> 31-Day Pass
+														Express</label>
+												</div>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+														id="customRadio1"
+														name="customRadio"
+														class="custom-control-input">
+													<label class="custom-control-label"
+														for="customRadio1"><strong>$90 </strong> 31-Day Local Rush
+														Hour</label>
+												</div>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+														id="customRadio2"
+														name="customRadio"
+														class="custom-control-input">
+													<label class="custom-control-label"
+														for="customRadio2"><strong>$20.50 </strong> 10-Day Ride
+														Pass</label>
+												</div>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+														id="customRadio2"
+														name="customRadio"
+														class="custom-control-input">
+													<label class="custom-control-label"
+														for="customRadio2"><strong>$24 </strong> 7-Day Ride Pass</label>
+												</div>
+												<div class="form-row">
+													<div class="col-6 offset-3">
+														<div class="form-group">
+															<label for="quantity"
+																class="d-inline-block">Quantity</label>
+															<input type="number"
+																class="form-control d-inline-block quantity"
+																maxlength="3"
+																id="quantity">
+														</div>
+													</div>
+												</div>
+												<div class="text-center">
+													<button type="button"
+															class="btn btn-warning">Add to cart</button>
+												</div>
 										</div>
-
-										<h3 class="h4 text-center">Add a pass</h4>
-											<div class="custom-control custom-radio">
-												<input type="radio"
-													   id="customRadio1"
-													   name="customRadio"
-													   class="custom-control-input">
-												<label class="custom-control-label"
-													   for="customRadio1"><strong>$65</strong> 31-Day Pass Local
-													Non-Rush Hour</label>
+										<div class="card-footer">&nbsp;</div>
+									</div>
+									<div id="addValue"
+										class="card">
+										<div class="card-header">
+											<h2 class="text-center">Add value to card</h2>
+										</div>
+										<div class="card-body">
+											<p><strong>Serial #:</strong> 0160-0341-4162-5587<br />
+												<strong>Nickname:</strong> Ellens Card<br />
+												<strong>Current Pass:</strong> Employee Pass<br />
+												<strong>Current Stored Value:</strong> $0.00<br />
+												<a href=''>View Transaction History</a><br />
+												<a href=''>Register My Card</a><br />
+												<a href=''>Enroll in Auto Refill</a><br />
+												<a href=''>Deactivate</a></p>
+											<h4 class="text-center">Add stored value</h4>
+											<div class="flex-wrap btn-group btn-group-toggle" data-toggle="buttons">
+												<label class="btn btn-outline-secondary active">
+													<input type="radio" name="Value" id="Value0" value="0" autocomplete="off" checked>
+													<p>$0</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value5.0000" value="5.0000" autocomplete="off">
+													<p>$5</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value10.0000" value="10.0000" autocomplete="off">
+													<p>$10</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value20.0000" value="20.0000" autocomplete="off">
+													<p>$20</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value30.0000" value="30.0000" autocomplete="off">
+													<p>$30</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value35.0000" value="35.0000" autocomplete="off"> <p>$35</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value40.0000" value="40.0000" autocomplete="off"> <p>$40</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value45.0000" value="45.0000" autocomplete="off"> <p>$45</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value50.0000" value="50.0000" autocomplete="off"> <p>$50</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value60.0000" value="60.0000" autocomplete="off"> <p>$60</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value70.0000" value="70.0000" autocomplete="off"> <p>$60</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value80.0000" value="80.0000" autocomplete="off"> <p>$80</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value100.0000" value="100.0000" autocomplete="off">
+													<p>$100</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value120.0000" value="120.0000" autocomplete="off">
+													<p>$120</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value140.0000" value="140.0000" autocomplete="off">
+													<p>$140</p>
+												</label>
+												<label class="btn btn-outline-secondary ">
+													<input type="radio" name="Value" id="Value180.0000" value="180.0000" autocomplete="off">
+													<p>$180</p>
+												</label>
 											</div>
-											<div class="custom-control custom-radio">
-												<input type="radio"
-													   id="customRadio2"
-													   name="customRadio"
-													   class="custom-control-input">
-												<label class="custom-control-label"
-													   for="customRadio2"><strong>$120 </strong> 31-Day Pass
-													Express</label>
+											<p>Please allow 24 hours for value to be available on your card.
+												Need it in fewer than 24 hours? Visit an authorized fare retailer.
+												All sales are final.</p>
+											<div class="d-flex justify-content-center">
+												<button type="button"
+														class="btn btn-warning mt-3">Add to cart</button>
 											</div>
-											<div class="custom-control custom-radio">
-												<input type="radio"
-													   id="customRadio1"
-													   name="customRadio"
-													   class="custom-control-input">
-												<label class="custom-control-label"
-													   for="customRadio1"><strong>$90 </strong> 31-Day Local Rush
-													Hour</label>
-											</div>
-											<div class="custom-control custom-radio">
-												<input type="radio"
-													   id="customRadio2"
-													   name="customRadio"
-													   class="custom-control-input">
-												<label class="custom-control-label"
-													   for="customRadio2"><strong>$20.50 </strong> 10-Day Ride
-													Pass</label>
-											</div>
-											<div class="custom-control custom-radio">
-												<input type="radio"
-													   id="customRadio2"
-													   name="customRadio"
-													   class="custom-control-input">
-												<label class="custom-control-label"
-													   for="customRadio2"><strong>$24 </strong> 7-Day Ride Pass</label>
-											</div>
+										</div>
+										<div class="card-footer">&nbsp;</div>
+									</div>
+								</div>
+								<div class="card-deck">
+									<div id="visitorPass"
+										class="card">
+										<div class="card-header">
+											<h2 class="text-center">Visitor Pass</h2>
+										</div>
+										<div class="card-body">
+											<h3 class="h4 text-center">$5</h3>
+											<p>Unlimited rides until 2 a.m. after first
+												use. Visitor Passes are valid for a $2.50 fare (cannot be
+												used on Northstar, express buses or Metro Mobility). Also
+												available at Transit Service Centers.</p>
+											<p>This pass will be shipped within FIVE business days.
+												Learn more at <a
+												href="metrotransit.org/visitor-pass">metrotransit.org/visitor-pass</a>.
+											</p>
 											<div class="form-row">
 												<div class="col-6 offset-3">
 													<div class="form-group">
 														<label for="quantity"
-															   class="d-inline-block">Quantity</label>
+															class="d-inline-block">Quantity</label>
 														<input type="number"
-															   class="form-control d-inline-block quantity"
-															   maxlength="3"
-															   id="quantity">
+															class="form-control d-inline-block quantity"
+															maxlength="3"
+															id="quantity">
 													</div>
 												</div>
 											</div>
@@ -366,218 +487,99 @@
 												<button type="button"
 														class="btn btn-warning">Add to cart</button>
 											</div>
-									</div>
-									<div class="card-footer">&nbsp;</div>
-								</div>
-								<div id="addValue"
-									 class="card">
-									<div class="card-header">
-										<h2 class="text-center">Add value to card</h2>
-									</div>
-									<div class="card-body">
-										<p><strong>Serial #:</strong> 0160-0341-4162-5587<br />
-											<strong>Nickname:</strong> Ellens Card<br />
-											<strong>Current Pass:</strong> Employee Pass<br />
-											<strong>Current Stored Value:</strong> $0.00<br />
-											<a href=''>View Transaction History</a><br />
-											<a href=''>Register My Card</a><br />
-											<a href=''>Enroll in Auto Refill</a><br />
-											<a href=''>Deactivate</a></p>
-										<h4 class="text-center">Add stored value</h4>
-										<div class="flex-wrap btn-group btn-group-toggle" data-toggle="buttons">
-											<label class="btn btn-outline-secondary active">
-												<input type="radio" name="Value" id="Value0" value="0" autocomplete="off" checked>
-												<p>$0</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value5.0000" value="5.0000" autocomplete="off">
-												<p>$5</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value10.0000" value="10.0000" autocomplete="off">
-												<p>$10</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value20.0000" value="20.0000" autocomplete="off">
-												<p>$20</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value30.0000" value="30.0000" autocomplete="off">
-												<p>$30</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value35.0000" value="35.0000" autocomplete="off"> <p>$35</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value40.0000" value="40.0000" autocomplete="off"> <p>$40</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value45.0000" value="45.0000" autocomplete="off"> <p>$45</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value50.0000" value="50.0000" autocomplete="off"> <p>$50</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value60.0000" value="60.0000" autocomplete="off"> <p>$60</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value70.0000" value="70.0000" autocomplete="off"> <p>$60</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value80.0000" value="80.0000" autocomplete="off"> <p>$80</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value100.0000" value="100.0000" autocomplete="off">
-												<p>$100</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value120.0000" value="120.0000" autocomplete="off">
-												<p>$120</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value140.0000" value="140.0000" autocomplete="off">
-												<p>$140</p>
-											</label>
-											<label class="btn btn-outline-secondary ">
-												<input type="radio" name="Value" id="Value180.0000" value="180.0000" autocomplete="off">
-												<p>$180</p>
-											</label>
 										</div>
-										<p>Please allow 24 hours for value to be available on your card.
-											Need it in fewer than 24 hours? Visit an authorized fare retailer.
-											All sales are final.</p>
-										<div class="d-flex justify-content-center">
-											<button type="button"
-													class="btn btn-warning mt-3">Add to cart</button>
-										</div>
+										<div class="card-footer">&nbsp;</div>
 									</div>
-									<div class="card-footer">&nbsp;</div>
+									<div id="eventTickets"
+										class="card">
+										<div class="card-header">
+											<h2 class="text-center">Event tickets</h2>
+										</div>
+										<div class="card-body">
+											<h3 class="h4 text-center">Going to a game?</h3>
+											<p class="text-center mb-4 mb-lg-5">Find out about purchasing tickets for
+												Northstar and METRO lines.</p>
+											<div class="button-container-icon-right">
+												<a class="btn btn-outline-primary">Name of Page</a>
+											</div>
+											<div class="button-container-icon-right">
+												<a class="btn btn-outline-primary">Name of Page</a>
+											</div>
+											<div class="button-container-icon-right">
+												<a class="btn btn-outline-primary">Name of Page</a>
+											</div>
+										</div>
+										<div class="card-footer">&nbsp;</div>
+									</div>
 								</div>
 							</div>
-							<div class="card-deck">
-								<div id="visitorPass"
-									 class="card">
-									<div class="card-header">
-										<h2 class="text-center">Visitor Pass</h2>
-									</div>
-									<div class="card-body">
-										<h3 class="h4 text-center">$5</h3>
-										<p>Unlimited rides until 2 a.m. after first
-											use. Visitor Passes are valid for a $2.50 fare (cannot be
-											used on Northstar, express buses or Metro Mobility). Also
-											available at Transit Service Centers.</p>
-										<p>This pass will be shipped within FIVE business days.
-											Learn more at <a
-											   href="metrotransit.org/visitor-pass">metrotransit.org/visitor-pass</a>.
-										</p>
-										<div class="form-row">
-											<div class="col-6 offset-3">
-												<div class="form-group">
-													<label for="quantity"
-														   class="d-inline-block">Quantity</label>
-													<input type="number"
-														   class="form-control d-inline-block quantity"
-														   maxlength="3"
-														   id="quantity">
-												</div>
+						</section>
+
+						<!-- Additional content sections -->
+						<section class="blue-cyan-bg">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-6 blue-bg">
+										<h2 class="text-center">Other ways to purchase fares</h2>
+										<div class="row">
+											<div
+												class="col-5 offset-1 col-md-3 offset-md-3 col-lg-4 offset-lg-2 mb-4 text-center">
+												<a class="stretched-link"
+												href="https://www.metrotransit.org/buy-by-mail">
+													<img alt="" class="icon"
+														src="/template/img/svg/mail-white.svg" />
+													<span class="d-block">By mail</span>
+												</a>
 											</div>
+											<div class="col-5 col-md-3 col-lg-4 mb-4 text-center">
+												<a class="stretched-link"
+												href="https://www.metrotransit.org/service-centers">
+													<img alt="" class="icon"
+														src="/template/img/svg/store-white.svg" />
+													<span class="d-block">Authorized<br />fare retailer</span>
+												</a>
+											</div>
+										</div>
+
+										<div class="row">
+											<div
+												class="col-5 offset-1 col-md-3 offset-md-3 col-lg-4 offset-lg-2 text-center">
+												<img alt="" class="icon phone-white"
+													src="/template/img/svg/phone-white.svg" />
+												<p>By phone <br>612-373-3333<br />
+													<small>(for Go-To Cards only)</small></p>
+											</div>
+											<div class="col-5 col-md-3 col-lg-4 text-center">
+												<a class="stretched-link"
+												href="https://www.metrotransit.org/how-to-use-a-ticket-machine">
+													<img alt="" class="icon ticket-white"
+														src="/template/img/svg/ticket-white.svg" />
+													<span class="d-block">Ticket machine<br />on rail platforms</span>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-6 cyan-bg">
+										<h2 class="text-center">My Store Features</h2>
+										<p class="text-center">To edit your account information, including your password,
+											click on the Edit Account link in the upper right hand corner.</p>
+										<div class="btn-container text-center">
+											<button type="button"
+													class="btn btn-warning pr-0 pl-0">Add My Fare Card List</button>
 										</div>
 										<div class="text-center">
 											<button type="button"
-													class="btn btn-warning">Add to cart</button>
+													class="btn btn-warning">Enroll in Auto Refill</button>
 										</div>
-									</div>
-									<div class="card-footer">&nbsp;</div>
-								</div>
-								<div id="eventTickets"
-									 class="card">
-									<div class="card-header">
-										<h2 class="text-center">Event tickets</h2>
-									</div>
-									<div class="card-body">
-										<h3 class="h4 text-center">Going to a game?</h3>
-										<p class="text-center mb-4 mb-lg-5">Find out about purchasing tickets for
-											Northstar and METRO lines.</p>
-										<div class="button-container-icon-right">
-											<a class="btn btn-outline-primary">Name of Page</a>
-										</div>
-										<div class="button-container-icon-right">
-											<a class="btn btn-outline-primary">Name of Page</a>
-										</div>
-										<div class="button-container-icon-right">
-											<a class="btn btn-outline-primary">Name of Page</a>
-										</div>
-									</div>
-									<div class="card-footer">&nbsp;</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<!-- Additional content sections -->
-					<section class="blue-cyan-bg">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-6 blue-bg">
-									<h2 class="text-center">Other ways to purchase fares</h2>
-									<div class="row">
-										<div
-											 class="col-5 offset-1 col-md-3 offset-md-3 col-lg-4 offset-lg-2 mb-4 text-center">
-											<a class="stretched-link"
-											   href="https://www.metrotransit.org/buy-by-mail">
-												<img alt="" class="icon"
-													 src="/template/img/svg/mail-white.svg" />
-												<span class="d-block">By mail</span>
-											</a>
-										</div>
-										<div class="col-5 col-md-3 col-lg-4 mb-4 text-center">
-											<a class="stretched-link"
-											   href="https://www.metrotransit.org/service-centers">
-												<img alt="" class="icon"
-													 src="/template/img/svg/store-white.svg" />
-												<span class="d-block">Authorized<br />fare retailer</span>
-											</a>
-										</div>
-									</div>
-
-									<div class="row">
-										<div
-											 class="col-5 offset-1 col-md-3 offset-md-3 col-lg-4 offset-lg-2 text-center">
-											<img alt="" class="icon phone-white"
-												 src="/template/img/svg/phone-white.svg" />
-											<p>By phone <br>612-373-3333<br />
-												<small>(for Go-To Cards only)</small></p>
-										</div>
-										<div class="col-5 col-md-3 col-lg-4 text-center">
-											<a class="stretched-link"
-											   href="https://www.metrotransit.org/how-to-use-a-ticket-machine">
-												<img alt="" class="icon ticket-white"
-													 src="/template/img/svg/ticket-white.svg" />
-												<span class="d-block">Ticket machine<br />on rail platforms</span>
-											</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-lg-6 cyan-bg">
-									<h2 class="text-center">My Store Features</h2>
-									<p class="text-center">To edit your account information, including your password,
-										click on the Edit Account link in the upper right hand corner.</p>
-									<div class="btn-container text-center">
-										<button type="button"
-												class="btn btn-warning pr-0 pl-0">Add My Fare Card List</button>
-									</div>
-									<div class="text-center">
-										<button type="button"
-												class="btn btn-warning">Enroll in Auto Refill</button>
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
+						</section>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</main>
 		<!-- End Main Content -->
 
 		<!-- Begin Footer -->
@@ -678,11 +680,9 @@
 		<!-- End Footer -->
 
 		<!-- Vendor scripts -->
-		<script src="/template/js/jquery.js"></script>
-		<script src="/template/js/popper.js"></script>
-		<script src="/template/js/bootstrap.js"></script>
-		<script src="/template/js/jquery.exlink.js"></script>
-		<script src="/template/js/svgxuse.js"></script>
+		<script src="/template/js/vendor/jquery.js"></script>
+		<script src="/template/js/vendor/popper.js"></script>
+		<script src="/template/js/vendor/bootstrap.js"></script>
 		<!-- End vendor scripts -->
 
 		<!-- build:js /template/js/scripts.min.js -->

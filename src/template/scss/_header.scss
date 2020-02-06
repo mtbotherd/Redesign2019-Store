@@ -37,7 +37,13 @@
           }
 
           &:hover,
-          &:focus,
+          &:focus {
+            @include media-breakpoint-up(xl) {
+              color: $white;
+              background-color: $cyan;
+            }
+          }
+
           &:focus-within {
             @include media-breakpoint-up(xl) {
               color: $white;

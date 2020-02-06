@@ -133,19 +133,19 @@ var Main = (function ($, window, document, undefined) {
 		});
 
 		// Initialize dataTables {
-		$("#myFareCardList").DataTable({
-			searching: false,
-			paging: false,
-			info: false,
-			"columns": [
-				{ "orderable": true },
-				{ "orderable": true },
-				{ "orderable": true },
-				{ "orderable": false },
-				{ "orderable": false }
-			]
-			//fixedHeader: true
-		});
+		// $("#myFareCardList").DataTable({
+		// 	searching: false,
+		// 	paging: false,
+		// 	info: false,
+		// 	"columns": [
+		// 		{ "orderable": true },
+		// 		{ "orderable": true },
+		// 		{ "orderable": true },
+		// 		{ "orderable": false },
+		// 		{ "orderable": false }
+		// 	]
+		// 	//fixedHeader: true
+		// });
 
         // Secondary nav set active item
         if ($('.secondary-nav').length) {

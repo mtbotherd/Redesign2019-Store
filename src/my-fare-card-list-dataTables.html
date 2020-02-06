@@ -197,442 +197,442 @@
 		<!-- End Header -->
 
 		<!-- Begin Main Content -->
-		<section id="mainContent">
-			<div id="primaryPage">
-
-				<!-- When adding a new page, also add new background image styles in _hero-backgrounds.scss. Change the class below to match that of the hero background. -->
-				<div class="hero store-hero-bg">
-					<div class="container">
-						<div class="page-title">
-							<h1>Metro Transit Store</h1>
+		<main id="pageContainer">
+			<section>
+				<div id="primaryPage">
+					<div class="hero store-hero-bg">
+						<div class="container">
+							<div class="page-title">
+								<h1>Metro Transit Store</h1>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div id="store" class="page-content">
-					<!-- Main page content -->
-					<section class="section reverse">
-						<div class="container">
-							<div class="shopping-cart">
-								<div id="shoppingCart" class="card">
-									<div class="card-header">
-										<h2 class="text-center">My Fare Card List</h2>
-									</div>
-									<div class="card-body p-0">												
-										<!-- <div class="validation-summary-valid alert alert-danger" data-valmsg-summary="true" role="alert">
-											<span>Please correct the following and try again.</span>
-											<ul>
-												<li style="display:none"></li>
-											</ul>
-										</div> -->
-										<div class="gray-bg-100 p-4 mt-4 mb-4">
-											<h3>Add My Fare Card</h3>
-											<form ic-post-to="/myfarecard/add" ic-replace-target="true" ic-include="input[name='__RequestVerificationToken']" ic-indicator="#goToCard_spinner" ic-src="/myfarecard/add" ic-verb="POST" ic-trigger-on="default" ic-deps="ignore" ic-id="4">
-												<!-- <div id="goToCard_spinner" class="spinner-overlay">
-													<div class="spinner-border" role="status">
-														<span class="sr-only">Loading...</span>
-													</div>
-												</div> -->
-												
-												<!-- <div class="validation-summary-valid alert alert-danger" data-valmsg-summary="true" role="alert">
-													<span>Please correct the following and try again.</span>
-													<ul>
-														<li style="display:none"></li>
-													</ul>
-												</div> -->
-												<div class="row">
-													<div class="col-md-4">
-														<div class="form-group w-auto">
-															<label for="Serial" class="sr-only">Serial Number</label>
-															<input type="text" class="form-control gray-box" id="Serial" name="Serial" placeholder="Serial Number" maxlength="20">
+					<div id="store" class="page-content">
+						<!-- Main page content -->
+						<section class="section reverse">
+							<div class="container">
+								<div class="shopping-cart">
+									<div id="shoppingCart" class="card">
+										<div class="card-header">
+											<h2 class="text-center">My Fare Card List</h2>
+										</div>
+										<div class="card-body p-0">												
+											<!-- <div class="validation-summary-valid alert alert-danger" data-valmsg-summary="true" role="alert">
+												<span>Please correct the following and try again.</span>
+												<ul>
+													<li style="display:none"></li>
+												</ul>
+											</div> -->
+											<div class="gray-bg-100 p-4 mt-4 mb-4">
+												<h3>Add My Fare Card</h3>
+												<form ic-post-to="/myfarecard/add" ic-replace-target="true" ic-include="input[name='__RequestVerificationToken']" ic-indicator="#goToCard_spinner" ic-src="/myfarecard/add" ic-verb="POST" ic-trigger-on="default" ic-deps="ignore" ic-id="4">
+													<!-- <div id="goToCard_spinner" class="spinner-overlay">
+														<div class="spinner-border" role="status">
+															<span class="sr-only">Loading...</span>
+														</div>
+													</div> -->
+													
+													<!-- <div class="validation-summary-valid alert alert-danger" data-valmsg-summary="true" role="alert">
+														<span>Please correct the following and try again.</span>
+														<ul>
+															<li style="display:none"></li>
+														</ul>
+													</div> -->
+													<div class="row">
+														<div class="col-md-4">
+															<div class="form-group w-auto">
+																<label for="Serial" class="sr-only">Serial Number</label>
+																<input type="text" class="form-control gray-box" id="Serial" name="Serial" placeholder="Serial Number" maxlength="20">
+															</div>
+														</div>
+														<div class="col-md-5">
+															<div class="form-group w-auto">
+																<label for="Nickname" class="sr-only">Go-To Card serial number</label>
+																<input type="text" class="form-control gray-box" id="Nickname" name="Nickname" placeholder="Nickname" maxlength="50">
+															</div>
+														</div>
+														<div class="col-md-3">
+															<button class="btn btn-warning p-1 w-100" id="Add" name="Add">Add&nbsp;Card</button>
 														</div>
 													</div>
-													<div class="col-md-5">
-														<div class="form-group w-auto">
-															<label for="Nickname" class="sr-only">Go-To Card serial number</label>
-															<input type="text" class="form-control gray-box" id="Nickname" name="Nickname" placeholder="Nickname" maxlength="50">
-														</div>
-													</div>
-													<div class="col-md-3">
-														<button class="btn btn-warning p-1 w-100" id="Add" name="Add">Add&nbsp;Card</button>
-													</div>
+												</form>
+											</div>
+											<form id="mfcl-form" action="/myfarecard/list" method="post" novalidate="novalidate">
+												<div class="table-responsive">
+													<table id="myFareCardList" class="table table-striped nowrap">
+														<thead>
+															<tr>
+																<th>Serial #</th>
+																<th>Nickname</th>
+																<th>Stored value</th>
+																<th>Pass type</th>
+																<th>Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr role="row" id="0160002648062034">
+																<td class="sorting_1">
+																	<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0026-4806-2034</span><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160002648062034">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
+																</td>
+																<td>
+																	<div class="form-group nickname-field"><span>Corinne's Card</span>
+																		<label for="nickname-0160002648062034" class="sr-only">Nickname</label>
+																		<input class="form-control" id="nickname-0160002648062034" name="I[0160002648062034].N" type="text" value="Corinne's Card" maxlength="50" data-serial="0160002648062034" onkeypress="mfcl.onNicknameKeyPress(event, this)">
+																		<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160002648062034">Edit</a><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160002648062034">Save</a><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160002648062034" class="ml-3">Cancel</a></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="value-field d-flex flex-column">
+																		<div class="current-value">$10.75<img src="https://store.metrotransittest.org/content/site/img/icon/silk/error.png" alt="Stored value amount is getting low."></div>
+																		<div class="form-group add-value">
+																			<label for="I[0160002648062034].V" class="sr-only">Add value</label>
+																			<select class="form-control" id="I[0160002648062034].V" name="I[0160002648062034].V">
+																				<option value="">Add value</option>
+																				<option value="5">$5</option>
+																				<option value="10">$10</option>
+																				<option value="20">$20</option>
+																				<option value="30">$30</option>
+																				<option value="35">$35</option>
+																				<option value="40">$40</option>
+																				<option value="45">$45</option>
+																				<option value="50">$50</option>
+																				<option value="60">$60</option>
+																				<option value="70">$70</option>
+																				<option value="80">$80</option>
+																				<option value="100">$100</option>
+																				<option value="120">$120</option>
+																				<option value="140">$140</option>
+																				<option value="180">$180</option>
+																			</select>
+																		</div>
+																	</div>
+																</td>
+																<td>
+																	<div class="pass-field">
+																		<div class="mt-current-passes">&nbsp;</div>
+																		<div class="form-group mt-add-pass">
+																			<label for="I[0160002648062034].P" class="sr-only">Add pass</label>
+																			<select class="form-control" id="I[0160002648062034].P" name="I[0160002648062034].P">
+																				<option value="">Add pass</option>
+																				<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
+																				<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
+																				<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
+																				<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
+																				<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
+																			</select>
+																		</div>
+																		<div class="mt-messages"></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160002648062034">Transaction History</a><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160002648062034">Edit Registration</a><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160002648062034">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160002648062034">Deactivate</a></div>
+																</td>
+															</tr>
+															
+															<tr role="row" id="0160005461135647">
+																<td class="sorting_1">
+																	<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0054-6113-5647</span><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160005461135647">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
+																</td>
+																<td>
+																	<div class="form-group nickname-field"><span>Sibenaller, B. $200</span>
+																		<label for="nickname-0160005461135647" class="sr-only">Nickname</label>
+																		<input class="form-control" id="nickname-0160005461135647" name="I[0160005461135647].N" type="text" value="Sibenaller, B. $200" maxlength="50" data-serial="0160005461135647" onkeypress="mfcl.onNicknameKeyPress(event, this)">
+																		<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160005461135647">Edit</a><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160005461135647">Save</a><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160005461135647" class="ml-3">Cancel</a></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="value-field d-flex flex-column">
+																		<div class="current-value">$329.25</div>
+																		<div class="form-group add-value">
+																			<label for="I[0160005461135647].V" class="sr-only">Add value</label>
+																			<select class="form-control" id="I[0160005461135647].V" name="I[0160005461135647].V">
+																				<option value="">Add value</option>
+																				<option value="5">$5</option>
+																				<option value="10">$10</option>
+																				<option value="20">$20</option>
+																				<option value="30">$30</option>
+																				<option value="35">$35</option>
+																				<option value="40">$40</option>
+																				<option value="45">$45</option>
+																				<option value="50">$50</option>
+																				<option value="60">$60</option>
+																				<option value="70">$70</option>
+																			</select>
+																		</div>
+																	</div>
+																</td>
+																<td>
+																	<div class="pass-field">
+																		<div class="mt-current-passes">&nbsp;</div>
+																		<div class="form-group mt-add-pass">
+																			<label for="I[0160005461135647].P" class="sr-only">Add pass</label>
+																			<select class="form-control" id="I[0160005461135647].P" name="I[0160005461135647].P">
+																				<option value="">Add pass</option>
+																				<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
+																				<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
+																				<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
+																				<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
+																				<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
+																			</select>
+																		</div>
+																		<div class="mt-messages"></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160005461135647">Transaction History</a><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160005461135647">Edit Registration</a><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160005461135647">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160005461135647">Deactivate</a></div>
+																</td>
+															</tr>
+															
+															<tr role="row" id="0160006156776430">
+																<td class="sorting_1">
+																	<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0061-5677-6430</span><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160006156776430">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
+																</td>
+																<td>
+																	<div class="form-group nickname-field"><span>Lindy B</span>
+																		<label for="nickname-0160006156776430" class="sr-only">Nickname</label>
+																		<input class="form-control" id="nickname-0160006156776430" name="I[0160006156776430].N" type="text" value="Lindy B" maxlength="50" data-serial="0160006156776430" onkeypress="mfcl.onNicknameKeyPress(event, this)">
+																		<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160006156776430">Edit</a><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160006156776430">Save</a><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160006156776430" class="ml-3">Cancel</a></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="value-field d-flex flex-column">
+																		<div class="current-value">$19.75<img src="https://store.metrotransittest.org/content/site/img/icon/silk/error.png" alt="Stored value amount is getting low."></div>
+																		<div class="form-group add-value">
+																			<label for="I[0160006156776430].V" class="sr-only">Add value</label>
+																			<select class="form-control" id="I[0160006156776430].V" name="I[0160006156776430].V">
+																				<option value="">Add value</option>
+																				<option value="5">$5</option>
+																				<option value="10">$10</option>
+																				<option value="20">$20</option>
+																				<option value="30">$30</option>
+																				<option value="35">$35</option>
+																				<option value="40">$40</option>
+																				<option value="45">$45</option>
+																				<option value="50">$50</option>
+																				<option value="60">$60</option>
+																				<option value="70">$70</option>
+																				<option value="80">$80</option>
+																				<option value="100">$100</option>
+																				<option value="120">$120</option>
+																				<option value="140">$140</option>
+																				<option value="180">$180</option>
+																			</select>
+																		</div>
+																	</div>
+																</td>
+																<td>
+																	<div class="pass-field">
+																		<div class="mt-current-passes">&nbsp;</div>
+																		<div class="form-group mt-add-pass">
+																			<label for="I[0160006156776430].P" class="sr-only">Add pass</label>
+																			<select class="form-control" id="I[0160006156776430].P" name="I[0160006156776430].P">
+																				<option value="">Add pass</option>
+																				<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
+																				<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
+																				<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
+																				<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
+																				<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
+																			</select>
+																		</div>
+																		<div class="mt-messages"></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160006156776430">Transaction History</a><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160006156776430">Edit Registration</a><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160006156776430">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160006156776430">Deactivate</a></div>
+																</td>
+															</tr>
+															
+															<tr role="row" id="0160006157352439">
+																<td class="sorting_1">
+																	<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0061-5735-2439</span><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160006157352439">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
+																</td>
+																<td>
+																	<div class="form-group nickname-field"><span>Pat R</span>
+																		<label for="nickname-0160006157352439" class="sr-only">Nickname</label>
+																		<input class="form-control" id="nickname-0160006157352439" name="I[0160006157352439].N" type="text" value="Pat R" maxlength="50" data-serial="0160006157352439" onkeypress="mfcl.onNicknameKeyPress(event, this)">
+																		<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160006157352439">Edit</a><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160006157352439">Save</a><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160006157352439" class="ml-3">Cancel</a></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="value-field d-flex flex-column">
+																		<div class="current-value">$26.25</div>
+																		<div class="form-group add-value">
+																			<label for="I[0160006157352439].V" class="sr-only">Add value</label>
+																			<select class="form-control" id="I[0160006157352439].V" name="I[0160006157352439].V">
+																				<option value="">Add value</option>
+																				<option value="5">$5</option>
+																				<option value="10">$10</option>
+																				<option value="20">$20</option>
+																				<option value="30">$30</option>
+																				<option value="35">$35</option>
+																				<option value="40">$40</option>
+																				<option value="45">$45</option>
+																				<option value="50">$50</option>
+																				<option value="60">$60</option>
+																				<option value="70">$70</option>
+																				<option value="80">$80</option>
+																				<option value="100">$100</option>
+																				<option value="120">$120</option>
+																				<option value="140">$140</option>
+																				<option value="180">$180</option>
+																			</select>
+																		</div>
+																	</div>
+																</td>
+																<td>
+																	<div class="pass-field">
+																		<div class="mt-current-passes">&nbsp;</div>
+																		<div class="form-group mt-add-pass">
+																			<label for="I[0160006157352439].P" class="sr-only">Add pass</label>
+																			<select class="form-control" id="I[0160006157352439].P" name="I[0160006157352439].P">
+																				<option value="">Add pass</option>
+																				<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
+																				<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
+																				<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
+																				<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
+																				<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
+																			</select>
+																		</div>
+																		<div class="mt-messages"></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160006157352439">Transaction History</a><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160006157352439">Edit Registration</a><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160006157352439">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160006157352439">Deactivate</a></div>
+																</td>
+															</tr>
+															
+															<tr role="row" id="0160006159072753">
+																<td class="sorting_1">
+																	<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0061-5907-2753</span><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160006159072753">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
+																</td>
+																<td>
+																	<div class="form-group nickname-field"><span>Kelly Miles</span>
+																		<label for="nickname-0160006159072753" class="sr-only">Nickname</label>
+																		<input class="form-control" id="nickname-0160006159072753" name="I[0160006159072753].N" type="text" value="Kelly Miles" maxlength="50" data-serial="0160006159072753" onkeypress="mfcl.onNicknameKeyPress(event, this)">
+																		<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160006159072753">Edit</a><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160006159072753">Save</a><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160006159072753" class="ml-3">Cancel</a></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="value-field d-flex flex-column">
+																		<div class="current-value">$19.75<img src="https://store.metrotransittest.org/content/site/img/icon/silk/error.png" alt="Stored value amount is getting low."></div>
+																		<div class="form-group add-value">
+																			<label for="I[0160006159072753].V" class="sr-only">Add value</label>
+																			<select class="form-control" id="I[0160006159072753].V" name="I[0160006159072753].V">
+																				<option value="">Add value</option>
+																				<option value="5">$5</option>
+																				<option value="10">$10</option>
+																				<option value="20">$20</option>
+																				<option value="30">$30</option>
+																				<option value="35">$35</option>
+																				<option value="40">$40</option>
+																				<option value="45">$45</option>
+																				<option value="50">$50</option>
+																				<option value="60">$60</option>
+																				<option value="70">$70</option>
+																				<option value="80">$80</option>
+																				<option value="100">$100</option>
+																				<option value="120">$120</option>
+																				<option value="140">$140</option>
+																				<option value="180">$180</option>
+																			</select>
+																		</div>
+																	</div>
+																</td>
+																<td>
+																	<div class="pass-field">
+																		<div class="mt-current-passes">&nbsp;</div>
+																		<div class="form-group mt-add-pass">
+																			<label for="I[0160006159072753].P" class="sr-only">Add pass</label>
+																			<select class="form-control" id="I[0160006159072753].P" name="I[0160006159072753].P">
+																				<option value="">Add pass</option>
+																				<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
+																				<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
+																				<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
+																				<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
+																				<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
+																			</select>
+																		</div>
+																		<div class="mt-messages"></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160006159072753">Transaction History</a><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160006159072753">Edit Registration</a><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160006159072753">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160006159072753">Deactivate</a></div>
+																</td>
+															</tr>
+															
+															<tr role="row" id="0160006159073553">
+																<td class="sorting_1">
+																	<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0061-5907-3553</span><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160006159073553">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
+																</td>
+																<td>
+																	<div class="form-group nickname-field"><span>Mike Ohman</span>
+																		<label for="nickname-0160006159073553" class="sr-only">Nickname</label>
+																		<input class="form-control" id="nickname-0160006159073553" name="I[0160006159073553].N" type="text" value="Mike Ohman" maxlength="50" data-serial="0160006159073553" onkeypress="mfcl.onNicknameKeyPress(event, this)">
+																		<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160006159073553">Edit</a><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160006159073553">Save</a><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160006159073553" class="ml-3">Cancel</a></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="value-field d-flex flex-column">
+																		<div class="current-value">$26.50</div>
+																		<div class="form-group add-value">
+																			<label for="I[0160006159073553].V" class="sr-only">Add value</label>
+																			<select class="form-control" id="I[0160006159073553].V" name="I[0160006159073553].V">
+																				<option value="">Add value</option>
+																				<option value="5">$5</option>
+																				<option value="10">$10</option>
+																				<option value="20">$20</option>
+																				<option value="30">$30</option>
+																				<option value="35">$35</option>
+																				<option value="40">$40</option>
+																				<option value="45">$45</option>
+																				<option value="50">$50</option>
+																				<option value="60">$60</option>
+																				<option value="70">$70</option>
+																				<option value="80">$80</option>
+																				<option value="100">$100</option>
+																				<option value="120">$120</option>
+																				<option value="140">$140</option>
+																				<option value="180">$180</option>
+																			</select>
+																		</div>
+																	</div>
+																</td>
+																<td>
+																	<div class="pass-field">
+																		<div class="mt-current-passes">&nbsp;</div>
+																		<div class="form-group mt-add-pass">
+																			<label for="I[0160006159073553].P" class="sr-only">Add pass</label>
+																			<select class="form-control" id="I[0160006159073553].P" name="I[0160006159073553].P">
+																				<option value="">Add pass</option>
+																				<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
+																				<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
+																				<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
+																				<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
+																				<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
+																			</select>
+																		</div>
+																		<div class="mt-messages"></div>
+																	</div>
+																</td>
+																<td>
+																	<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160006159073553">Transaction History</a><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160006159073553">Edit Registration</a><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160006159073553">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160006159073553">Deactivate</a></div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
 												</div>
 											</form>
 										</div>
-										<form id="mfcl-form" action="/myfarecard/list" method="post" novalidate="novalidate">
-											<div class="table-responsive">
-												<table id="myFareCardList" class="table table-striped nowrap">
-													<thead>
-														<tr>
-															<th>Serial #</th>
-															<th>Nickname</th>
-															<th>Stored value</th>
-															<th>Pass type</th>
-															<th>Action</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr role="row" id="0160002648062034">
-															<td class="sorting_1">
-																<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0026-4806-2034</span><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160002648062034">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
-															</td>
-															<td>
-																<div class="form-group nickname-field"><span>Corinne's Card</span>
-																	<label for="nickname-0160002648062034" class="sr-only">Nickname</label>
-																	<input class="form-control" id="nickname-0160002648062034" name="I[0160002648062034].N" type="text" value="Corinne's Card" maxlength="50" data-serial="0160002648062034" onkeypress="mfcl.onNicknameKeyPress(event, this)">
-																	<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160002648062034">Edit</a><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160002648062034">Save</a><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160002648062034" class="ml-3">Cancel</a></div>
-																</div>
-															</td>
-															<td>
-																<div class="value-field d-flex flex-column">
-																	<div class="current-value">$10.75<img src="https://store.metrotransittest.org/content/site/img/icon/silk/error.png" alt="Stored value amount is getting low."></div>
-																	<div class="form-group add-value">
-																		<label for="I[0160002648062034].V" class="sr-only">Add value</label>
-																		<select class="form-control" id="I[0160002648062034].V" name="I[0160002648062034].V">
-																			<option value="">Add value</option>
-																			<option value="5">$5</option>
-																			<option value="10">$10</option>
-																			<option value="20">$20</option>
-																			<option value="30">$30</option>
-																			<option value="35">$35</option>
-																			<option value="40">$40</option>
-																			<option value="45">$45</option>
-																			<option value="50">$50</option>
-																			<option value="60">$60</option>
-																			<option value="70">$70</option>
-																			<option value="80">$80</option>
-																			<option value="100">$100</option>
-																			<option value="120">$120</option>
-																			<option value="140">$140</option>
-																			<option value="180">$180</option>
-																		</select>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="pass-field">
-																	<div class="mt-current-passes">&nbsp;</div>
-																	<div class="form-group mt-add-pass">
-																		<label for="I[0160002648062034].P" class="sr-only">Add pass</label>
-																		<select class="form-control" id="I[0160002648062034].P" name="I[0160002648062034].P">
-																			<option value="">Add pass</option>
-																			<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
-																			<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
-																			<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
-																			<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
-																			<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
-																		</select>
-																	</div>
-																	<div class="mt-messages"></div>
-																</div>
-															</td>
-															<td>
-																<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160002648062034">Transaction History</a><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160002648062034">Edit Registration</a><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160002648062034">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160002648062034" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160002648062034">Deactivate</a></div>
-															</td>
-														</tr>
-														
-														<tr role="row" id="0160005461135647">
-															<td class="sorting_1">
-																<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0054-6113-5647</span><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160005461135647">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
-															</td>
-															<td>
-																<div class="form-group nickname-field"><span>Sibenaller, B. $200</span>
-																	<label for="nickname-0160005461135647" class="sr-only">Nickname</label>
-																	<input class="form-control" id="nickname-0160005461135647" name="I[0160005461135647].N" type="text" value="Sibenaller, B. $200" maxlength="50" data-serial="0160005461135647" onkeypress="mfcl.onNicknameKeyPress(event, this)">
-																	<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160005461135647">Edit</a><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160005461135647">Save</a><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160005461135647" class="ml-3">Cancel</a></div>
-																</div>
-															</td>
-															<td>
-																<div class="value-field d-flex flex-column">
-																	<div class="current-value">$329.25</div>
-																	<div class="form-group add-value">
-																		<label for="I[0160005461135647].V" class="sr-only">Add value</label>
-																		<select class="form-control" id="I[0160005461135647].V" name="I[0160005461135647].V">
-																			<option value="">Add value</option>
-																			<option value="5">$5</option>
-																			<option value="10">$10</option>
-																			<option value="20">$20</option>
-																			<option value="30">$30</option>
-																			<option value="35">$35</option>
-																			<option value="40">$40</option>
-																			<option value="45">$45</option>
-																			<option value="50">$50</option>
-																			<option value="60">$60</option>
-																			<option value="70">$70</option>
-																		</select>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="pass-field">
-																	<div class="mt-current-passes">&nbsp;</div>
-																	<div class="form-group mt-add-pass">
-																		<label for="I[0160005461135647].P" class="sr-only">Add pass</label>
-																		<select class="form-control" id="I[0160005461135647].P" name="I[0160005461135647].P">
-																			<option value="">Add pass</option>
-																			<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
-																			<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
-																			<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
-																			<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
-																			<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
-																		</select>
-																	</div>
-																	<div class="mt-messages"></div>
-																</div>
-															</td>
-															<td>
-																<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160005461135647">Transaction History</a><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160005461135647">Edit Registration</a><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160005461135647">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160005461135647" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160005461135647">Deactivate</a></div>
-															</td>
-														</tr>
-														
-														<tr role="row" id="0160006156776430">
-															<td class="sorting_1">
-																<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0061-5677-6430</span><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160006156776430">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
-															</td>
-															<td>
-																<div class="form-group nickname-field"><span>Lindy B</span>
-																	<label for="nickname-0160006156776430" class="sr-only">Nickname</label>
-																	<input class="form-control" id="nickname-0160006156776430" name="I[0160006156776430].N" type="text" value="Lindy B" maxlength="50" data-serial="0160006156776430" onkeypress="mfcl.onNicknameKeyPress(event, this)">
-																	<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160006156776430">Edit</a><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160006156776430">Save</a><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160006156776430" class="ml-3">Cancel</a></div>
-																</div>
-															</td>
-															<td>
-																<div class="value-field d-flex flex-column">
-																	<div class="current-value">$19.75<img src="https://store.metrotransittest.org/content/site/img/icon/silk/error.png" alt="Stored value amount is getting low."></div>
-																	<div class="form-group add-value">
-																		<label for="I[0160006156776430].V" class="sr-only">Add value</label>
-																		<select class="form-control" id="I[0160006156776430].V" name="I[0160006156776430].V">
-																			<option value="">Add value</option>
-																			<option value="5">$5</option>
-																			<option value="10">$10</option>
-																			<option value="20">$20</option>
-																			<option value="30">$30</option>
-																			<option value="35">$35</option>
-																			<option value="40">$40</option>
-																			<option value="45">$45</option>
-																			<option value="50">$50</option>
-																			<option value="60">$60</option>
-																			<option value="70">$70</option>
-																			<option value="80">$80</option>
-																			<option value="100">$100</option>
-																			<option value="120">$120</option>
-																			<option value="140">$140</option>
-																			<option value="180">$180</option>
-																		</select>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="pass-field">
-																	<div class="mt-current-passes">&nbsp;</div>
-																	<div class="form-group mt-add-pass">
-																		<label for="I[0160006156776430].P" class="sr-only">Add pass</label>
-																		<select class="form-control" id="I[0160006156776430].P" name="I[0160006156776430].P">
-																			<option value="">Add pass</option>
-																			<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
-																			<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
-																			<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
-																			<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
-																			<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
-																		</select>
-																	</div>
-																	<div class="mt-messages"></div>
-																</div>
-															</td>
-															<td>
-																<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160006156776430">Transaction History</a><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160006156776430">Edit Registration</a><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160006156776430">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160006156776430" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160006156776430">Deactivate</a></div>
-															</td>
-														</tr>
-														
-														<tr role="row" id="0160006157352439">
-															<td class="sorting_1">
-																<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0061-5735-2439</span><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160006157352439">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
-															</td>
-															<td>
-																<div class="form-group nickname-field"><span>Pat R</span>
-																	<label for="nickname-0160006157352439" class="sr-only">Nickname</label>
-																	<input class="form-control" id="nickname-0160006157352439" name="I[0160006157352439].N" type="text" value="Pat R" maxlength="50" data-serial="0160006157352439" onkeypress="mfcl.onNicknameKeyPress(event, this)">
-																	<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160006157352439">Edit</a><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160006157352439">Save</a><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160006157352439" class="ml-3">Cancel</a></div>
-																</div>
-															</td>
-															<td>
-																<div class="value-field d-flex flex-column">
-																	<div class="current-value">$26.25</div>
-																	<div class="form-group add-value">
-																		<label for="I[0160006157352439].V" class="sr-only">Add value</label>
-																		<select class="form-control" id="I[0160006157352439].V" name="I[0160006157352439].V">
-																			<option value="">Add value</option>
-																			<option value="5">$5</option>
-																			<option value="10">$10</option>
-																			<option value="20">$20</option>
-																			<option value="30">$30</option>
-																			<option value="35">$35</option>
-																			<option value="40">$40</option>
-																			<option value="45">$45</option>
-																			<option value="50">$50</option>
-																			<option value="60">$60</option>
-																			<option value="70">$70</option>
-																			<option value="80">$80</option>
-																			<option value="100">$100</option>
-																			<option value="120">$120</option>
-																			<option value="140">$140</option>
-																			<option value="180">$180</option>
-																		</select>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="pass-field">
-																	<div class="mt-current-passes">&nbsp;</div>
-																	<div class="form-group mt-add-pass">
-																		<label for="I[0160006157352439].P" class="sr-only">Add pass</label>
-																		<select class="form-control" id="I[0160006157352439].P" name="I[0160006157352439].P">
-																			<option value="">Add pass</option>
-																			<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
-																			<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
-																			<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
-																			<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
-																			<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
-																		</select>
-																	</div>
-																	<div class="mt-messages"></div>
-																</div>
-															</td>
-															<td>
-																<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160006157352439">Transaction History</a><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160006157352439">Edit Registration</a><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160006157352439">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160006157352439" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160006157352439">Deactivate</a></div>
-															</td>
-														</tr>
-														
-														<tr role="row" id="0160006159072753">
-															<td class="sorting_1">
-																<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0061-5907-2753</span><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160006159072753">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
-															</td>
-															<td>
-																<div class="form-group nickname-field"><span>Kelly Miles</span>
-																	<label for="nickname-0160006159072753" class="sr-only">Nickname</label>
-																	<input class="form-control" id="nickname-0160006159072753" name="I[0160006159072753].N" type="text" value="Kelly Miles" maxlength="50" data-serial="0160006159072753" onkeypress="mfcl.onNicknameKeyPress(event, this)">
-																	<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160006159072753">Edit</a><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160006159072753">Save</a><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160006159072753" class="ml-3">Cancel</a></div>
-																</div>
-															</td>
-															<td>
-																<div class="value-field d-flex flex-column">
-																	<div class="current-value">$19.75<img src="https://store.metrotransittest.org/content/site/img/icon/silk/error.png" alt="Stored value amount is getting low."></div>
-																	<div class="form-group add-value">
-																		<label for="I[0160006159072753].V" class="sr-only">Add value</label>
-																		<select class="form-control" id="I[0160006159072753].V" name="I[0160006159072753].V">
-																			<option value="">Add value</option>
-																			<option value="5">$5</option>
-																			<option value="10">$10</option>
-																			<option value="20">$20</option>
-																			<option value="30">$30</option>
-																			<option value="35">$35</option>
-																			<option value="40">$40</option>
-																			<option value="45">$45</option>
-																			<option value="50">$50</option>
-																			<option value="60">$60</option>
-																			<option value="70">$70</option>
-																			<option value="80">$80</option>
-																			<option value="100">$100</option>
-																			<option value="120">$120</option>
-																			<option value="140">$140</option>
-																			<option value="180">$180</option>
-																		</select>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="pass-field">
-																	<div class="mt-current-passes">&nbsp;</div>
-																	<div class="form-group mt-add-pass">
-																		<label for="I[0160006159072753].P" class="sr-only">Add pass</label>
-																		<select class="form-control" id="I[0160006159072753].P" name="I[0160006159072753].P">
-																			<option value="">Add pass</option>
-																			<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
-																			<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
-																			<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
-																			<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
-																			<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
-																		</select>
-																	</div>
-																	<div class="mt-messages"></div>
-																</div>
-															</td>
-															<td>
-																<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160006159072753">Transaction History</a><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160006159072753">Edit Registration</a><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160006159072753">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160006159072753" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160006159072753">Deactivate</a></div>
-															</td>
-														</tr>
-														
-														<tr role="row" id="0160006159073553">
-															<td class="sorting_1">
-																<div class="serial-field d-flex flex-column"><span class="mt-serial">0160-0061-5907-3553</span><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="remove-card" id="remove-card-0160006159073553">Remove</a><span class="mt-last-used-on">Last Used: </span></div>
-															</td>
-															<td>
-																<div class="form-group nickname-field"><span>Mike Ohman</span>
-																	<label for="nickname-0160006159073553" class="sr-only">Nickname</label>
-																	<input class="form-control" id="nickname-0160006159073553" name="I[0160006159073553].N" type="text" value="Mike Ohman" maxlength="50" data-serial="0160006159073553" onkeypress="mfcl.onNicknameKeyPress(event, this)">
-																	<div class="d-flex flex-row"><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="edit-nickname" id="edit-nickname-0160006159073553">Edit</a><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="save-nickname" id="save-nickname-0160006159073553">Save</a><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="cancel-nickname" id="cancel-nickname-0160006159073553" class="ml-3">Cancel</a></div>
-																</div>
-															</td>
-															<td>
-																<div class="value-field d-flex flex-column">
-																	<div class="current-value">$26.50</div>
-																	<div class="form-group add-value">
-																		<label for="I[0160006159073553].V" class="sr-only">Add value</label>
-																		<select class="form-control" id="I[0160006159073553].V" name="I[0160006159073553].V">
-																			<option value="">Add value</option>
-																			<option value="5">$5</option>
-																			<option value="10">$10</option>
-																			<option value="20">$20</option>
-																			<option value="30">$30</option>
-																			<option value="35">$35</option>
-																			<option value="40">$40</option>
-																			<option value="45">$45</option>
-																			<option value="50">$50</option>
-																			<option value="60">$60</option>
-																			<option value="70">$70</option>
-																			<option value="80">$80</option>
-																			<option value="100">$100</option>
-																			<option value="120">$120</option>
-																			<option value="140">$140</option>
-																			<option value="180">$180</option>
-																		</select>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<div class="pass-field">
-																	<div class="mt-current-passes">&nbsp;</div>
-																	<div class="form-group mt-add-pass">
-																		<label for="I[0160006159073553].P" class="sr-only">Add pass</label>
-																		<select class="form-control" id="I[0160006159073553].P" name="I[0160006159073553].P">
-																			<option value="">Add pass</option>
-																			<option value="35a1cfca-4f11-4502-9881-33bb49343e17">$20.50 10-Ride Pass Full Fare</option>
-																			<option value="0e999ce0-bffa-4439-bb79-e6d093f643b9">$24 7-Day Pass</option>
-																			<option value="426fe5f8-6620-4719-91e1-2b76b78296c7">$65 31-Day Pass Local Off-Peak</option>
-																			<option value="45584027-7c58-43fb-afce-cf0eb3e0683d">$90 31-Day Pass Local Peak</option>
-																			<option value="01e2610b-951a-4548-9f96-7ce0dcd05481">$120 31-Day Pass Express</option>
-																		</select>
-																	</div>
-																	<div class="mt-messages"></div>
-																</div>
-															</td>
-															<td>
-																<div class="action-field d-flex flex-column"><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="view-history" id="view-history-0160006159073553">Transaction History</a><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="edit-registration" id="edit-registration-0160006159073553">Edit Registration</a><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="enroll-card" id="enroll-card-0160006159073553">Enroll in Auto Refill</a><a href="javascript:void(0)" data-serial="0160006159073553" onclick="mfcl.action(this)" data-command="deactivate-card" id="deactivate-card-0160006159073553">Deactivate</a></div>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</form>
+										<!-- <div class="card-footer">&nbsp;</div> -->
 									</div>
-									<!-- <div class="card-footer">&nbsp;</div> -->
 								</div>
 							</div>
-						</div>
-					</section>
+						</section>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</main>
 		<!-- End Main Content -->
 
 		<!-- Begin Footer -->
@@ -733,13 +733,13 @@
 		<!-- End Footer -->
 
 		<!-- Vendor scripts -->
-		<script src="/template/js/jquery.js"></script>
-		<script src="/template/js/popper.js"></script>
-		<script src="/template/js/bootstrap.js"></script>
-		<script src="/template/js/jquery.exlink.js"></script>
-		<script src="/template/js/svgxuse.js"></script>
-		<script src="/template/js/dataTables.js"></script>
-		<script src="/template/js/dataTables.fixedHeader.js"></script>
+		<script src="/template/js/vendor/jquery.js"></script>
+		<script src="/template/js/vendor/popper.js"></script>
+		<script src="/template/js/vendor/bootstrap.js"></script>
+		<!-- 
+		 -->
+		<!-- <script src="/template/js/dataTables.js"></script>
+		<script src="/template/js/dataTables.fixedHeader.js"></script> -->
 		<!-- End vendor scripts -->
 
 		<!-- build:js /template/js/scripts.min.js -->
