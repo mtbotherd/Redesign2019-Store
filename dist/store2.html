@@ -17,10 +17,14 @@
 <body>
 	<form id="aspnForm">
 
+		<div role="link" aria-labelledby="skipNav">
+			<a id="skipNav" href="#pageContainer" class="skip-to-content">Skip to main content</a>
+		</div>
+
 		<!-- Begin Header -->
 		<header id="header">
 			<nav class="navbar navbar-expand-xl navbar-light">
-				<a href="#pageContainer" class="skip-to-content">Skip to main content</a>
+				<!-- <a href="#pageContainer" class="skip-to-content">Skip to main content</a> -->
 				<div class="container">
 					<a class="navbar-brand" href="/">
 						<img alt="metro transit logo" src="/template/img/MetroTransitLogo.svg" class="logo d-inline-block">
@@ -30,7 +34,7 @@
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-	
+
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<section>
 							<ul class="nav navbar-nav mx-auto">
@@ -97,7 +101,7 @@
 						</section>
 						<ul class="nav navbar-nav utilities ml-auto">
 							<li class="nav-item">
-								<a class="nav-link store-icon" href="https://store.metrotransit.org/shoppingcart.aspx">
+								<a class="nav-link store-icon" href="https://store.metrotransit.org">
 									<span class="sr-only">store</span>
 								</a>
 							</li>
@@ -112,7 +116,7 @@
 										<div class="input-group-append">
 											<button type="button" id="siteSearchBtn" class="btn btn-primary">
 												<span class="sr-only">Search button</span>
-												<img alt="search button" class="icon" src="/template/img/svg/search-gray.svg">
+												<img alt="search button" class="icon" src="/img/svg/search-gray.svg">
 											</button>
 										</div>
 									</div>
