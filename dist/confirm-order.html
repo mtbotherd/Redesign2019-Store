@@ -198,646 +198,648 @@
 		<!-- End Header -->
 
 		<!-- Begin Main Content -->
-		<section id="mainContent">
-			<div id="primaryPage">
+		<main id="pageContainer">
+			<section>
+				<div id="primaryPage">
 
-				<!-- When adding a new page, also add new background image styles in _hero-backgrounds.scss. Change the class below to match that of the hero background. -->
-				<div class="hero store-hero-bg">
-					<div class="container">
-						<div class="page-title">
-							<h1>Store</h1>
+					<!-- When adding a new page, also add new background image styles in _hero-backgrounds.scss. Change the class below to match that of the hero background. -->
+					<div class="hero store-hero-bg">
+						<div class="container">
+							<div class="page-title">
+								<h1>Store</h1>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div id="store"
-					 class="page-content">
-					<!-- Main page content -->
-					<section class="section reverse">
-						<div class="container">
-							<div class="billing-info">
-								<div id="shoppingCart"
-									 class="card mb-0">
-									<div class="card-header">
-										<h2 class="text-center">Confirm Order</h2>
+					<div id="store"
+						class="page-content">
+						<!-- Main page content -->
+						<section class="section reverse">
+							<div class="container">
+								<div class="billing-info">
+									<div id="shoppingCart"
+										class="card mb-0">
+										<div class="card-header">
+											<h2 class="text-center">Confirm Order</h2>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
+						</section>
 
-					<!-- Additional content sections -->
-					<section class="section reverse">
-						<div class="container">
-							<div class="billing-info">
-								<div class="">
-									<div class="d-flex justify-content-between">
-										<h3 class="h4">Billing Address</h3>
-										<p class="d-flex denote-required position-relative"><span
-												  class="required-symbol">&#42;</span> = Required Field</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="firtName"
-												   class="sr-only">First name</label>
-											<input type="text"
-												   class="form-control"
-												   id="firstName"
-												   name="firstName"
-												   placeholder="First name">
+						<!-- Additional content sections -->
+						<section class="section reverse">
+							<div class="container">
+								<div class="billing-info">
+									<div class="">
+										<div class="d-flex justify-content-between">
+											<h3 class="h4">Billing Address</h3>
+											<p class="d-flex denote-required position-relative"><span
+													class="required-symbol">&#42;</span> = Required Field</p>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="lastName"
-												   class="sr-only">Last name</label>
-											<input type="text"
-												   class="form-control"
-												   id="lastName"
-												   name="lastName"
-												   placeholder="Last name">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="firtName"
+													class="sr-only">First name</label>
+												<input type="text"
+													class="form-control"
+													id="firstName"
+													name="firstName"
+													placeholder="First name">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="lastName"
+													class="sr-only">Last name</label>
+												<input type="text"
+													class="form-control"
+													id="lastName"
+													name="lastName"
+													placeholder="Last name">
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="address"
-												   class="sr-only">Address</label>
-											<input type="text"
-												   class="form-control"
-												   id="address"
-												   name="address"
-												   placeholder="Address">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="address"
+													class="sr-only">Address</label>
+												<input type="text"
+													class="form-control"
+													id="address"
+													name="address"
+													placeholder="Address">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="sr-only">Address 2</label>
+												<input type="address"
+													class="form-control"
+													id="address2"
+													aria-describedby="emailHelp"
+													placeholder="Address 2">
+											</div>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label class="sr-only">Address 2</label>
-											<input type="address"
-												   class="form-control"
-												   id="address2"
-												   aria-describedby="emailHelp"
-												   placeholder="Address 2">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="city"
+													class="sr-only">City</label>
+												<input type="text"
+													class="form-control"
+													id="city"
+													name="city"
+													placeholder="City">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="state"
+													class="sr-only">State</label>
+												<select class="custom-select"
+														id="state"
+														name="state">
+													<option value="">State</option>
+													<option value="AL">Alabama</option>
+													<option value="AK">Alaska</option>
+													<option value="AZ">Arizona</option>
+													<option value="AR">Arkansas</option>
+													<option value="CA">California</option>
+													<option value="CO">Colorado</option>
+													<option value="CT">Connecticut</option>
+													<option value="DE">Delaware</option>
+													<option value="FL">Florida</option>
+													<option value="GA">Georgia</option>
+													<option value="HI">Hawaii</option>
+													<option value="ID">Idaho</option>
+													<option value="IL">Illinois</option>
+													<option value="IN">Indiana</option>
+													<option value="IA">Iowa</option>
+													<option value="KS">Kansas</option>
+													<option value="KY">Kentucky</option>
+													<option value="LA">Louisiana</option>
+													<option value="ME">Maine</option>
+													<option value="MD">Maryland</option>
+													<option value="MA">Massachusetts</option>
+													<option value="MI">Michigan</option>
+													<option value="MN">Minnesota</option>
+													<option value="MS">Mississippi</option>
+													<option value="MO">Missouri</option>
+													<option value="MT">Montana</option>
+													<option value="NE">Nebraska</option>
+													<option value="NV">Nevada</option>
+													<option value="NH">New Hampshire</option>
+													<option value="NJ">New Jersey</option>
+													<option value="NM">New Mexico</option>
+													<option value="NY">New York</option>
+													<option value="NC">North Carolina</option>
+													<option value="ND">North Dakota</option>
+													<option value="OH">Ohio</option>
+													<option value="OK">Oklahoma</option>
+													<option value="OR">Oregon</option>
+													<option value="PA">Pennsylvania</option>
+													<option value="RI">Rhode Island</option>
+													<option value="SC">South Carolina</option>
+													<option value="SD">South Dakota</option>
+													<option value="TN">Tennessee</option>
+													<option value="TX">Texas</option>
+													<option value="UT">Utah</option>
+													<option value="VT">Vermont</option>
+													<option value="VA">Virginia</option>
+													<option value="WA">Washington</option>
+													<option value="WV">West Virginia</option>
+													<option value="WI">Wisconsin</option>
+													<option value="WY">Wyoming</option>
+												</select>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="city"
-												   class="sr-only">City</label>
-											<input type="text"
-												   class="form-control"
-												   id="city"
-												   name="city"
-												   placeholder="City">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="zipcode"
+													class="sr-only">Zip code</label>
+												<input type="text"
+													class="form-control"
+													id="zipcode"
+													name="zipcode"
+													placeholder="Zip code">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="phoneNumber"
+													class="sr-only">Phone number</label>
+												<input type="text"
+													class="form-control"
+													id="phoneNumber"
+													name="phoneNumber"
+													placeholder="Phone number">
+											</div>
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="state"
-												   class="sr-only">State</label>
-											<select class="custom-select"
-													id="state"
-													name="state">
-												<option value="">State</option>
-												<option value="AL">Alabama</option>
-												<option value="AK">Alaska</option>
-												<option value="AZ">Arizona</option>
-												<option value="AR">Arkansas</option>
-												<option value="CA">California</option>
-												<option value="CO">Colorado</option>
-												<option value="CT">Connecticut</option>
-												<option value="DE">Delaware</option>
-												<option value="FL">Florida</option>
-												<option value="GA">Georgia</option>
-												<option value="HI">Hawaii</option>
-												<option value="ID">Idaho</option>
-												<option value="IL">Illinois</option>
-												<option value="IN">Indiana</option>
-												<option value="IA">Iowa</option>
-												<option value="KS">Kansas</option>
-												<option value="KY">Kentucky</option>
-												<option value="LA">Louisiana</option>
-												<option value="ME">Maine</option>
-												<option value="MD">Maryland</option>
-												<option value="MA">Massachusetts</option>
-												<option value="MI">Michigan</option>
-												<option value="MN">Minnesota</option>
-												<option value="MS">Mississippi</option>
-												<option value="MO">Missouri</option>
-												<option value="MT">Montana</option>
-												<option value="NE">Nebraska</option>
-												<option value="NV">Nevada</option>
-												<option value="NH">New Hampshire</option>
-												<option value="NJ">New Jersey</option>
-												<option value="NM">New Mexico</option>
-												<option value="NY">New York</option>
-												<option value="NC">North Carolina</option>
-												<option value="ND">North Dakota</option>
-												<option value="OH">Ohio</option>
-												<option value="OK">Oklahoma</option>
-												<option value="OR">Oregon</option>
-												<option value="PA">Pennsylvania</option>
-												<option value="RI">Rhode Island</option>
-												<option value="SC">South Carolina</option>
-												<option value="SD">South Dakota</option>
-												<option value="TN">Tennessee</option>
-												<option value="TX">Texas</option>
-												<option value="UT">Utah</option>
-												<option value="VT">Vermont</option>
-												<option value="VA">Virginia</option>
-												<option value="WA">Washington</option>
-												<option value="WV">West Virginia</option>
-												<option value="WI">Wisconsin</option>
-												<option value="WY">Wyoming</option>
-											</select>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="emailAddress"
+													class="sr-only">Email address</label>
+												<input type="email"
+													class="form-control"
+													id="emailAddress"
+													name="emailAddress"
+													placeholder="Email address">
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="zipcode"
-												   class="sr-only">Zip code</label>
-											<input type="text"
-												   class="form-control"
-												   id="zipcode"
-												   name="zipcode"
-												   placeholder="Zip code">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="phoneNumber"
-												   class="sr-only">Phone number</label>
-											<input type="text"
-												   class="form-control"
-												   id="phoneNumber"
-												   name="phoneNumber"
-												   placeholder="Phone number">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="emailAddress"
-												   class="sr-only">Email address</label>
-											<input type="email"
-												   class="form-control"
-												   id="emailAddress"
-												   name="emailAddress"
-												   placeholder="Email address">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="input-group mb-lg-4 mb-2 required">
-											<label for="confirmEmailAddress"
-												   class="sr-only">Confirm email address</label>
-											<input type="email"
-												   class="form-control"
-												   id="confirmEmailAddress"
-												   name="confirmEmailAddress"
-												   placeholder="Confirm email address">
-											<div class="input-group-append">
-												<div class="input-group-text">
-													<img alt="" class="gray-circle-info"
-														 src='/template/img/svg/gray-circle-info.svg'
-														 data-toggle="popover"
-														 data-trigger="hover"
-														 data-content='We will use your e-mail address to send you a confirmation message once your order is processed.
-															Metro Transit will not sell or disclose your personal information to any third party unless required to do 
-															so by law except for administrative or planning purpose to help us improve transit products or services. 
-															Metro Transit may use the information to tell you about its products and services.' />
+										<div class="col-md-6">
+											<div class="input-group mb-lg-4 mb-2 required">
+												<label for="confirmEmailAddress"
+													class="sr-only">Confirm email address</label>
+												<input type="email"
+													class="form-control"
+													id="confirmEmailAddress"
+													name="confirmEmailAddress"
+													placeholder="Confirm email address">
+												<div class="input-group-append">
+													<div class="input-group-text">
+														<img alt="" class="gray-circle-info"
+															src='/template/img/svg/gray-circle-info.svg'
+															data-toggle="popover"
+															data-trigger="hover"
+															data-content='We will use your e-mail address to send you a confirmation message once your order is processed.
+																Metro Transit will not sell or disclose your personal information to any third party unless required to do 
+																so by law except for administrative or planning purpose to help us improve transit products or services. 
+																Metro Transit may use the information to tell you about its products and services.' />
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="d-flex justify-content-between mt-4 mt-lg-0">
-									<div class="custom-control custom-checkbox">
-										<input type="checkbox"
-											   class="custom-control-input"
-											   id="saveDefaultBilling"
-											   name="saveDefaultBilling"
-											   checked>
-										<label class="custom-control-label"
-											   for="saveDefaultBilling">Save as my default billing address</label>
+									<div class="d-flex justify-content-between mt-4 mt-lg-0">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox"
+												class="custom-control-input"
+												id="saveDefaultBilling"
+												name="saveDefaultBilling"
+												checked>
+											<label class="custom-control-label"
+												for="saveDefaultBilling">Save as my default billing address</label>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
+						</section>
 
-					<section class="section reverse">
-						<div class="container">
-							<div class="payment-info">
-								<h3 class="h4">Payment Information</h3>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="creditCardNumber"
-												   class="sr-only">Credit card number</label>
-											<input type="text"
-												   id="creditCardNumber"
-												   class="form-control"
-												   name="creditCardNumber"
-												   placeholder="Card Number">
+						<section class="section reverse">
+							<div class="container">
+								<div class="payment-info">
+									<h3 class="h4">Payment Information</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="creditCardNumber"
+													class="sr-only">Credit card number</label>
+												<input type="text"
+													id="creditCardNumber"
+													class="form-control"
+													name="creditCardNumber"
+													placeholder="Card Number">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required mb-3">
+												<label for="expirationMonth"
+													class="sr-only">Expiration Month</label>
+												<select id="expirationMonth"
+														name="expirationMonth"
+														class="custom-select">
+													<option value="">Expiration Month</option>
+													<option value="1">01 January</option>
+													<option value="2">02 February</option>
+													<option value="3">03 March</option>
+													<option value="4">04 April</option>
+													<option value="5">05 May</option>
+													<option value="6">06 June</option>
+													<option value="7">07 July</option>
+													<option value="8">08 August</option>
+													<option value="9">09 September</option>
+													<option value="10">10 October</option>
+													<option value="11">11 November</option>
+													<option value="12">12 December</option>
+												</select>
+											</div>
+											<div class="form-group required mb-3">
+												<label for="expirationYear"
+													class="sr-only">Expiration Year</label>
+												<select id="expirationYear"
+														name="expirationYear"
+														class="custom-select">
+													<option value="">Expiration Year</option>
+													<option value="2019">2019</option>
+													<option value="2020">2020</option>
+													<option value="2021">2021</option>
+													<option value="2022">2022</option>
+													<option value="2023">2023</option>
+													<option value="2024">2024</option>
+													<option value="2025">2025</option>
+													<option value="2026">2026</option>
+													<option value="2027">2027</option>
+													<option value="2028">2028</option>
+													<option value="2029">2029</option>
+												</select>
+											</div>
+											<!-- <div class="row">
+													<div class="col-6 offset-6"> -->
+
+											<!-- </div>
+												</div> -->
 										</div>
 									</div>
-									<div class="col-md-6">
-										<div class="form-group required mb-3">
-											<label for="expirationMonth"
-												   class="sr-only">Expiration Month</label>
-											<select id="expirationMonth"
-													name="expirationMonth"
-													class="custom-select">
-												<option value="">Expiration Month</option>
-												<option value="1">01 January</option>
-												<option value="2">02 February</option>
-												<option value="3">03 March</option>
-												<option value="4">04 April</option>
-												<option value="5">05 May</option>
-												<option value="6">06 June</option>
-												<option value="7">07 July</option>
-												<option value="8">08 August</option>
-												<option value="9">09 September</option>
-												<option value="10">10 October</option>
-												<option value="11">11 November</option>
-												<option value="12">12 December</option>
-											</select>
-										</div>
-										<div class="form-group required mb-3">
-											<label for="expirationYear"
-												   class="sr-only">Expiration Year</label>
-											<select id="expirationYear"
-													name="expirationYear"
-													class="custom-select">
-												<option value="">Expiration Year</option>
-												<option value="2019">2019</option>
-												<option value="2020">2020</option>
-												<option value="2021">2021</option>
-												<option value="2022">2022</option>
-												<option value="2023">2023</option>
-												<option value="2024">2024</option>
-												<option value="2025">2025</option>
-												<option value="2026">2026</option>
-												<option value="2027">2027</option>
-												<option value="2028">2028</option>
-												<option value="2029">2029</option>
-											</select>
-										</div>
-										<!-- <div class="row">
-												<div class="col-6 offset-6"> -->
-
-										<!-- </div>
-											</div> -->
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6 offset-md-6">
-										<div class="input-group required-custom position-relative">
-											<label for="cvc"
-												   class="sr-only">CVC number</label>
-											<input type="text"
-												   id="cvc"
-												   class="form-control"
-												   name="cvc"
-												   maxlength="5"
-												   placeholder="CVC">
-											<div class="input-group-append">
-												<div class="input-group-text">
-													<img alt="" class="gray-circle-info"
-														 src='/template/img/svg/gray-circle-info.svg'
-														 data-toggle="popover"
-														 data-trigger="hover"
-														 data-content="This is a three-digit or four-digit number found on your credit card that protects against fraud." />
+									<div class="row">
+										<div class="col-md-6 offset-md-6">
+											<div class="input-group required-custom position-relative">
+												<label for="cvc"
+													class="sr-only">CVC number</label>
+												<input type="text"
+													id="cvc"
+													class="form-control"
+													name="cvc"
+													maxlength="5"
+													placeholder="CVC">
+												<div class="input-group-append">
+													<div class="input-group-text">
+														<img alt="" class="gray-circle-info"
+															src='/template/img/svg/gray-circle-info.svg'
+															data-toggle="popover"
+															data-trigger="hover"
+															data-content="This is a three-digit or four-digit number found on your credit card that protects against fraud." />
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="alert alert-primary"
-									 role="alert">
-									<h4>Important</h4>
-									<p>Please note that if you enter a billing
-										zip code other than the one on file with the credit card’s issuing bank,
-										or an incorrect CVC code, Metro Transit will deny your transaction for
-										security purposes. Additionally, rejected debit card transactions may
-										cause the funds to be held by your bank for up to 5 business days before
-										being released back to the card.
-									</p>
+									<div class="alert alert-primary"
+										role="alert">
+										<h4>Important</h4>
+										<p>Please note that if you enter a billing
+											zip code other than the one on file with the credit card’s issuing bank,
+											or an incorrect CVC code, Metro Transit will deny your transaction for
+											security purposes. Additionally, rejected debit card transactions may
+											cause the funds to be held by your bank for up to 5 business days before
+											being released back to the card.
+										</p>
+									</div>
 								</div>
 							</div>
-						</div>
-					</section>
+						</section>
 
-					<section class="section reverse">
-						<div class="container">
-							<div class="shipping-info">
-								<h3 class="h4">Shipping Address</h3>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="firtName"
-												   class="sr-only">First name</label>
-											<input type="text"
-												   class="form-control"
-												   id="firstName"
-												   name="firstName"
-												   placeholder="First name">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="lastName"
-												   class="sr-only">Last name</label>
-											<input type="text"
-												   class="form-control"
-												   id="lastName"
-												   name="lastName"
-												   placeholder="Last name">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="address"
-												   class="sr-only">Address</label>
-											<input type="text"
-												   class="form-control"
-												   id="address"
-												   name="address"
-												   placeholder="Address">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<label class="sr-only">Address 2</label>
-											<input type="address"
-												   class="form-control"
-												   id="address2"
-												   aria-describedby="emailHelp"
-												   placeholder="Address 2">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="city"
-												   class="sr-only">City</label>
-											<input type="text"
-												   class="form-control"
-												   id="city"
-												   name="city"
-												   placeholder="City">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="state"
-												   class="sr-only">State</label>
-											<select class="custom-select"
-													id="state"
-													name="state">
-												<option value="">State</option>
-												<option value="AL">Alabama</option>
-												<option value="AK">Alaska</option>
-												<option value="AZ">Arizona</option>
-												<option value="AR">Arkansas</option>
-												<option value="CA">California</option>
-												<option value="CO">Colorado</option>
-												<option value="CT">Connecticut</option>
-												<option value="DE">Delaware</option>
-												<option value="FL">Florida</option>
-												<option value="GA">Georgia</option>
-												<option value="HI">Hawaii</option>
-												<option value="ID">Idaho</option>
-												<option value="IL">Illinois</option>
-												<option value="IN">Indiana</option>
-												<option value="IA">Iowa</option>
-												<option value="KS">Kansas</option>
-												<option value="KY">Kentucky</option>
-												<option value="LA">Louisiana</option>
-												<option value="ME">Maine</option>
-												<option value="MD">Maryland</option>
-												<option value="MA">Massachusetts</option>
-												<option value="MI">Michigan</option>
-												<option value="MN">Minnesota</option>
-												<option value="MS">Mississippi</option>
-												<option value="MO">Missouri</option>
-												<option value="MT">Montana</option>
-												<option value="NE">Nebraska</option>
-												<option value="NV">Nevada</option>
-												<option value="NH">New Hampshire</option>
-												<option value="NJ">New Jersey</option>
-												<option value="NM">New Mexico</option>
-												<option value="NY">New York</option>
-												<option value="NC">North Carolina</option>
-												<option value="ND">North Dakota</option>
-												<option value="OH">Ohio</option>
-												<option value="OK">Oklahoma</option>
-												<option value="OR">Oregon</option>
-												<option value="PA">Pennsylvania</option>
-												<option value="RI">Rhode Island</option>
-												<option value="SC">South Carolina</option>
-												<option value="SD">South Dakota</option>
-												<option value="TN">Tennessee</option>
-												<option value="TX">Texas</option>
-												<option value="UT">Utah</option>
-												<option value="VT">Vermont</option>
-												<option value="VA">Virginia</option>
-												<option value="WA">Washington</option>
-												<option value="WV">West Virginia</option>
-												<option value="WI">Wisconsin</option>
-												<option value="WY">Wyoming</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="zipcode"
-												   class="sr-only">Zip code</label>
-											<input type="text"
-												   class="form-control"
-												   id="zipcode"
-												   name="zipcode"
-												   placeholder="Zip code">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="phoneNumber"
-												   class="sr-only">Phone number</label>
-											<input type="text"
-												   class="form-control"
-												   id="phoneNumber"
-												   name="phoneNumber"
-												   placeholder="Phone number">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group required">
-											<label for="emailAddress"
-												   class="sr-only">Email address</label>
-											<input type="email"
-												   class="form-control"
-												   id="emailAddress"
-												   name="emailAddress"
-												   placeholder="Email address">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox"
-									   class="custom-control-input shipping-address"
-									   id="customCheck1"
-									   checked>
-								<label class="custom-control-label"
-									   for="customCheck1">Shipping address is the same as my billing
-									address</label>
-							</div>
-						</div>
-					</section>
-
-					<section class="section reverse">
-						<div class="container">
-							<div class="shopping-cart">
-								<div class="row">
-									<div class="col col-lg-8 offset-lg-2">
-										<div id="shoppingCart"
-											 class="card mb-0">
-											<div class="card-header">
-												<h2 class="text-center">Shopping cart</h2>
+						<section class="section reverse">
+							<div class="container">
+								<div class="shipping-info">
+									<h3 class="h4">Shipping Address</h3>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="firtName"
+													class="sr-only">First name</label>
+												<input type="text"
+													class="form-control"
+													id="firstName"
+													name="firstName"
+													placeholder="First name">
 											</div>
-											<div class="card-body p-0">
-												<div class="cart-item-heading">
-													<div class="row">
-														<div class="col-6 col-md-8 h2">Item</div>
-														<div class="col-3 col-md-2 h2 text-center">Qty
-														</div>
-														<div class="col-3 col-md-2 h2 text-right">Total
-														</div>
-													</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="lastName"
+													class="sr-only">Last name</label>
+												<input type="text"
+													class="form-control"
+													id="lastName"
+													name="lastName"
+													placeholder="Last name">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="address"
+													class="sr-only">Address</label>
+												<input type="text"
+													class="form-control"
+													id="address"
+													name="address"
+													placeholder="Address">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="sr-only">Address 2</label>
+												<input type="address"
+													class="form-control"
+													id="address2"
+													aria-describedby="emailHelp"
+													placeholder="Address 2">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="city"
+													class="sr-only">City</label>
+												<input type="text"
+													class="form-control"
+													id="city"
+													name="city"
+													placeholder="City">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="state"
+													class="sr-only">State</label>
+												<select class="custom-select"
+														id="state"
+														name="state">
+													<option value="">State</option>
+													<option value="AL">Alabama</option>
+													<option value="AK">Alaska</option>
+													<option value="AZ">Arizona</option>
+													<option value="AR">Arkansas</option>
+													<option value="CA">California</option>
+													<option value="CO">Colorado</option>
+													<option value="CT">Connecticut</option>
+													<option value="DE">Delaware</option>
+													<option value="FL">Florida</option>
+													<option value="GA">Georgia</option>
+													<option value="HI">Hawaii</option>
+													<option value="ID">Idaho</option>
+													<option value="IL">Illinois</option>
+													<option value="IN">Indiana</option>
+													<option value="IA">Iowa</option>
+													<option value="KS">Kansas</option>
+													<option value="KY">Kentucky</option>
+													<option value="LA">Louisiana</option>
+													<option value="ME">Maine</option>
+													<option value="MD">Maryland</option>
+													<option value="MA">Massachusetts</option>
+													<option value="MI">Michigan</option>
+													<option value="MN">Minnesota</option>
+													<option value="MS">Mississippi</option>
+													<option value="MO">Missouri</option>
+													<option value="MT">Montana</option>
+													<option value="NE">Nebraska</option>
+													<option value="NV">Nevada</option>
+													<option value="NH">New Hampshire</option>
+													<option value="NJ">New Jersey</option>
+													<option value="NM">New Mexico</option>
+													<option value="NY">New York</option>
+													<option value="NC">North Carolina</option>
+													<option value="ND">North Dakota</option>
+													<option value="OH">Ohio</option>
+													<option value="OK">Oklahoma</option>
+													<option value="OR">Oregon</option>
+													<option value="PA">Pennsylvania</option>
+													<option value="RI">Rhode Island</option>
+													<option value="SC">South Carolina</option>
+													<option value="SD">South Dakota</option>
+													<option value="TN">Tennessee</option>
+													<option value="TX">Texas</option>
+													<option value="UT">Utah</option>
+													<option value="VT">Vermont</option>
+													<option value="VA">Virginia</option>
+													<option value="WA">Washington</option>
+													<option value="WV">West Virginia</option>
+													<option value="WI">Wisconsin</option>
+													<option value="WY">Wyoming</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="zipcode"
+													class="sr-only">Zip code</label>
+												<input type="text"
+													class="form-control"
+													id="zipcode"
+													name="zipcode"
+													placeholder="Zip code">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="phoneNumber"
+													class="sr-only">Phone number</label>
+												<input type="text"
+													class="form-control"
+													id="phoneNumber"
+													name="phoneNumber"
+													placeholder="Phone number">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group required">
+												<label for="emailAddress"
+													class="sr-only">Email address</label>
+												<input type="email"
+													class="form-control"
+													id="emailAddress"
+													name="emailAddress"
+													placeholder="Email address">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox"
+										class="custom-control-input shipping-address"
+										id="customCheck1"
+										checked>
+									<label class="custom-control-label"
+										for="customCheck1">Shipping address is the same as my billing
+										address</label>
+								</div>
+							</div>
+						</section>
+
+						<section class="section reverse">
+							<div class="container">
+								<div class="shopping-cart">
+									<div class="row">
+										<div class="col col-lg-8 offset-lg-2">
+											<div id="shoppingCart"
+												class="card mb-0">
+												<div class="card-header">
+													<h2 class="text-center">Shopping cart</h2>
 												</div>
-												<div class="cart-item">
-													<h3 class="h4 cyan">Stored Value</h3>
-													<p>Card #: <span class="cyan">1234-5678-9000-0000</span>
-													</p>
-													<div class="row">
-														<div class="col-6 col-md-8 d-flex pt-1 pt-md-2">
-															<p id="itemDescription"
-															   class="item-description d-inline-block">
-																$5.00</p>
-														</div>
-														<div class="col-3 col-md-2 pt-1 pt-md-2">
-															<p class="text-center">1</p>
-														</div>
-														<div class="col-3 col-md-2 pt-1 pt-md-2 text-right">
-															<p id="itemCost">$5.00</p>
-														</div>
-													</div>
-												</div>
-												<div class="cart-item">
-													<h3 class="h4 cyan">Visitor Pass</h3>
-													<div class="row">
-														<div class="col-6 col-md-8 d-flex pt-1 pt-md-2">
-															<p id="itemDescription"
-															   class="item-description d-inline-block">
-																$5.00</p>
-														</div>
-														<div class="col-3 col-md-2 pt-1 pt-md-2">
-															<p class="text-center">1</p>
-														</div>
-														<div class="col-3 col-md-2 pt-1 pt-md-2 text-right">
-															<p id="itemCost">$5.00</p>
-														</div>
-													</div>
-												</div>
-												<div class="cart-item">
-													<h3 class="h4 cyan">New Go-To Card + Stored Value 10
-													</h3>
-													<div class="row">
-														<div class="col-6 col-md-8 d-flex pt-1 pt-md-2">
-															<p id="itemDescription"
-															   class="item-description d-inline-block">
-																$10.00</p>
-														</div>
-														<div class="col-3 col-md-2 pt-1 pt-md-2">
-															<p class="text-center">1</p>
-														</div>
-														<div class="col-3 col-md-2 pt-1 pt-md-2 text-right">
-															<p id="itemCost">$10.00</p>
-														</div>
-													</div>
-												</div>
-												<div class="cost-breakdown">
-													<div class="row gray-bg-200">
-														<div class="col-8 text-right"><strong>Sub
-																Total</strong>
-														</div>
-														<div class="col-4 text-right">$20.00</div>
-													</div>
-													<div class="row">
-														<div class="col-8 text-right"><strong>Processing
-																&amp;
-																Shipping</strong></div>
-														<div class="col-4 text-right">$0.00</div>
-													</div>
-													<div class="row">
-														<div class="col-8 text-right"><strong>Sales
-																Tax</strong>
-														</div>
-														<div class="col-4 text-right">$0.00</div>
-													</div>
-													<div class="row teal-bg">
-														<div class="col-8 text-right">
-															<strong>Total</strong></div>
-														<div class="col-4 text-right">$20.00</div>
-													</div>
-												</div>
-												<div class="cart-controls">
-													<div class="row">
-														<div class="col-md-6">
-															<div class="button-container-icon-left">
-																<a class="btn btn-outline-primary">Billing &amp;
-																	payment</a>
+												<div class="card-body p-0">
+													<div class="cart-item-heading">
+														<div class="row">
+															<div class="col-6 col-md-8 h2">Item</div>
+															<div class="col-3 col-md-2 h2 text-center">Qty
 															</div>
-														</div>
-														<div class="col-md-6">
-															<div class="btn-container">
-																<button type="submit"
-																		id="placeOrder"
-																		class="btn btn-warning">Place order</button>
+															<div class="col-3 col-md-2 h2 text-right">Total
 															</div>
 														</div>
 													</div>
-												</div>
-												<p class="text-center"><em>All sales are final.</em></p>
-												<div class="text-link-container text-center">
-													<a href="/">Continue shopping &nbsp;</a>
+													<div class="cart-item">
+														<h3 class="h4 cyan">Stored Value</h3>
+														<p>Card #: <span class="cyan">1234-5678-9000-0000</span>
+														</p>
+														<div class="row">
+															<div class="col-6 col-md-8 d-flex pt-1 pt-md-2">
+																<p id="itemDescription"
+																class="item-description d-inline-block">
+																	$5.00</p>
+															</div>
+															<div class="col-3 col-md-2 pt-1 pt-md-2">
+																<p class="text-center">1</p>
+															</div>
+															<div class="col-3 col-md-2 pt-1 pt-md-2 text-right">
+																<p id="itemCost">$5.00</p>
+															</div>
+														</div>
+													</div>
+													<div class="cart-item">
+														<h3 class="h4 cyan">Visitor Pass</h3>
+														<div class="row">
+															<div class="col-6 col-md-8 d-flex pt-1 pt-md-2">
+																<p id="itemDescription"
+																class="item-description d-inline-block">
+																	$5.00</p>
+															</div>
+															<div class="col-3 col-md-2 pt-1 pt-md-2">
+																<p class="text-center">1</p>
+															</div>
+															<div class="col-3 col-md-2 pt-1 pt-md-2 text-right">
+																<p id="itemCost">$5.00</p>
+															</div>
+														</div>
+													</div>
+													<div class="cart-item">
+														<h3 class="h4 cyan">New Go-To Card + Stored Value 10
+														</h3>
+														<div class="row">
+															<div class="col-6 col-md-8 d-flex pt-1 pt-md-2">
+																<p id="itemDescription"
+																class="item-description d-inline-block">
+																	$10.00</p>
+															</div>
+															<div class="col-3 col-md-2 pt-1 pt-md-2">
+																<p class="text-center">1</p>
+															</div>
+															<div class="col-3 col-md-2 pt-1 pt-md-2 text-right">
+																<p id="itemCost">$10.00</p>
+															</div>
+														</div>
+													</div>
+													<div class="cost-breakdown">
+														<div class="row gray-bg-200">
+															<div class="col-8 text-right"><strong>Sub
+																	Total</strong>
+															</div>
+															<div class="col-4 text-right">$20.00</div>
+														</div>
+														<div class="row">
+															<div class="col-8 text-right"><strong>Processing
+																	&amp;
+																	Shipping</strong></div>
+															<div class="col-4 text-right">$0.00</div>
+														</div>
+														<div class="row">
+															<div class="col-8 text-right"><strong>Sales
+																	Tax</strong>
+															</div>
+															<div class="col-4 text-right">$0.00</div>
+														</div>
+														<div class="row teal-bg">
+															<div class="col-8 text-right">
+																<strong>Total</strong></div>
+															<div class="col-4 text-right">$20.00</div>
+														</div>
+													</div>
+													<div class="cart-controls">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="button-container-icon-left">
+																	<a class="btn btn-outline-primary">Billing &amp;
+																		payment</a>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="btn-container">
+																	<button type="submit"
+																			id="placeOrder"
+																			class="btn btn-warning">Place order</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<p class="text-center"><em>All sales are final.</em></p>
+													<div class="text-link-container text-center">
+														<a href="/">Continue shopping &nbsp;</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
+						</section>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</main>
 		<!-- End Main Content -->
 
 		<!-- Begin Footer -->
