@@ -7677,10 +7677,11 @@ hr {
 
 .section {
   padding-top: 30px;
-  padding-bottom: 60px; }
+  padding-bottom: 30px; }
   @media (min-width: 992px) {
     .section {
-      padding-top: 60px; } }
+      padding-top: 60px;
+      padding-bottom: 60px; } }
   .section:nth-child(odd) {
     background-color: #f5f5f4; }
 
@@ -8451,10 +8452,13 @@ input[name="quantity"]::placeholder {
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
   top: 2px; }
 
-table.table-my-fare-card-list {
-  width: 100%; }
-  table.table-my-fare-card-list thead .th-lg {
-    min-width: 12rem; }
+table#myFareCardList tbody td {
+  white-space: nowrap; }
+  table#myFareCardList tbody td:nth-of-type(3) select, table#myFareCardList tbody td:nth-of-type(4) select {
+    min-width: 155px !important; }
+    @media (min-width: 992px) {
+      table#myFareCardList tbody td:nth-of-type(3) select, table#myFareCardList tbody td:nth-of-type(4) select {
+        width: auto; } }
 
 .tooltip {
   border: 2px solid #fff; }
@@ -8490,7 +8494,11 @@ table.table-my-fare-card-list {
           #header .navbar .navbar-nav .nav-item .nav-link:link {
             padding: 1.3rem; } }
       @media (min-width: 1200px) {
-        #header .navbar .navbar-nav .nav-item .nav-link:hover, #header .navbar .navbar-nav .nav-item .nav-link:focus, #header .navbar .navbar-nav .nav-item .nav-link:focus-within {
+        #header .navbar .navbar-nav .nav-item .nav-link:hover, #header .navbar .navbar-nav .nav-item .nav-link:focus {
+          color: #fff;
+          background-color: #0097d0; } }
+      @media (min-width: 1200px) {
+        #header .navbar .navbar-nav .nav-item .nav-link:focus-within {
           color: #fff;
           background-color: #0097d0; } }
       @media (min-width: 1200px) {
