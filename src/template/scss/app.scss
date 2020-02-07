@@ -22,3 +22,6 @@
 @import "billing.scss";
 @import "shopping-cart";
 @import "footer";
+
+// IE11 support using Babel
+@import "ie11";
