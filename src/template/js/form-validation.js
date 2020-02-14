@@ -94,12 +94,11 @@ $(function () {
             if (element.prop("type") === "checkbox" ||
                 element.prop("type") === "radio" ||
                 element.prop("type") === "file") {
-                //$("<img src='/template/img/svg/alert-red.svg'/>").appendTo(element.parents(".form-group, input-group"));
-				$("<img alt="" class='alert-red' src='/template/img/svg/alert-red.svg'/>").appendTo(element.parents(".custom-control"));
-				error.appendTo(element.parents(".custom-control"));
+				$('<img alt="" class="alert-red" src="/template/img/svg/alert-red.svg"/>').appendTo(element.parents('.custom-control'));
+				error.appendTo(element.parents('.custom-control'));
             } else {
-				$("<img alt="" class='alert-red' src='/template/img/svg/alert-red.svg'/>").appendTo(element.parents(".form-group, .input-group"));
-				error.appendTo(element.parents(".form-group, .input-group"));
+				$('<img alt="" class="alert-red" src="/template/img/svg/alert-red.svg"/>').appendTo(element.parents('.form-group, .input-group'));
+				error.appendTo(element.parents('.form-group, .input-group'));
 			}
         },
         success: function(label, element) {
@@ -110,15 +109,15 @@ $(function () {
         },
         highlight: function(element, errorClass, validClass) {
             // Adds error ".is-invalid" for Bootstrap 4 styles.
-            $(element).parents(".form-group, .input-group, .custom-control").addClass(errorClass).removeClass(validClass);
+            $(element).parents('.form-group, .input-group, .custom-control').addClass(errorClass).removeClass(validClass);
 
             // Sets error icon.
-            $(element).next(".alert-red").show()/*addClass("fa-exclamation-triangle").removeClass("fa-check")*/;
+            $(element).next('.alert-red').show()/*addClass("fa-exclamation-triangle").removeClass("fa-check")*/;
         },
         unhighlight: function(element, errorClass, validClass) {
             // Adds valid class ".is-valid" for Bootstrap 4 styles.
-			$(element).parents(".form-group, .input-group, .custom-control").addClass(validClass).removeClass(errorClass);
-			$(element).next(".alert-red").remove();
+			$(element).parents('.form-group, .input-group, .custom-control').addClass(validClass).removeClass(errorClass);
+			$(element).next('.alert-red').remove();
         }
 	});
 });

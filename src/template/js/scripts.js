@@ -1,111 +1,146 @@
-var Main = (function ($, window, document, undefined) {
+var Main = (function($, window, document, undefined) {
+    "use strict";
 
-    'use strict';
-
-    var getCookie = function (check_name) {
-        var a_all_cookies = document.cookie.split(';'); var a_temp_cookie = ''; var cookie_name = ''; var cookie_value = ''; var b_cookie_found = false; var i = ''; for (i = 0; i < a_all_cookies.length; i++) {
-            a_temp_cookie = a_all_cookies[i].split('='); cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, ''); if (cookie_name == check_name) {
-                b_cookie_found = true; if (a_temp_cookie.length > 1) { cookie_value = unescape(a_temp_cookie[1].replace(/^\s+|\s+$/g, '')); }
-                return cookie_value; break;
+    var getCookie = function(check_name) {
+        var a_all_cookies = document.cookie.split(";");
+        var a_temp_cookie = "";
+        var cookie_name = "";
+        var cookie_value = "";
+        var b_cookie_found = false;
+        var i = "";
+        for (i = 0; i < a_all_cookies.length; i++) {
+            a_temp_cookie = a_all_cookies[i].split("=");
+            cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, "");
+            if (cookie_name == check_name) {
+                b_cookie_found = true;
+                if (a_temp_cookie.length > 1) {
+                    cookie_value = unescape(
+                        a_temp_cookie[1].replace(/^\s+|\s+$/g, "")
+                    );
+                }
+                return cookie_value;
+                break;
             }
-            a_temp_cookie = null; cookie_name = '';
+            a_temp_cookie = null;
+            cookie_name = "";
         }
-        if (!b_cookie_found) { return null; }
-    }
+        if (!b_cookie_found) {
+            return null;
+        }
+    };
 
-    var setCookie = function (name, value, expires, path, domain, secure) {
-        var today = new Date(); today.setTime(today.getTime()); if (expires) { expires = expires * 1000 * 60 * 60 * 24; }
-        var expires_date = new Date(today.getTime() + (expires)); document.cookie = name + "=" + escape(value) +
-            ((expires) ? ";expires=" + expires_date.toGMTString() : "") +
-            ((path) ? ";path=" + path : "") +
-            ((domain) ? ";domain=" + domain : "") +
-            ((secure) ? ";secure" : "");
-    }
+    var setCookie = function(name, value, expires, path, domain, secure) {
+        var today = new Date();
+        today.setTime(today.getTime());
+        if (expires) {
+            expires = expires * 1000 * 60 * 60 * 24;
+        }
+        var expires_date = new Date(today.getTime() + expires);
+        document.cookie =
+            name +
+            "=" +
+            escape(value) +
+            (expires ? ";expires=" + expires_date.toGMTString() : "") +
+            (path ? ";path=" + path : "") +
+            (domain ? ";domain=" + domain : "") +
+            (secure ? ";secure" : "");
+    };
 
-    var deleteCookie = function (name, path, domain) {
-        if (getCookie(name)) document.cookie = name + "=" +
-            ((path) ? ";path=" + path : "") +
-            ((domain) ? ";domain=" + domain : "") + ";expires=Thu, 01-Jan-1970 00:00:01 GMT";
-    }
+    var deleteCookie = function(name, path, domain) {
+        if (getCookie(name))
+            document.cookie =
+                name +
+                "=" +
+                (path ? ";path=" + path : "") +
+                (domain ? ";domain=" + domain : "") +
+                ";expires=Thu, 01-Jan-1970 00:00:01 GMT";
+    };
 
-    var popupAlertNotice = function (cookieID, expire) {
-        if ($('#special-alert-notice').hasClass('alert-popup')) {
-            if (cookieID.substring(0, 3) === 'pop' &&
-                getCookie('PopupNoticeShown' + cookieID) !== 'true') {
-                setCookie('PopupNoticeShown' + cookieID, 'true', expire);
-                $('<div />').prependTo('body').addClass('alert-popup-overlay');
-                $('body').addClass('hidden-overflow');
-                $('#special-alert-notice').show();
-                $('#special-alert-notice .fa-close').one('click', function () {
-                    $('#special-alert-notice').hide();
-                    $('.alert-popup-overlay').remove();
-                    $('body').removeClass('hidden-overflow');
+    var popupAlertNotice = function(cookieID, expire) {
+        if ($("#special-alert-notice").hasClass("alert-popup")) {
+            if (
+                cookieID.substring(0, 3) === "pop" &&
+                getCookie("PopupNoticeShown" + cookieID) !== "true"
+            ) {
+                setCookie("PopupNoticeShown" + cookieID, "true", expire);
+                $("<div />")
+                    .prependTo("body")
+                    .addClass("alert-popup-overlay");
+                $("body").addClass("hidden-overflow");
+                $("#special-alert-notice").show();
+                $("#special-alert-notice .fa-close").one("click", function() {
+                    $("#special-alert-notice").hide();
+                    $(".alert-popup-overlay").remove();
+                    $("body").removeClass("hidden-overflow");
                 });
             }
         }
 
-        if ($('#special-alert-notice').hasClass('alert-topmargin')) {
-            if (cookieID.substring(0, 3) === 'top' &&
-                getCookie('PopupNoticeShown' + cookieID) !== 'true') {
-                $('body').prepend($('#special-alert-notice').show());
+        if ($("#special-alert-notice").hasClass("alert-topmargin")) {
+            if (
+                cookieID.substring(0, 3) === "top" &&
+                getCookie("PopupNoticeShown" + cookieID) !== "true"
+            ) {
+                $("body").prepend($("#special-alert-notice").show());
             }
-            $('#special-alert-notice').on('close.bs.alert', function () {
-                setCookie('PopupNoticeShown' + cookieID, 'true', expire);
+            $("#special-alert-notice").on("close.bs.alert", function() {
+                setCookie("PopupNoticeShown" + cookieID, "true", expire);
             });
         }
     };
 
-    var enterKeyPressHandler = function (f, t) {
+    var enterKeyPressHandler = function(f, t) {
         var field = $(f);
-        field.on('focus', function () {
-            $(document).on('keydown', function (event) {
-                if (field.attr('id') !== event.target.id) return;
-                if (field.val() == '') return;
+        field.on("focus", function() {
+            $(document).on("keydown", function(event) {
+                if (field.attr("id") !== event.target.id) return;
+                if (field.val() == "") return;
                 if (event.which == 13) {
                     event.preventDefault();
-                    $(t).trigger('click');
+                    $(t).trigger("click");
                 }
             });
         });
-        field.on('blur', function () { $(document).off('keydown'); });
+        field.on("blur", function() {
+            $(document).off("keydown");
+        });
     };
 
-    var init = function () {
+    var init = function() {
+        // Detect IE version
+        function GetIEVersion() {
+            var sAgent = window.navigator.userAgent;
+            var Idx = sAgent.indexOf("MSIE");
 
-		// Detect IE version
-		function GetIEVersion() {
-			var sAgent = window.navigator.userAgent;
-			var Idx = sAgent.indexOf("MSIE");
-		  
-			// If IE, return version number.
-			if (Idx > 0) 
-			  return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
-		  
-			// If IE 11 then look for Updated user agent string.
-			else if (!!navigator.userAgent.match(/Trident\/7\./)) 
-			  return 11;
-		  
-			else
-			  return 0; //It is not IE
-		}
-			
+            // If IE, return version number.
+            if (Idx > 0)
+                return parseInt(
+                    sAgent.substring(Idx + 5, sAgent.indexOf(".", Idx))
+                );
+            // If IE 11 then look for Updated user agent string.
+            else if (!!navigator.userAgent.match(/Trident\/7\./)) return 11;
+            else return 0; //It is not IE
+        }
+
         // shopping car number
-        let qty = getCookie('cart_status');
+        let qty = getCookie("cart_status");
         if (qty !== null && qty > 0) {
-            $('<span/>', { class: 'badge badge-info' }).text(qty).appendTo($('a.store-icon'));
+            $("<span/>", { class: "badge badge-info" })
+                .text(qty)
+                .appendTo($("a.store-icon"));
         }
 
         // Bootstrap Popover with HTML
         $('[data-toggle="popover"]').popover({
             html: true,
-            trigger: 'click'
+            trigger: "click",
         });
 
         $("#header img.active").hide();
 
         var navImg = $("#header .nav-item");
         $(navImg).hover(
-            function () {
+            function() {
                 $(this)
                     .find("img.inactive")
                     .hide();
@@ -113,7 +148,7 @@ var Main = (function ($, window, document, undefined) {
                     .find("img.active")
                     .show();
             },
-            function () {
+            function() {
                 $(this)
                     .find("img.inactive")
                     .show();
@@ -121,67 +156,72 @@ var Main = (function ($, window, document, undefined) {
                     .find("img.active")
                     .hide();
             }
-		);
-		
-		// Show/hide shipping address
-		$("#saShippingAddress").change(function() {
-			if(this.checked) {
-				$(".shipping-info").fadeOut();
-			} else {
-				$(".shipping-info").fadeIn();
-			}
-		});
+        );
 
-		// Initialize dataTables {
-		// $("#myFareCardList").DataTable({
-		// 	searching: false,
-		// 	paging: false,
-		// 	info: false,
-		// 	"columns": [
-		// 		{ "orderable": true },
-		// 		{ "orderable": true },
-		// 		{ "orderable": true },
-		// 		{ "orderable": false },
-		// 		{ "orderable": false }
-		// 	]
-		// 	//fixedHeader: true
-		// });
+        // Show/hide shipping address
+        $("#saShippingAddress").change(function() {
+            if (this.checked) {
+                $(".shipping-info").fadeOut();
+            } else {
+                $(".shipping-info").fadeIn();
+            }
+        });
+
+        // Initialize dataTables {
+        // $("#myFareCardList").DataTable({
+        // 	searching: false,
+        // 	paging: false,
+        // 	info: false,
+        // 	"columns": [
+        // 		{ "orderable": true },
+        // 		{ "orderable": true },
+        // 		{ "orderable": true },
+        // 		{ "orderable": false },
+        // 		{ "orderable": false }
+        // 	]
+        // 	//fixedHeader: true
+        // });
 
         // Secondary nav set active item
-        if ($('.secondary-nav').length) {
-            $('.secondary-nav > ul > li > a[href=' + location.pathname.replace('/', '\\/') + ']').addClass('active');
-		}
-		
-		// Google CSE
-		$('#siteSearchBtn').on('click', function() {
-			window.location = "/website-search-results?q=" + encodeURI ($('#siteSearch').val());
-		});
-		Main.enterKeyPressHandler('#siteSearch', '#siteSearchBtn');
+        if ($(".secondary-nav").length) {
+            $(
+                ".secondary-nav > ul > li > a[href=" +
+                    location.pathname.replace("/", "\\/") +
+                    "]"
+            ).addClass("active");
+        }
+
+        // Google CSE
+        $("#siteSearchBtn").on("click", function() {
+            window.location =
+                "/website-search-results?q=" +
+                encodeURI($("#siteSearch").val());
+        });
+        Main.enterKeyPressHandler("#siteSearch", "#siteSearchBtn");
     };
 
     return {
         init: init,
         enterKeyPressHandler: enterKeyPressHandler,
-        popupAlertNotice: popupAlertNotice
+        popupAlertNotice: popupAlertNotice,
     };
-
 })(jQuery, window, document);
 
-$(function () {
+$(function() {
     Main.init();
 });
 function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        autoDisplay: false,
-        gaTrack: true,
-        gaId: 'UA-63539533-1'
-    },
-        'google_translate_element'
+    new google.translate.TranslateElement(
+        {
+            pageLanguage: "en",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+            gaTrack: true,
+            gaId: "UA-63539533-1",
+        },
+        "google_translate_element"
     );
-};
-
+}
 
 // $(document).ready(function() {
 
@@ -197,7 +237,7 @@ function googleTranslateElementInit() {
 //         $(this).find('img.inactive').show();
 //         $(this).find('img.active').hide();
 //     });
-	
+
 // 	// Initialize tooltips
 // 	$('[data-toggle="popover"]').popover();
 
