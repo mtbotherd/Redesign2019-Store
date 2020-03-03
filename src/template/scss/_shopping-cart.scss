@@ -2,101 +2,101 @@
     Shopping cart styles and includes
 **********************************************/
 #store {
-  .shopping-cart {
-    .card-header.header .white-circle-info {
-      top: 2.5rem;
-      right: 2rem;
+    .shopping-cart {
+        .card-header.header .white-circle-info {
+            top: 2.5rem;
+            right: 2rem;
 
-      @include media-breakpoint-up(md) {
-        top: 1.5rem;
-        right: 7rem;
-      }
-    }
-    .cart-item-heading {
-      background-color: $gray-100;
-      padding-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      .row {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-
-    .cart-item {
-      .h4 {
-        padding-top: 0.5rem;
-      }
-
-      &:first-child .h4 {
-        padding-top: 0;
-      }
-
-      @include media-breakpoint-up(lg) {
-        padding: 0;
-      }
-
-      .row {
-        border-bottom: 1px solid $gray-300;
-        margin-right: 0;
-        margin-left: 0;
-        padding-bottom: 30px;
-
-        .custom-control-label {
-          margin-right: 1rem;
-
-          &::before {
-            top: 0.25rem;
-          }
+            @include media-breakpoint-up(md) {
+                top: 1.5rem;
+                right: 7rem;
+            }
+        }
+        .cart-item-heading {
+            background-color: $gray-100;
+            padding-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            .row {
+                margin-right: 0;
+                margin-left: 0;
+            }
         }
 
-        .form-group {
-          margin-bottom: 0;
+        .cart-item {
+            .h4 {
+                padding-top: 0.5rem;
+            }
+
+            &:first-child .h4 {
+                padding-top: 0;
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding: 0;
+            }
+
+            .row {
+                border-bottom: 1px solid $gray-300;
+                margin-right: 0;
+                margin-left: 0;
+                padding-bottom: 30px;
+
+                .custom-control-label {
+                    margin-right: 1rem;
+
+                    //   &::before {
+                    //     top: 0.25rem;
+                    //   }
+                }
+
+                .form-group {
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
         }
 
-        p {
-          margin-bottom: 0;
+        .cost-breakdown {
+            border: 1px solid $gray-300;
+            border-top: none;
+            margin-bottom: 30px;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 45px;
+            }
+
+            .row {
+                margin-right: 0;
+                margin-left: 0;
+
+                div {
+                    border-bottom: 1px solid $gray-300;
+                    padding: 0.75rem;
+
+                    &:first-child {
+                        border-right: 1px solid $gray-300;
+                    }
+                }
+
+                &:last-child div {
+                    border-bottom: none;
+                }
+            }
         }
-      }
-    }
 
-    .cost-breakdown {
-      border: 1px solid $gray-300;
-      border-top: none;
-      margin-bottom: 30px;
-
-      @include media-breakpoint-up(lg) {
-        margin-bottom: 45px;
-      }
-
-      .row {
-        margin-right: 0;
-        margin-left: 0;
-
-        div {
-          border-bottom: 1px solid $gray-300;
-          padding: 0.75rem;
-
-          &:first-child {
-            border-right: 1px solid $gray-300;
-          }
+        .cart-controls {
+            text-align: center;
         }
 
-        &:last-child div {
-          border-bottom: none;
+        .sales-final {
+            text-align: center;
+
+            @include media-breakpoint-up(lg) {
+                text-align: right;
+            }
         }
-      }
     }
-
-    .cart-controls {
-      text-align: center;
-    }
-
-    .sales-final {
-      text-align: center;
-
-      @include media-breakpoint-up(lg) {
-        text-align: right;
-      }
-    }
-  }
 }

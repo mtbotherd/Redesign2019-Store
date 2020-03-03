@@ -1,0 +1,12 @@
+.input-group {
+    input {
+        border-right: 0;
+    }
+    .input-group-append {
+        .btn-primary {
+            background-color: $white !important;
+            border-color: $border-color;
+            border-left: none;
+        }
+    }
+}

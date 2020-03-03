@@ -5,13 +5,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Metro Transit</title>
 	<link rel="shortcut icon"
 		  href="favicon.ico"
 		  type="image/x-icon">
-	<!-- build:css /template/css/app.min.css -->
 	<link rel="stylesheet" href="/template/css/app.css">
-	<!-- endbuild -->
 </head>
 
 <body>
@@ -21,10 +20,22 @@
 			<a id="skipNav" href="#pageContainer" class="skip-to-content">Skip to main content</a>
 		</div>
 
+		<div id="ieAlert" style="display: none;">
+			<div class="alert alert-danger mb-0">
+				<div class="container">
+					<p class="mb-0">
+						You are using Internet Explorer. Please use Edge or
+						Chrome to get the full experience.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+
 		<!-- Begin Header -->
 		<header id="header">
 			<nav class="navbar navbar-expand-xl navbar-light">
-				<!-- <a href="#pageContainer" class="skip-to-content">Skip to main content</a> -->
 				<div class="container">
 					<a class="navbar-brand" href="/">
 						<img alt="metro transit logo" src="/template/img/MetroTransitLogo.svg" class="logo d-inline-block">
@@ -110,13 +121,21 @@
 									<span class="sr-only">site search</span>
 								</a>
 								<div class="dropdown-menu search-dropdown-menu">
-									<div class="input-group">
-										<label for="siteSearch" class="sr-only">Search</label>
-										<input type="text" id="siteSearch" class="form-control" placeholder="Search our site">
+									<div class="input-group has-float-label custom-width d-flex mb-0">
+										<input
+											type="text"
+											id="siteSearch"
+											name="siteSearch"
+											class="form-control"
+											placeholder="Search our site" />
+										<label for="siteSearch">Search our site</label>
 										<div class="input-group-append">
-											<button type="button" id="siteSearchBtn" class="btn btn-primary">
+											<button
+												type="button"
+												id="siteSearchBtn"
+												class="btn btn-primary">
 												<span class="sr-only">Search button</span>
-												<img alt="search button" class="icon" src="/template/img/svg/search-gray.svg">
+												<img alt="search button" class="icon" src="/template/img/svg/search-gray.svg" />
 											</button>
 										</div>
 									</div>
@@ -129,65 +148,6 @@
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropdown">
 									<a class="dropdown-item" href="/logoff.aspx?returnurl=https%3a%2f%2fwwwtest.metrotransit.org%2fDefault.aspx">Sign Out</a>
 									<a class="dropdown-item" href="https://account.metrotransit.org/edit.aspx?returnurl=https%3a%2f%2fwwwtest.metrotransit.org%2fDefault.aspx">Edit Account</a>
-								</div>
-							</li>
-						</ul>
-						<ul class="nav navbar-nav d-xl-none border-top-0">
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Metro Transit</a>
-								<div class="dropdown-menu" aria-labelledby="aboutDropdown">
-									<a class="dropdown-item" href="/transit-improvements">Transit Improvements</a>
-									<a class="dropdown-item" href="/facilities-people">Facilities</a>
-									<a class="dropdown-item" href="/riders-almanac-blog">Rider's Almanac</a>
-									<a class="dropdown-item" href="/use-of-transit-property">Use of Transit Property</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="mediaRelationsDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media Relations</a>
-								<div class="dropdown-menu" aria-labelledby="mediaRelationsDropdown">
-									<a class="dropdown-item" href="/logos-images">Media Resources</a>
-									<a class="dropdown-item" href="/awards">Awards</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Careers</a>
-								<div class="dropdown-menu" aria-labelledby="careersDropdown">
-									<a class="dropdown-item" href="/jobs">Available Job Opportunities</a>
-									<a class="dropdown-item" href="/drive">Become a Bus Driver</a>
-									<a class="dropdown-item" href="/transit-police-careers">Join the Transit Police</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="policeDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Policies</a>
-								<div class="dropdown-menu" aria-labelledby="policeDropdown">
-									<a class="dropdown-item" href="/social-media-policy">Social Media Policy</a>
-									<a class="dropdown-item" href="https://metrocouncil.org/Privacy-Policy.aspx">Privacy Policy</a>
-									<a class="dropdown-item" href="/code-of-conduct">Code of Conduct</a>
-									<a class="dropdown-item" href="/titlevi">Title VI: Commitment to Fairness</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="missionDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mission &amp; Impact</a>
-								<div class="dropdown-menu" aria-labelledby="missionDropdown">
-									<a class="dropdown-item" href="/about-metro-transit">Mission &amp; Funding</a>
-									<a class="dropdown-item" href="/equity">Equity &amp; Inclusion</a>
-									<a class="dropdown-item" href="/public-art-in-transit">Public Art</a>
-									<a class="dropdown-item" href="/outreach">Outreach</a>
-									<a class="dropdown-item" href="/transit-oriented-development">Transit Oriented Development</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-								<div class="dropdown-menu" aria-labelledby="resourcesDropdown">
-									<a class="dropdown-item" href="/app">Try the Metro Transit App</a>
-									<a class="dropdown-item" href="/advertise-with-metro-transit">Advertise with Us</a>
-									<a class="dropdown-item" href="/apps">API Resources for Developers</a>
 								</div>
 							</li>
 						</ul>
@@ -243,18 +203,16 @@
 										<div class="card-body">
 											<p>Add value to an existing Go-To Card, Metropass, College Pass, U-Pass or
 												Student Pass.</p>
-											<div class="form-group">
-												<label class="sr-only"
-													for="gotoSerialNumber">Enter Go-To card serial number</label>
+											<div class="form-group has-float-label">
 												<input type="text"
 													class="form-control"
 													id="gotoSerialNumber"
 													name="gotoSerialNumber"
 													placeholder="Enter Go-To Card serial number">
+												<label for="gotoSerialNumber">Enter Go-To card serial number</label>
 											</div>
 											<div class="text-center mb-2 mb-md-4">
-												<button type="submit"
-														class="btn btn-warning">Continue</button>
+												<button type="submit" class="btn btn-warning">Continue</button>
 											</div>
 											<p>Please allow 24 hours for value to be available on your card.
 												Need it in fewer than 24 hours? Visit an authorized fare retailer.
@@ -281,8 +239,70 @@
 											<img alt="" class="icon white-circle-info" src="/template/img/svg/white-circle-info.svg" data-toggle="popover" data-trigger="click" data-content="Add stored value (up to $400), passes (up to two of the same type) or both to one card. Why both? If you buy a pass that is valid for a Local Rush Hour $2.50 fare and board a bus with a Express Rush Hour $3.25 fare, the card will deduct stored value to pay the remaining 75¢. If you don't have stored value to pay the extra amount due, you must pay the full fare in cash.">
 										</div>
 										<div class="card-body">
-											<h3 class="h4 text-center">Choose an amount</h3>
-											<div class="flex-wrap btn-group btn-group-toggle" data-toggle="buttons">
+											<fieldset>
+												<legend class="h4 text-center">Choose an amount</legend>
+												<div class="flex-wrap btn-group btn-group-toggle" data-toggle="buttons">
+													<label class="btn btn-outline-secondary active">
+														<input type="radio" name="Value" id="Value0" value="0" autocomplete="off" checked>
+														<p>$0</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value5.0000" value="5.0000" autocomplete="off">
+														<p>$5</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value10.0000" value="10.0000" autocomplete="off">
+														<p>$10</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value20.0000" value="20.0000" autocomplete="off">
+														<p>$20</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value30.0000" value="30.0000" autocomplete="off">
+														<p>$30</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value35.0000" value="35.0000" autocomplete="off"> <p>$35</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value40.0000" value="40.0000" autocomplete="off"> <p>$40</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value45.0000" value="45.0000" autocomplete="off"> <p>$45</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value50.0000" value="50.0000" autocomplete="off"> <p>$50</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value60.0000" value="60.0000" autocomplete="off"> <p>$60</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value70.0000" value="70.0000" autocomplete="off"> <p>$60</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value80.0000" value="80.0000" autocomplete="off"> <p>$80</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value100.0000" value="100.0000" autocomplete="off">
+														<p>$100</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value120.0000" value="120.0000" autocomplete="off">
+														<p>$120</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value140.0000" value="140.0000" autocomplete="off">
+														<p>$140</p>
+													</label>
+													<label class="btn btn-outline-secondary ">
+														<input type="radio" name="Value" id="Value180.0000" value="180.0000" autocomplete="off">
+														<p>$180</p>
+													</label>
+												</div>
+											</fieldset>
+											<!-- <h3 class="h4 text-center">Choose an amount</h3> -->
+											<!-- <div class="flex-wrap btn-group btn-group-toggle" data-toggle="buttons">
 												<label class="btn btn-outline-secondary active">
 													<input type="radio" name="Value" id="Value0" value="0" autocomplete="off" checked>
 													<p>$0</p>
@@ -340,14 +360,70 @@
 													<input type="radio" name="Value" id="Value180.0000" value="180.0000" autocomplete="off">
 													<p>$180</p>
 												</label>
-											</div>
+											</div> -->
 
 											<div class="flex-container">
 												<p class="line-break position-relative mr-0 ml-0">and/or</p>
 											</div>
 
-											<h3 class="h4 text-center">Add a pass</h3>
-											<div class="custom-control custom-radio">
+											<fieldset>
+												<legend class="h4 text-center">Add a pass</legend>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+															id="noPass"
+															name="pass"
+															class="custom-control-input"
+															checked="chekced">
+													<label class="custom-control-label"
+															for="noPass"><strong>$0</strong> (no pass - add stored value above)</label>
+												</div>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+															id="pass31DayNonRush"
+															name="pass"
+															class="custom-control-input">
+													<label class="custom-control-label"
+															for="pass31DayNonRush"><strong>$65</strong> 31-Day Pass Local
+														Non-Rush Hour</label>
+												</div>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+															id="pass31DayExpress"
+															name="pass"
+															class="custom-control-input">
+													<label class="custom-control-label"
+															for="pass31DayExpress"><strong>$120 </strong> 31-Day Pass
+														Express</label>
+												</div>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+															id="pass31DayLocalRush"
+															name="pass"
+															class="custom-control-input">
+													<label class="custom-control-label"
+															for="pass31DayLocalRush"><strong>$90 </strong> 31-Day Local Rush
+														Hour</label>
+												</div>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+															id="pass10DayRidePass"
+															name="pass"
+															class="custom-control-input">
+													<label class="custom-control-label"
+															for="pass10DayRidePass"><strong>$20.50 </strong> 10-Day Ride
+														Pass</label>
+												</div>
+												<div class="custom-control custom-radio">
+													<input type="radio"
+															id="pass7DayRidePass"
+															name="pass"
+															class="custom-control-input">
+													<label class="custom-control-label"
+															for="pass7DayRidePass"><strong>$24 </strong> 7-Day Ride Pass</label>
+												</div>
+											</fieldset>
+											<!-- <h3 class="h4 text-center">Add a pass</h3> -->
+											<!-- <div class="custom-control custom-radio">
 												<input type="radio"
 														id="pass31DayNonRush"
 														name="pass31DayNonRush"
@@ -390,17 +466,17 @@
 														class="custom-control-input">
 												<label class="custom-control-label"
 														for="pass7DayRidePass"><strong>$24 </strong> 7-Day Ride Pass</label>
-											</div>
+											</div> -->
 											<div class="form-row">
 												<div class="col-6 offset-3">
-													<div class="form-group">
-														<label for="gotoQuantity"
-																class="d-inline-block">Quantity</label>
+													<div class="form-group has-float-label">
 														<input type="number"
-																class="form-control d-inline-block quantity"
-																maxlength="3"
+																class="form-control"
 																id="gotoQuantity"
-																name="gotoQuantity">
+																name="gotoQuantity"
+																placeholder="Quantity">
+														<label for="gotoQuantity">Quantity</label>
+														<!-- <label for="gotoQuantity" class="d-inline-block">Quantity</label> -->
 													</div>
 												</div>
 											</div>
@@ -430,13 +506,13 @@
 											</p>
 											<div class="form-row">
 												<div class="col-6 offset-3">
-													<div class="form-group">
-														<label for="visitorPassQuantity"
-															class="d-inline-block">Quantity</label>
+													<div class="form-group has-float-label">
 														<input type="number"
-															class="form-control d-inline-block quantity"
+															class="form-control"
 															id="visitorPassQuantity"
-															name="visitorPassQuantity">
+															name="visitorPassQuantity"
+															placeholder="Quantity">
+														<label for="visitorPassQuantity">Quantity</label>
 													</div>
 												</div>
 											</div>
@@ -639,13 +715,8 @@
 		<script src="/template/js/vendor/popper.js"></script>
 		<script src="/template/js/vendor/bootstrap.js"></script>
 		<script src="/template/js/vendor/jquery.validate.js"></script>
-		<!-- <script src="/template/js/vendor/additional-methods.js"></script> -->
 		<script src="/template/js/form-validation.js"></script>
-		<!-- End vendor scripts -->
-
-		<!-- build:js /template/js/scripts.min.js -->
 		<script src="/template/js/scripts.js"></script>
-		<!-- endbuild -->
 	</form>
 </body>
 

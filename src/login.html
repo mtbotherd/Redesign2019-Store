@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Metro Transit</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- build:css /template/css/app.min.css -->
@@ -18,10 +19,21 @@
 			<a id="skipNav" href="#pageContainer" class="skip-to-content">Skip to main content</a>
 		</div>
 
+		<div id="ieAlert" style="display: none;">
+			<div class="alert alert-danger mb-0">
+				<div class="container">
+					<p class="mb-0">
+						You are using Internet Explorer. Please use Edge or
+						Chrome to get the full experience.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
 		<!-- Begin Header -->
 		<header id="header">
 			<nav class="navbar navbar-expand-xl navbar-light">
-				<!-- <a href="#pageContainer" class="skip-to-content">Skip to main content</a> -->
 				<div class="container">
 					<a class="navbar-brand" href="/">
 						<img alt="metro transit logo" src="/template/img/MetroTransitLogo.svg" class="logo d-inline-block">
@@ -107,13 +119,21 @@
 									<span class="sr-only">site search</span>
 								</a>
 								<div class="dropdown-menu search-dropdown-menu">
-									<div class="input-group">
-										<label for="siteSearch" class="sr-only">Search</label>
-										<input type="text" id="siteSearch" class="form-control" placeholder="Search our site">
+									<div class="input-group has-float-label custom-width d-flex mb-0">
+										<input
+											type="text"
+											id="siteSearch"
+											name="siteSearch"
+											class="form-control"
+											placeholder="Search our site" />
+										<label for="siteSearch">Search our site</label>
 										<div class="input-group-append">
-											<button type="button" id="siteSearchBtn" class="btn btn-primary">
+											<button
+												type="button"
+												id="siteSearchBtn"
+												class="btn btn-primary">
 												<span class="sr-only">Search button</span>
-												<img alt="search button" class="icon" src="/template/img/svg/search-gray.svg">
+												<img alt="search button" class="icon" src="/template/img/svg/search-gray.svg" />
 											</button>
 										</div>
 									</div>
@@ -126,65 +146,6 @@
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropdown">
 									<a class="dropdown-item" href="/logoff.aspx?returnurl=https%3a%2f%2fwwwtest.metrotransit.org%2fDefault.aspx">Sign Out</a>
 									<a class="dropdown-item" href="https://account.metrotransit.org/edit.aspx?returnurl=https%3a%2f%2fwwwtest.metrotransit.org%2fDefault.aspx">Edit Account</a>
-								</div>
-							</li>
-						</ul>
-						<ul class="nav navbar-nav d-xl-none border-top-0">
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Metro Transit</a>
-								<div class="dropdown-menu" aria-labelledby="aboutDropdown">
-									<a class="dropdown-item" href="/transit-improvements">Transit Improvements</a>
-									<a class="dropdown-item" href="/facilities-people">Facilities</a>
-									<a class="dropdown-item" href="/riders-almanac-blog">Rider's Almanac</a>
-									<a class="dropdown-item" href="/use-of-transit-property">Use of Transit Property</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="mediaRelationsDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media Relations</a>
-								<div class="dropdown-menu" aria-labelledby="mediaRelationsDropdown">
-									<a class="dropdown-item" href="/logos-images">Media Resources</a>
-									<a class="dropdown-item" href="/awards">Awards</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Careers</a>
-								<div class="dropdown-menu" aria-labelledby="careersDropdown">
-									<a class="dropdown-item" href="/jobs">Available Job Opportunities</a>
-									<a class="dropdown-item" href="/drive">Become a Bus Driver</a>
-									<a class="dropdown-item" href="/transit-police-careers">Join the Transit Police</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="policeDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Policies</a>
-								<div class="dropdown-menu" aria-labelledby="policeDropdown">
-									<a class="dropdown-item" href="/social-media-policy">Social Media Policy</a>
-									<a class="dropdown-item" href="https://metrocouncil.org/Privacy-Policy.aspx">Privacy Policy</a>
-									<a class="dropdown-item" href="/code-of-conduct">Code of Conduct</a>
-									<a class="dropdown-item" href="/titlevi">Title VI: Commitment to Fairness</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="missionDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mission &amp; Impact</a>
-								<div class="dropdown-menu" aria-labelledby="missionDropdown">
-									<a class="dropdown-item" href="/about-metro-transit">Mission &amp; Funding</a>
-									<a class="dropdown-item" href="/equity">Equity &amp; Inclusion</a>
-									<a class="dropdown-item" href="/public-art-in-transit">Public Art</a>
-									<a class="dropdown-item" href="/outreach">Outreach</a>
-									<a class="dropdown-item" href="/transit-oriented-development">Transit Oriented Development</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-								<div class="dropdown-menu" aria-labelledby="resourcesDropdown">
-									<a class="dropdown-item" href="/app">Try the Metro Transit App</a>
-									<a class="dropdown-item" href="/advertise-with-metro-transit">Advertise with Us</a>
-									<a class="dropdown-item" href="/apps">API Resources for Developers</a>
 								</div>
 							</li>
 						</ul>
@@ -205,7 +166,6 @@
 					</div>
 
 					<div id="store" class="page-content">
-						<!-- Main page content -->
 						<section class="section white-bg">
 							<div class="container d-flex justify-content-center">
 								<div class="login-signup-form gray-bg-100 p-4 billing-info">
@@ -213,15 +173,14 @@
 										<p class="d-flex denote-required position-relative"><span
 											class="required-symbol">&#42;</span>= Required Field</p>
 									</div>
-									<div class="pr-4">
-										<div class="form-group mb-4 w-auto required">
-											<input type="username" class="form-control gray-box" id="loginEmail" aria-describedby="emailHelp" placeholder="User Name">
-										</div>
-										<div class="form-group mb-4 w-auto required">
-											<input type="email" class="form-control gray-box" id="emailAddress" aria-describedby="emailHelp" placeholder="E-mail Address">
-										</div>
+									<div class="form-group has-float-label required">
+										<input type="text" class="form-control" id="userName" name="userName" placeholder="User name">
+										<label for="userName">User name</label>
 									</div>
-									
+									<div class="form-group has-float-label required">
+										<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+										<label for="password">Password</label>
+									</div>									
 									<div>
 										<p class="mb-1">Remember Me</p>
 										<div class="white-bg p-3 gray-box">
@@ -246,7 +205,6 @@
 								</div>
 							</div>
 						</section>
-
 					</div>
 				</div>
 			</section>
@@ -352,11 +310,9 @@
 		<script src="/template/js/vendor/jquery.js"></script>
 		<script src="/template/js/vendor/popper.js"></script>
 		<script src="/template/js/vendor/bootstrap.js"></script>
-		<!-- End vendor scripts -->
-
-		<!-- build:js /template/js/scripts.min.js -->
+		<script src="/template/js/vendor/jquery.validate.js"></script>
+		<script src="/template/js/form-validation.js"></script>
 		<script src="/template/js/scripts.js"></script>
-		<!-- endbuild -->
 	</form>
 </body>
 

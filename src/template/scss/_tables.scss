@@ -1,20 +1,32 @@
 table {
-  &#myFareCardList {
-    tbody {
-      td {
-        white-space: nowrap;
-
-        &:nth-of-type(3),
-        &:nth-of-type(4) {
-          select {
-            min-width: 155px !important;
-
-            @include media-breakpoint-up(lg) {
-              width: auto;
-            }
-          }
+    caption {
+        caption-side: top;
+        margin-bottom: 0;
+        &.h3 {
+            margin-bottom: 0;
         }
-      }
     }
-  }
+    &#myFareCardList {
+        tbody {
+            td {
+                white-space: nowrap;
+
+                &:nth-of-type(3),
+                &:nth-of-type(4) {
+                    select {
+                        min-width: 155px !important;
+
+                        @include media-breakpoint-up(lg) {
+                            width: auto;
+                        }
+                    }
+                }
+
+                .form-group,
+                .input-group {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

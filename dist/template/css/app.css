@@ -8268,65 +8268,81 @@ abbr {
 /**********************************************
     Form styles
 **********************************************/
+fieldset {
+  width: 100%; }
+  fieldset legend {
+    font-weight: 700; }
+
 .form-row {
   margin-top: 30px; }
   @media (min-width: 992px) {
     .form-row {
       margin-top: 45px; } }
 
-.form-group {
-  margin-bottom: 15px; }
-  @media (min-width: 992px) {
-    .form-group {
-      margin-bottom: 30px; } }
-
-.form-control,
-.form-control-lg,
-.custom-select {
-  font-size: 16px !important;
-  font-size: 1rem !important; }
-  @media (min-width: 992px) {
-    .form-control,
-    .form-control-lg,
-    .custom-select {
-      font-size: 23px !important;
-      font-size: 1.4375rem !important; } }
-
-.input-group .form-control {
-  border-right: none; }
-
-.input-group .input-group-text {
-  background-color: #fff;
-  border-left: none; }
-
-.input-group.is-invalid .input-group-text {
-  border: 1px solid #ed1b2e;
-  border-left: none; }
+.form-group,
+.input-group {
+  margin-bottom: 1rem;
+  width: 98%; }
+  .form-group.required, .form-group.required-custom,
+  .input-group.required,
+  .input-group.required-custom {
+    position: relative; }
+    .form-group.required::after, .form-group.required-custom::after,
+    .input-group.required::after,
+    .input-group.required-custom::after {
+      content: "*";
+      position: absolute;
+      top: 0;
+      right: -1rem;
+      font-size: 43px !important;
+      font-size: 2.6875rem !important;
+      color: #ed1b2e;
+      line-height: 1; }
+      @media (min-width: 992px) {
+        .form-group.required::after, .form-group.required-custom::after,
+        .input-group.required::after,
+        .input-group.required-custom::after {
+          font-size: 47px !important;
+          font-size: 2.9375rem !important; } }
+  .form-group .form-control,
+  .form-group .custom-select,
+  .input-group .form-control,
+  .input-group .custom-select {
+    display: block;
+    height: 45px;
+    color: #8a8b8a;
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
+    padding: 0.375rem 0.75rem; }
+    @media (min-width: 992px) {
+      .form-group .form-control,
+      .form-group .custom-select,
+      .input-group .form-control,
+      .input-group .custom-select {
+        height: 50px;
+        font-size: 23px !important;
+        font-size: 1.4375rem !important; } }
+  .form-group .custom-select,
+  .input-group .custom-select {
+    padding-left: 1.25rem; }
+  .form-group label,
+  .input-group label {
+    color: #8a8b8a; }
+  .form-group textarea,
+  .input-group textarea {
+    width: 100%;
+    height: auto; }
+  .form-group .input-group-text,
+  .input-group .input-group-text {
+    background-color: #fff;
+    border-left: none; }
+  .form-group.is-invalid .input-group-text,
+  .input-group.is-invalid .input-group-text {
+    border: 1px solid #ed1b2e;
+    border-left: none; }
 
 .form-control:disabled, .form-control[readonly] {
   background-color: #fff; }
-
-.site-search-box {
-  background: #f5f5f4;
-  position: absolute;
-  top: 67px;
-  right: 0;
-  width: 420px;
-  padding: 1rem;
-  display: none;
-  z-index: 3; }
-  .site-search-box .form-control {
-    color: #626462;
-    font-size: 18px !important;
-    font-size: 1.125rem !important; }
-  .site-search-box .input-group-append {
-    background-color: #fff; }
-    .site-search-box .input-group-append .btn-primary {
-      background-color: #fff;
-      border: 1px solid #e3e3e0;
-      border-left: 0;
-      font-size: 18px !important;
-      font-size: 1.125rem !important; }
 
 @media (min-width: 768px) {
   button[type="search"] .icon {
@@ -8337,11 +8353,13 @@ abbr {
 .denote-required {
   position: relative;
   font-size: 18px !important;
-  font-size: 1.125rem !important; }
+  font-size: 1.125rem !important;
+  margin-left: 1.25rem; }
   @media (min-width: 992px) {
     .denote-required {
       font-size: 23px !important;
-      font-size: 1.4375rem !important; } }
+      font-size: 1.4375rem !important;
+      margin-left: 1.4375rem; } }
   .denote-required .required-symbol {
     font-size: 43px !important;
     font-size: 2.6875rem !important;
@@ -8356,83 +8374,6 @@ abbr {
         line-height: 0;
         margin-right: 0.25rem;
         top: 1.7rem; } }
-
-.billing-info .form-group,
-.billing-info .input-group,
-.payment-info .form-group,
-.payment-info .input-group,
-.shipping-info .form-group,
-.shipping-info .input-group {
-  width: 327px; }
-  @media (min-width: 992px) {
-    .billing-info .form-group,
-    .billing-info .input-group,
-    .payment-info .form-group,
-    .payment-info .input-group,
-    .shipping-info .form-group,
-    .shipping-info .input-group {
-      width: 445px; } }
-  @media (min-width: 1200px) {
-    .billing-info .form-group,
-    .billing-info .input-group,
-    .payment-info .form-group,
-    .payment-info .input-group,
-    .shipping-info .form-group,
-    .shipping-info .input-group {
-      width: 535px; } }
-  .billing-info .form-group.required,
-  .billing-info .input-group.required,
-  .payment-info .form-group.required,
-  .payment-info .input-group.required,
-  .shipping-info .form-group.required,
-  .shipping-info .input-group.required {
-    position: relative; }
-    .billing-info .form-group.required::after,
-    .billing-info .input-group.required::after,
-    .payment-info .form-group.required::after,
-    .payment-info .input-group.required::after,
-    .shipping-info .form-group.required::after,
-    .shipping-info .input-group.required::after {
-      content: "*";
-      position: absolute;
-      top: 0;
-      right: -1rem;
-      font-size: 43px !important;
-      font-size: 2.6875rem !important;
-      color: #ed1b2e;
-      line-height: 1; }
-      @media (min-width: 992px) {
-        .billing-info .form-group.required::after,
-        .billing-info .input-group.required::after,
-        .payment-info .form-group.required::after,
-        .payment-info .input-group.required::after,
-        .shipping-info .form-group.required::after,
-        .shipping-info .input-group.required::after {
-          font-size: 47px !important;
-          font-size: 2.9375rem !important; } }
-  .billing-info .form-group.required-custom::after,
-  .billing-info .input-group.required-custom::after,
-  .payment-info .form-group.required-custom::after,
-  .payment-info .input-group.required-custom::after,
-  .shipping-info .form-group.required-custom::after,
-  .shipping-info .input-group.required-custom::after {
-    content: "*";
-    position: absolute;
-    top: 0;
-    right: -1rem;
-    font-size: 43px !important;
-    font-size: 2.6875rem !important;
-    color: #ed1b2e;
-    line-height: 1; }
-    @media (min-width: 992px) {
-      .billing-info .form-group.required-custom::after,
-      .billing-info .input-group.required-custom::after,
-      .payment-info .form-group.required-custom::after,
-      .payment-info .input-group.required-custom::after,
-      .shipping-info .form-group.required-custom::after,
-      .shipping-info .input-group.required-custom::after {
-        font-size: 47px !important;
-        font-size: 2.9375rem !important; } }
 
 .shipping-info {
   display: none; }
@@ -8449,8 +8390,115 @@ input[name="quantity"]::-ms-input-placeholder {
 input[name="quantity"]::placeholder {
   text-align: center; }
 
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
-  top: 2px; }
+/**************************************************
+	Bootstrap floating labels
+	https://github.com/tonystar/bootstrap-float-label
+**************************************************/
+.has-float-label {
+  display: block;
+  position: relative; }
+  .has-float-label label {
+    position: absolute;
+    left: 0.75rem;
+    top: 0;
+    cursor: text;
+    font-size: 12px !important;
+    font-size: 0.75rem !important;
+    opacity: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .has-float-label select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  .has-float-label textarea {
+    width: 100%; }
+  .has-float-label input::-webkit-input-placeholder,
+  .has-float-label select::-webkit-input-placeholder,
+  .has-float-label textarea::-webkit-input-placeholder {
+    opacity: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .has-float-label input::-moz-placeholder,
+  .has-float-label select::-moz-placeholder,
+  .has-float-label textarea::-moz-placeholder {
+    opacity: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .has-float-label input:-ms-input-placeholder,
+  .has-float-label select:-ms-input-placeholder,
+  .has-float-label textarea:-ms-input-placeholder {
+    opacity: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .has-float-label input::-ms-input-placeholder,
+  .has-float-label select::-ms-input-placeholder,
+  .has-float-label textarea::-ms-input-placeholder {
+    opacity: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .has-float-label input::placeholder,
+  .has-float-label select::placeholder,
+  .has-float-label textarea::placeholder {
+    opacity: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .has-float-label input:placeholder-shown:not(:focus)::-webkit-input-placeholder,
+  .has-float-label select:placeholder-shown:not(:focus)::-webkit-input-placeholder,
+  .has-float-label textarea:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+    opacity: 0; }
+  .has-float-label input:placeholder-shown:not(:focus)::-moz-placeholder,
+  .has-float-label select:placeholder-shown:not(:focus)::-moz-placeholder,
+  .has-float-label textarea:placeholder-shown:not(:focus)::-moz-placeholder {
+    opacity: 0; }
+  .has-float-label input:placeholder-shown:not(:focus):-ms-input-placeholder,
+  .has-float-label select:placeholder-shown:not(:focus):-ms-input-placeholder,
+  .has-float-label textarea:placeholder-shown:not(:focus):-ms-input-placeholder {
+    opacity: 0; }
+  .has-float-label input:placeholder-shown:not(:focus)::-ms-input-placeholder,
+  .has-float-label select:placeholder-shown:not(:focus)::-ms-input-placeholder,
+  .has-float-label textarea:placeholder-shown:not(:focus)::-ms-input-placeholder {
+    opacity: 0; }
+  .has-float-label input:placeholder-shown:not(:focus)::placeholder,
+  .has-float-label select:placeholder-shown:not(:focus)::placeholder,
+  .has-float-label textarea:placeholder-shown:not(:focus)::placeholder {
+    opacity: 0; }
+  .has-float-label input:placeholder-shown:not(:focus) + *,
+  .has-float-label select:placeholder-shown:not(:focus) + *,
+  .has-float-label textarea:placeholder-shown:not(:focus) + * {
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
+    top: 0.5em; }
+    @media (min-width: 992px) {
+      .has-float-label input:placeholder-shown:not(:focus) + *,
+      .has-float-label select:placeholder-shown:not(:focus) + *,
+      .has-float-label textarea:placeholder-shown:not(:focus) + * {
+        font-size: 23px !important;
+        font-size: 1.4375rem !important;
+        left: 1.25rem;
+        top: 0.5rem; } }
+  .has-float-label input:focus,
+  .has-float-label select:focus,
+  .has-float-label textarea:focus {
+    outline: none; }
+  .has-float-label select {
+    padding-right: 1em;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.5em bottom 0.25em;
+    background-size: 8px 10px; }
+
+.input-group input {
+  border-right: 0; }
+
+.input-group .input-group-append .btn-primary {
+  background-color: #fff !important;
+  border-color: #e3e3e0;
+  border-left: none; }
+
+table caption {
+  caption-side: top;
+  margin-bottom: 0; }
+  table caption.h3 {
+    margin-bottom: 0; }
 
 table#myFareCardList tbody td {
   white-space: nowrap; }
@@ -8459,6 +8507,9 @@ table#myFareCardList tbody td {
     @media (min-width: 992px) {
       table#myFareCardList tbody td:nth-of-type(3) select, table#myFareCardList tbody td:nth-of-type(4) select {
         width: auto; } }
+  table#myFareCardList tbody td .form-group,
+  table#myFareCardList tbody td .input-group {
+    width: 100%; }
 
 .tooltip {
   border: 2px solid #fff; }
@@ -8505,7 +8556,7 @@ table#myFareCardList tbody td {
         #header .navbar .navbar-nav .nav-item .nav-link.store-icon:hover::before {
           display: block;
           content: "";
-          background-image: url("../img/svg/shopping-cart-white.svg");
+          background-image: url("/template/img/svg/shopping-cart-white.svg");
           background-repeat: no-repeat;
           background-size: 1.5rem;
           width: 1.5rem;
@@ -8514,7 +8565,7 @@ table#myFareCardList tbody td {
         position: relative;
         top: 0.25rem;
         content: "";
-        background-image: url("../img/svg/chevron-down-gray.svg");
+        background-image: url("/template/img/svg/chevron-down-gray.svg");
         background-repeat: no-repeat;
         background-size: 0.75rem;
         width: 0.75rem;
@@ -8530,7 +8581,7 @@ table#myFareCardList tbody td {
         #header .navbar .navbar-nav .nav-item .dropdown-toggle.search-icon:hover::before {
           display: block;
           content: "";
-          background-image: url("../img/svg/search-white.svg");
+          background-image: url("/template/img/svg/search-white.svg");
           background-repeat: no-repeat;
           background-size: 1.5rem;
           width: 1.5rem;
@@ -8539,7 +8590,7 @@ table#myFareCardList tbody td {
         #header .navbar .navbar-nav .nav-item .dropdown-toggle.avatar-icon::before {
           display: block;
           content: "";
-          background-image: url("../img/svg/avatar-gray.svg");
+          background-image: url("/template/img/svg/avatar-gray.svg");
           background-repeat: no-repeat;
           background-size: 1.5rem;
           width: 1.5rem;
@@ -8548,7 +8599,7 @@ table#myFareCardList tbody td {
         #header .navbar .navbar-nav .nav-item .dropdown-toggle.avatar-icon:hover::before {
           display: block;
           content: "";
-          background-image: url("../img/svg/avatar-white.svg");
+          background-image: url("/template/img/svg/avatar-white.svg");
           background-repeat: no-repeat;
           background-size: 1.5rem;
           width: 1.5rem;
@@ -8556,7 +8607,7 @@ table#myFareCardList tbody td {
       @media (min-width: 1200px) {
         #header .navbar .navbar-nav .nav-item .dropdown-toggle:hover::after, #header .navbar .navbar-nav .nav-item .dropdown-toggle:focus::after {
           content: "";
-          background-image: url("../img/svg/chevron-down-white.svg");
+          background-image: url("/template/img/svg/chevron-down-white.svg");
           background-repeat: no-repeat;
           background-size: 0.75rem;
           width: 0.75rem;
@@ -8600,7 +8651,7 @@ table#myFareCardList tbody td {
       #header .navbar .utilities .nav-item .store-icon:focus::before {
         display: block;
         content: "";
-        background-image: url("../img/svg/shopping-cart-white.svg");
+        background-image: url("/template/img/svg/shopping-cart-white.svg");
         background-repeat: no-repeat;
         background-size: 1.5rem;
         width: 1.5rem;
@@ -8611,7 +8662,7 @@ table#myFareCardList tbody td {
     #header .navbar .utilities .nav-item .nav-link.store-icon::before {
       display: block;
       content: "";
-      background-image: url("../img/svg/shopping-cart-green.svg");
+      background-image: url("/template/img/svg/shopping-cart-green.svg");
       background-repeat: no-repeat;
       background-size: 1.5rem;
       width: 1.5rem;
@@ -8634,7 +8685,7 @@ table#myFareCardList tbody td {
     #header .navbar .utilities .nav-item .dropdown-toggle.search-icon::before {
       display: block;
       content: "";
-      background-image: url("../img/svg/search-gray.svg");
+      background-image: url("/template/img/svg/search-gray.svg");
       background-repeat: no-repeat;
       background-size: 1.5rem;
       width: 1.5rem;
@@ -8643,7 +8694,7 @@ table#myFareCardList tbody td {
       #header .navbar .utilities .nav-item .dropdown-toggle.search-icon:focus::before {
         display: block;
         content: "";
-        background-image: url("../img/svg/search-white.svg");
+        background-image: url("/template/img/svg/search-white.svg");
         background-repeat: no-repeat;
         background-size: 1.5rem;
         width: 1.5rem;
@@ -8651,7 +8702,7 @@ table#myFareCardList tbody td {
     #header .navbar .utilities .nav-item .dropdown-toggle.avatar-icon::before {
       display: block;
       content: "";
-      background-image: url("../img/svg/avatar-gray.svg");
+      background-image: url("/template/img/svg/avatar-gray.svg");
       background-repeat: no-repeat;
       background-size: 1.5rem;
       width: 1.5rem;
@@ -8660,7 +8711,7 @@ table#myFareCardList tbody td {
       #header .navbar .utilities .nav-item .dropdown-toggle.avatar-icon:focus::before {
         display: block;
         content: "";
-        background-image: url("../img/svg/avatar-white.svg");
+        background-image: url("/template/img/svg/avatar-white.svg");
         background-repeat: no-repeat;
         background-size: 1.5rem;
         width: 1.5rem;
@@ -8682,7 +8733,18 @@ table#myFareCardList tbody td {
           left: -17.1rem;
           margin-top: 0; } }
       #header .navbar .utilities .nav-item .search-dropdown-menu .input-group {
-        width: 313px; }
+        width: 100%; }
+        #header .navbar .utilities .nav-item .search-dropdown-menu .input-group .custom-width {
+          width: 275px; }
+          @media (min-width: 768px) {
+            #header .navbar .utilities .nav-item .search-dropdown-menu .input-group .custom-width {
+              width: 650px; } }
+          @media (min-width: 992px) {
+            #header .navbar .utilities .nav-item .search-dropdown-menu .input-group .custom-width {
+              width: 882px; } }
+          @media (min-width: 1200px) {
+            #header .navbar .utilities .nav-item .search-dropdown-menu .input-group .custom-width {
+              width: 264px; } }
         #header .navbar .utilities .nav-item .search-dropdown-menu .input-group .form-control {
           border-right: none; }
         #header .navbar .utilities .nav-item .search-dropdown-menu .input-group .input-group-append .btn {
@@ -9046,8 +9108,6 @@ form .is-valid .alert-red {
   padding-bottom: 30px; }
   #store .shopping-cart .cart-item .row .custom-control-label {
     margin-right: 1rem; }
-    #store .shopping-cart .cart-item .row .custom-control-label::before {
-      top: 0.25rem; }
   #store .shopping-cart .cart-item .row .form-group {
     margin-bottom: 0; }
   #store .shopping-cart .cart-item .row p {
