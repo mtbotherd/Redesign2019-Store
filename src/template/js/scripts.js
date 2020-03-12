@@ -132,8 +132,7 @@ var Main = (function($, window, document, undefined) {
 
         // Bootstrap Popover with HTML
         $('[data-toggle="popover"]').popover({
-            html: true,
-            trigger: "click",
+            trigger: "focus",
         });
 
         $("#header img.active").hide();
